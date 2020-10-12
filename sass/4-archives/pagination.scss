@@ -1,0 +1,37 @@
+/* Theme Pagination */
+.pagination-wrap {
+	border-top: 1px solid;
+	@include border-color(--page-border-color);
+}
+
+.pagination {
+	margin: 0 auto;
+	max-width: $contentWidth;
+	width: 100%;
+	@include font-size(15);
+}
+
+.pagination .page-numbers,
+.pagination .current {
+	display: inline-block;
+	margin: 0 1em 0 0;
+	padding: 0.4em 1em;
+	text-align: center;
+	@include color(--link-color);
+	text-decoration: none;
+}
+
+.pagination .page-numbers.dots {
+	padding: 0 0.5rem;
+}
+
+.pagination a:hover,
+.pagination a:active {
+	@include color(--link-hover-color);
+	text-decoration: underline;
+}
+
+.pagination .current {
+	@include color(--button-text-color);
+	@include background(--button-color);
+}
