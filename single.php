@@ -12,17 +12,9 @@ get_header();
 
 while ( have_posts() ) :
 	the_post();
-	?>
 
-	<main id="main" class="site-main" role="main">
+	get_template_part( 'template-parts/post/content', esc_html( kairos_get_option( 'post_image_single' ) ) );
 
-		<?php
-			get_template_part( 'template-parts/post/content', esc_html( kairos_get_option( 'post_image_single' ) ) );
-		?>
-
-	</main><!-- #main -->
-
-	<?php
 	kairos_post_navigation();
 
 	kairos_related_posts();

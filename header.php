@@ -50,3 +50,5 @@
 		<div id="content" class="site-content">
 
 			<?php kairos_breadcrumbs(); ?>
+
+			<main id="main" class="site-main" role="main">

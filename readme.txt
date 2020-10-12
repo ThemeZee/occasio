@@ -23,30 +23,6 @@ For more information about Kairos please go to https://themezee.com/themes/kairo
 
 == Changelog ==
 
-= 1.2.2 - 2020-10-10 =
-* added AMP dropdown toggles for sub menus
-* added CSS variables for line heights
-
-= 1.2.1 - 2020-08-24 =
-* fixed styling of menu items with empty links
-* fixed undefined naviClass variable warning
-
-= 1.2 - 2020-08-06 =
-* added support for official AMP WordPress plugin
-
-= 1.1 - 2020-03-04 =
-* added Retina Logo option
-* added No Title page template
-* added Full-width / No Title page template
-* added live preview for page templates in Gutenberg Editor
-* added Trackbacks in comments section
-
-= 1.0.2 - 2020-02-17 =
-* added flexible width and height to custom header image
-
-= 1.0.1 - 2019-12-05 =
-* improved support for wooCommerce
-
 = 1.0 - 2019-11-20 =
 * First Release
 

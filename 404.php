@@ -10,30 +10,26 @@
 
 get_header(); ?>
 
-	<main id="main" class="site-main" role="main">
+	<section class="error-404 not-found type-page">
 
-		<section class="error-404 not-found type-page">
+		<header class="entry-header">
 
-			<header class="entry-header">
+			<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'kairos' ); ?></h1>
 
-				<h1 class="entry-title page-title"><?php esc_html_e( '404: Page not found', 'kairos' ); ?></h1>
+		</header><!-- .entry-header -->
 
-			</header><!-- .entry-header -->
+		<div class="entry-content">
+			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'kairos' ); ?></p>
 
-			<div class="entry-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'kairos' ); ?></p>
+			<?php get_search_form(); ?>
 
-				<?php get_search_form(); ?>
+			<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+			<?php the_widget( 'WP_Widget_Pages' ); ?>
 
-				<?php the_widget( 'WP_Widget_Pages' ); ?>
+		</div><!-- .entry-content -->
 
-			</div><!-- .entry-content -->
-
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
+	</section><!-- .error-404 -->
 
 <?php
 get_footer();

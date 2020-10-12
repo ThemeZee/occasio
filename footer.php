@@ -12,6 +12,10 @@
 
 ?>
 
+		</main><!-- #main -->
+
+		<?php get_sidebar(); ?>
+
 	</div><!-- #content -->
 
 	<?php do_action( 'kairos_before_footer' ); ?>

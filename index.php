@@ -16,22 +16,14 @@
 get_header();
 
 if ( have_posts() ) :
-	?>
 
-	<main id="main" class="site-main" role="main">
+	while ( have_posts() ) :
+		the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		get_template_part( 'template-parts/page/content', 'page' );
 
-			get_template_part( 'template-parts/page/content', 'page' );
+	endwhile;
 
-		endwhile;
-		?>
-
-	</main><!-- #main -->
-
-	<?php
 	kairos_pagination();
 
 else :

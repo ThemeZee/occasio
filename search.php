@@ -11,24 +11,16 @@
 get_header();
 
 if ( have_posts() ) :
-	?>
 
-	<main id="main" class="site-main" role="main">
+	kairos_search_header();
 
-		<?php
-		kairos_search_header();
+	while ( have_posts() ) :
+		the_post();
 
-		while ( have_posts() ) :
-			the_post();
+		get_template_part( 'template-parts/page/content', 'search' );
 
-			get_template_part( 'template-parts/page/content', 'search' );
+	endwhile;
 
-		endwhile;
-		?>
-
-	</main><!-- #main -->
-
-	<?php
 	kairos_pagination();
 
 else :

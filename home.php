@@ -11,26 +11,21 @@
 get_header();
 
 if ( have_posts() ) :
+	do_action( 'kairos_before_blog' );
 	?>
 
-	<main id="main" class="site-main" role="main">
+	<div id="post-wrapper" class="post-wrapper">
 
-		<?php do_action( 'kairos_before_blog' ); ?>
+	<?php
+	while ( have_posts() ) :
+		the_post();
 
-		<div id="post-wrapper" class="post-wrapper">
+		get_template_part( 'template-parts/blog/content', esc_html( kairos_get_option( 'blog_layout' ) ) );
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	endwhile;
+	?>
 
-			get_template_part( 'template-parts/blog/content', esc_html( kairos_get_option( 'blog_layout' ) ) );
-
-		endwhile;
-		?>
-
-		</div>
-
-	</main><!-- #main -->
+	</div>
 
 	<?php
 	kairos_pagination();
