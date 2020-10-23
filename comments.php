@@ -20,51 +20,48 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="comments-wrap page-footer">
+<div id="comments" class="comments-area">
 
-	<div id="comments" class="comments-area">
+	<?php
+	// You can start editing here -- including this comment!
+	if ( have_comments() ) :
+		?>
+		<h2 class="comments-title">
+			<?php
+			$comment_count = get_comments_number();
+			if ( '1' === $comment_count ) {
+				esc_html_e( 'One comment', 'kairos' );
+			} else {
+				// translators: Comment Count
+				printf( esc_html__( '%s comments', 'kairos' ), number_format_i18n( $comment_count ) );
+			}
+			?>
+		</h2><!-- .comments-title -->
+
+		<?php the_comments_navigation(); ?>
+
+		<ol class="comment-list">
+			<?php
+				wp_list_comments( array(
+					'style'       => 'ol',
+					'avatar_size' => 56,
+				) );
+			?>
+		</ol><!-- .comment-list -->
 
 		<?php
-		// You can start editing here -- including this comment!
-		if ( have_comments() ) :
+		the_comments_navigation();
+
+		// If comments are closed and there are comments, let's leave a little note, shall we?
+		if ( ! comments_open() ) :
 			?>
-			<h2 class="comments-title">
-				<?php
-				$comment_count = get_comments_number();
-				if ( '1' === $comment_count ) {
-					esc_html_e( 'One comment', 'kairos' );
-				} else {
-					// translators: Comment Count
-					printf( esc_html__( '%s comments', 'kairos' ), number_format_i18n( $comment_count ) );
-				}
-				?>
-			</h2><!-- .comments-title -->
-
-			<?php the_comments_navigation(); ?>
-
-			<ol class="comment-list">
-				<?php
-					wp_list_comments( array(
-						'style'       => 'ol',
-						'avatar_size' => 56,
-					) );
-				?>
-			</ol><!-- .comment-list -->
-
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'kairos' ); ?></p>
 			<?php
-			the_comments_navigation();
+		endif;
 
-			// If comments are closed and there are comments, let's leave a little note, shall we?
-			if ( ! comments_open() ) :
-				?>
-				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'kairos' ); ?></p>
-				<?php
-			endif;
+	endif; // Check for have_comments().
 
-		endif; // Check for have_comments().
+	comment_form();
+	?>
 
-		comment_form();
-		?>
-
-	</div><!-- #comments -->
-</div>
+</div><!-- #comments -->

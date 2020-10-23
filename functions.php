@@ -153,6 +153,18 @@ add_action( 'enqueue_block_editor_assets', 'kairos_theme_fonts', 1 );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function kairos_widgets_init() {
+
+	// Register Blog Sidebar widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'kairos' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'kairos' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
 	// Register Footer Copyright widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Copyright', 'kairos' ),

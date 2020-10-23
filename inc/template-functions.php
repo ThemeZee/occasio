@@ -100,6 +100,16 @@ function kairos_body_classes( $classes ) {
 		$classes[] = 'is-amp-page';
 	}
 
+	// Add Blog Page class?
+	if ( kairos_is_blog_page() ) {
+		$classes[] = 'is-blog-page';
+	}
+
+	// Add Sidebar class.
+	if ( kairos_has_sidebar() ) {
+		$classes[] = 'has-sidebar';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -108,6 +118,38 @@ function kairos_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'kairos_body_classes' );
+
+
+/**
+ * Check if we are on a blog page or single post.
+ *
+ * @return bool
+ */
+function kairos_is_blog_page() {
+	return ( 'post' === get_post_type() ) && ( is_home() || is_archive() || is_single() );
+}
+
+
+/**
+ * Check if sidebar should be displayed.
+ *
+ * @return bool
+ */
+function kairos_has_sidebar() {
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		return false;
+	}
+
+	if ( kairos_is_blog_page() && ! is_page_template( 'templates/template-no-sidebar.php' ) ) {
+		return true;
+	}
+
+	if ( is_page_template( 'templates/template-sidebar-left.php' ) or is_page_template( 'templates/template-sidebar-right.php' ) ) {
+		return true;
+	}
+
+	return false;
+}
 
 
 /**

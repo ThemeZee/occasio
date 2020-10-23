@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: Full-width Layout
+ * Template Name: Sidebar Left
  * Template Post Type: page
  *
- * Description: A custom template for displaying a fullwidth layout.
+ * Description: A custom template for displaying a page with sidebar.
  *
  * @package Kairos
  */
