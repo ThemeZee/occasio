@@ -8,8 +8,8 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #c9493b;
-	--secondary-color: #e36355;
+	--primary-color: #5d7b94;
+	--secondary-color: #2a4861;
 	--accent-color: #078896;
 	--highlight-color: #5bb021;
 	--light-gray-color: #e4e4e4;
@@ -18,22 +18,25 @@
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
-	--link-color: #c9493b;
-	--link-hover-color: #e36355;
-	--button-color: #c9493b;
+	--link-color: #5d7b94;
+	--link-hover-color: #2a4861;
+	--button-color: #2a4861;
 	--button-text-color: #fff;
-	--button-hover-color: #e36355;
+	--button-hover-color: #5d7b94;
 	--button-hover-text-color: #fff;
 	--page-background-color: #fff;
 	--page-border-color: rgba(0, 0, 0, 0.1);
 	--page-light-bg-color: rgba(0, 0, 0, 0.05);
-	--header-background-color: #fff;
-	--header-text-color: rgba(0, 0, 0, 0.9);
-	--header-text-hover-color: #e36355;
-	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: #202020;
-	--title-hover-color: #e36355;
-	--footer-background-color: #202020;
+	--header-background-color: #2a4861;
+	--header-text-color: #fff;
+	--header-text-hover-color: rgba(255, 255, 255, 0.5);
+	--header-border-color: rgba(255, 255, 255, 0.1);
+	--title-color: #2a4861;
+	--title-hover-color: #5d7b94;
+	--widget-title-color: #2a4861;
+	--widget-title-hover-color: #5d7b94;
+	--widget-background-color: #ededef;
+	--footer-background-color: #2a4861;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
 	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
@@ -84,7 +87,7 @@
 
 /* Post and Page Title */
 body.block-editor-page .editor-post-title__block .editor-post-title__input {
-	color: #202020;
+	color: #2a4861;
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -173,7 +176,7 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 .editor-styles-wrapper a {
-	color: #c9493b;
+	color: #5d7b94;
 	color: var(--link-color);
 }
 
@@ -576,12 +579,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #c9493b;
+	color: #5d7b94;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #e36355;
+	color: #2a4861;
 	color: var(--secondary-color);
 }
 
@@ -620,12 +623,12 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #c9493b;
+	background-color: #5d7b94;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #e36355;
+	background-color: #2a4861;
 	background-color: var(--secondary-color);
 }
 
@@ -807,7 +810,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	margin-top: 0;
 	margin-bottom: 0.25rem;
 	padding: 0;
-	color: #202020;
+	color: #2a4861;
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -822,7 +825,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:link,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:visited {
-	color: #202020;
+	color: #2a4861;
 	color: var(--title-color);
 	text-decoration: none;
 	transition: all 0.15s ease;
@@ -830,7 +833,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-title a:active {
-	color: #e36355;
+	color: #5d7b94;
 	color: var(--title-hover-color);
 }
 
@@ -895,7 +898,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	padding: 0.6em 1.2em;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #c9493b;
+	background-color: #2a4861;
 	background-color: var(--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -913,7 +916,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #e36355;
+	background-color: #5d7b94;
 	background-color: var(--button-hover-color);
 }
 
