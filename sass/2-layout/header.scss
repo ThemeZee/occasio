@@ -1,7 +1,5 @@
 .site-header {
 	@include background(--header-background-color);
-	border-bottom: 1px solid;
-	@include border-color(--header-border-color);
 }
 
 .header-main {
@@ -74,7 +72,7 @@
 
 /* Custom Header Image */
 .header-image {
-	margin-top: -1px;
+	margin-top: 1px;
 }
 
 .header-image img,

@@ -8,22 +8,3 @@
 	padding: 0;
 	vertical-align: top;
 }
-
-/* Featured Images with Wide Alignment */
-@media only screen and (min-width: 1120px) {
-	.post-template-template-no-sidebar.blog-layout-vertical-list .type-post .post-image-archives,
-	.post-template-template-no-sidebar.single-post .type-post .post-image-single {
-		margin-left: -50px;
-		margin-right: -50px;
-		max-width: 980px;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.post-template-template-no-sidebar.blog-layout-vertical-list .type-post .post-image-archives,
-	.post-template-template-no-sidebar.single-post .type-post .post-image-single {
-		margin-left: -100px;
-		margin-right: -100px;
-		max-width: 1080px;
-	}
-}

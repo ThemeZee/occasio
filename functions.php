@@ -36,13 +36,13 @@ function kairos_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 1080, 540, true );
+	set_post_thumbnail_size( 800, 440, true );
 
 	// Add image size for header image on single posts and pages.
-	add_image_size( 'kairos-featured-header-image', 1440, 600, true );
+	add_image_size( 'kairos-featured-header-image', 1240, 480, true );
 
 	// Add image size for posts with the Horizontal Blog layout enabled.
-	add_image_size( 'kairos-horizontal-list-post', 960, 720, true );
+	add_image_size( 'kairos-horizontal-list-post', 400, 400, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
