@@ -1,6 +1,5 @@
 .entry-meta {
 	margin: 1rem 0 0;
-	@include color(--light-text-color);
 	@include font-size(15);
 }
 
@@ -10,28 +9,16 @@
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	@include color(--light-text-color);
 	text-decoration: none;
 }
 
 .entry-meta a:hover,
 .entry-meta a:active {
-	@include color(--text-color);
+	text-decoration: underline;
 }
 
 .entry-meta .updated:not(.published) {
 	display: none;
-}
-
-.entry-meta .posted-by a:link,
-.entry-meta .posted-by a:visited {
-	font-weight: bold;
-	@include color(--medium-text-color);
-}
-
-.entry-meta .posted-by a:hover,
-.entry-meta .posted-by a:active {
-	@include color(--text-color);
 }
 
 @media only screen and (min-width: 360px) {
@@ -59,6 +46,8 @@
 }
 
 .entry-categories ul {
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -66,6 +55,14 @@
 
 .entry-categories ul li {
 	margin: 0;
+}
+
+.entry-categories a {
+	display: inline-block;
+	margin: 0 2px 2px 0;
+	padding: 0.1em 0.6em;
+	text-decoration: none;
+	background: #ededef;
 }
 
 .entry-categories a:link,
@@ -78,24 +75,6 @@
 	text-decoration: underline;
 }
 
-@media only screen and (min-width: 360px) {
-	.entry-categories ul {
-		display: flex;
-	}
-
-	.entry-categories ul li::after {
-		display: inline-block;
-		@include color(--light-text-color);
-		margin: 0 0.75rem;
-		content: "\2022";
-	}
-
-	.entry-categories ul li:last-child::after {
-		margin: 0;
-		content: "";
-	}
-}
-
 /* Entry Tags */
 .entry-tags {
 	display: flex;
@@ -106,7 +85,6 @@
 
 .entry-tags-label {
 	@include color(--light-text-color);
-	@include font-size(15);
 }
 
 .entry-tags-label::after {
@@ -119,7 +97,6 @@
 .entry-tags a {
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
-	@include font-size(15);
 	text-decoration: none;
 }
 

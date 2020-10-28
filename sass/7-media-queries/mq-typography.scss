@@ -8,7 +8,7 @@
 	}
 
 	.entry-title {
-		@include font-size(32);
+		@include font-size(28);
 	}
 
 	.entry-content {
@@ -20,7 +20,6 @@
 	input[type="reset"],
 	input[type="submit"],
 	.entry-meta,
-	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer {
@@ -43,8 +42,8 @@
 		@include font-size(17);
 	}
 
-	.entry-tags-label,
-	.entry-tags a,
+	.entry-categories,
+	.entry-tags,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
@@ -63,7 +62,7 @@
 	}
 
 	.entry-title {
-		@include font-size(40);
+		@include font-size(32);
 	}
 
 	.entry-content {
@@ -75,7 +74,6 @@
 	input[type="reset"],
 	input[type="submit"],
 	.entry-meta,
-	.entry-categories,
 	.more-link,
 	.pagination,
 	.site-footer,
@@ -106,23 +104,11 @@
 	}
 
 	.entry-title {
-		@include font-size(48);
+		@include font-size(36);
 	}
 
 	.entry-content {
 		@include font-size(19);
-	}
-
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"],
-	.entry-meta,
-	.entry-categories,
-	.more-link,
-	.pagination,
-	.site-footer {
-		@include font-size(18);
 	}
 
 	.archive-header .archive-title,
@@ -139,14 +125,5 @@
 
 	.comment {
 		@include font-size(18);
-	}
-
-	.entry-tags-label,
-	.entry-tags a,
-	.comment-meta .comment-metadata,
-	.comment .reply,
-	.comment-form .logged-in-as,
-	.comment-reply-title small a {
-		@include font-size(17);
 	}
 }

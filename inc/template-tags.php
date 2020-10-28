@@ -191,8 +191,8 @@ if ( ! function_exists( 'kairos_entry_meta' ) ) :
 	 */
 	function kairos_entry_meta() {
 
-		$postmeta  = kairos_entry_author();
-		$postmeta .= kairos_entry_date();
+		$postmeta  = kairos_entry_date();
+		$postmeta .= kairos_entry_author();
 		$postmeta .= kairos_entry_comments();
 
 		echo '<div class="entry-meta">' . $postmeta . '</div>';
@@ -238,13 +238,7 @@ if ( ! function_exists( 'kairos_entry_author' ) ) :
 			esc_html( get_the_author() )
 		);
 
-		$posted_by = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'kairos' ),
-			$author_string
-		);
-
-		return '<span class="posted-by"> ' . $posted_by . '</span>';
+		return '<span class="posted-by"> ' . $author_string . '</span>';
 	}
 endif;
 
