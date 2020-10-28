@@ -1,10 +1,9 @@
 .entry-meta {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	margin: 1rem 0 0;
 	@include font-size(15);
-}
-
-.entry-meta > span {
-	display: block;
 }
 
 .entry-meta a:link,
@@ -22,15 +21,20 @@
 }
 
 @media only screen and (min-width: 360px) {
+	.entry-meta {
+		flex-direction: row;
+		align-items: center;
+	}
+
 	.entry-meta > span {
-		display: inline;
+		padding-bottom: 2px;
 	}
 
 	.entry-meta > span::after {
 		display: inline-block;
-		margin: 0 1rem;
+		margin: 0 0.5rem;
 		@include color(--light-text-color);
-		content: "\2013";
+		content: "\002F";
 	}
 
 	.entry-meta .entry-comments::after {
@@ -41,8 +45,7 @@
 
 /* Entry Categories */
 .entry-categories {
-	margin-bottom: 0.75rem;
-	@include font-size(15);
+	margin-right: 1rem;
 }
 
 .entry-categories ul {
@@ -65,33 +68,12 @@
 	background: #ededef;
 }
 
-.entry-categories a:link,
-.entry-categories a:visited {
-	text-decoration: none;
-}
-
-.entry-categories a:hover,
-.entry-categories a:active {
-	text-decoration: underline;
-}
-
 /* Entry Tags */
 .entry-tags {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2em 0 0;
+	margin: 2rem 0 0;
 	align-items: center;
-}
-
-.entry-tags-label {
-	@include color(--light-text-color);
-}
-
-.entry-tags-label::after {
-	display: inline-block;
-	@include color(--light-text-color);
-	margin: 0 1rem;
-	content: "\2013";
 }
 
 .entry-tags a {
@@ -129,7 +111,7 @@ body.post-navigation-hidden.single-post .post-navigation-wrap {
 
 body.author-hidden .type-post .entry-meta .posted-by::after,
 body.date-hidden .type-post .entry-meta .posted-on::after,
-body.comments-hidden .type-post .entry-meta .posted-on::after,
+body.comments-hidden .type-post .entry-meta .posted-by::after,
 body.date-hidden.comments-hidden .type-post .entry-meta .posted-by::after {
 	margin: 0;
 	content: "";

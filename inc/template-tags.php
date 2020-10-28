@@ -191,7 +191,8 @@ if ( ! function_exists( 'kairos_entry_meta' ) ) :
 	 */
 	function kairos_entry_meta() {
 
-		$postmeta  = kairos_entry_date();
+		$postmeta  = kairos_entry_categories();
+		$postmeta .= kairos_entry_date();
 		$postmeta .= kairos_entry_author();
 		$postmeta .= kairos_entry_comments();
 
@@ -256,7 +257,7 @@ if ( ! function_exists( 'kairos_entry_categories' ) ) :
 
 		$categories = get_the_category_list( '' );
 
-		echo '<div class="entry-categories"> ' . $categories . '</div>';
+		return '<div class="entry-categories"> ' . $categories . '</div>';
 	}
 endif;
 
@@ -297,7 +298,7 @@ if ( ! function_exists( 'kairos_entry_tags' ) ) :
 	 */
 	function kairos_entry_tags() {
 		// Get tags.
-		$tag_list = get_the_tag_list( sprintf( '<span class="entry-tags-label">%s</span>', esc_html__( 'Tags', 'kairos' ) ) );
+		$tag_list = get_the_tag_list( sprintf( '<span class="entry-tags-label screen-reader-text">%s</span>', esc_html__( 'Tags', 'kairos' ) ) );
 
 		// Display tags.
 		if ( $tag_list ) :

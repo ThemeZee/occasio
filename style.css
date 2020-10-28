@@ -1264,13 +1264,12 @@ body.site-description-hidden .site-header .site-description {
 }
 
 .entry-meta {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	margin: 1rem 0 0;
 	font-size: 15px;
 	font-size: 0.9375rem;
-}
-
-.entry-meta > span {
-	display: block;
 }
 
 .entry-meta a:link,
@@ -1288,16 +1287,21 @@ body.site-description-hidden .site-header .site-description {
 }
 
 @media only screen and (min-width: 360px) {
+	.entry-meta {
+		flex-direction: row;
+		align-items: center;
+	}
+
 	.entry-meta > span {
-		display: inline;
+		padding-bottom: 2px;
 	}
 
 	.entry-meta > span::after {
 		display: inline-block;
-		margin: 0 1rem;
+		margin: 0 0.5rem;
 		color: rgba(0, 0, 0, 0.5);
 		color: var(--light-text-color);
-		content: "\2013";
+		content: "\002F";
 	}
 
 	.entry-meta .entry-comments::after {
@@ -1308,9 +1312,7 @@ body.site-description-hidden .site-header .site-description {
 
 /* Entry Categories */
 .entry-categories {
-	margin-bottom: 0.75rem;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	margin-right: 1rem;
 }
 
 .entry-categories ul {
@@ -1333,35 +1335,12 @@ body.site-description-hidden .site-header .site-description {
 	background: #ededef;
 }
 
-.entry-categories a:link,
-.entry-categories a:visited {
-	text-decoration: none;
-}
-
-.entry-categories a:hover,
-.entry-categories a:active {
-	text-decoration: underline;
-}
-
 /* Entry Tags */
 .entry-tags {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 2em 0 0;
+	margin: 2rem 0 0;
 	align-items: center;
-}
-
-.entry-tags-label {
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--light-text-color);
-}
-
-.entry-tags-label::after {
-	display: inline-block;
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--light-text-color);
-	margin: 0 1rem;
-	content: "\2013";
 }
 
 .entry-tags a {
@@ -1403,7 +1382,7 @@ body.post-navigation-hidden.single-post .post-navigation-wrap {
 
 body.author-hidden .type-post .entry-meta .posted-by::after,
 body.date-hidden .type-post .entry-meta .posted-on::after,
-body.comments-hidden .type-post .entry-meta .posted-on::after,
+body.comments-hidden .type-post .entry-meta .posted-by::after,
 body.date-hidden.comments-hidden .type-post .entry-meta .posted-by::after {
 	margin: 0;
 	content: "";
@@ -1583,7 +1562,6 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	}
 
 	.blog-layout-horizontal-list .post-wrapper .type-post .entry-meta,
-	.blog-layout-horizontal-list .post-wrapper .type-post .entry-categories,
 	.blog-layout-horizontal-list .post-wrapper .type-post .entry-tags,
 	.blog-layout-horizontal-list .post-wrapper .type-post .more-link {
 		font-size: 15px;
@@ -3308,7 +3286,6 @@ object {
 		font-size: 1.0625rem;
 	}
 
-	.entry-categories,
 	.entry-tags,
 	.comment-meta .comment-metadata,
 	.comment .reply,

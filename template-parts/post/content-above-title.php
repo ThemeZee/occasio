@@ -13,11 +13,11 @@
 
 	<header class="post-header entry-header">
 
-		<?php kairos_entry_categories(); ?>
-
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 		<?php kairos_entry_meta(); ?>
+
+		<?php kairos_entry_categories(); ?>
 
 	</header><!-- .entry-header -->
 
