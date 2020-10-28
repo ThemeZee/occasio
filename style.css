@@ -691,7 +691,7 @@ textarea {
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
-	max-width: 1440px;
+	max-width: 1240px;
 	background-color: #fff;
 	background-color: var(--page-background-color);
 }
@@ -709,7 +709,7 @@ textarea {
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 800px;
 }
 
 .site-footer {
@@ -1057,7 +1057,7 @@ body.site-description-hidden .site-header .site-description {
 .sidebar {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 800px;
 }
 
 .sidebar .widget {
@@ -1134,7 +1134,6 @@ body.site-description-hidden .site-header .site-description {
 
 	.has-sidebar .site-content .site-main {
 		flex-basis: 70%;
-		max-width: 100%;
 	}
 
 	.has-sidebar .site-content .site-main .entry-content > .alignwide,
@@ -1269,8 +1268,8 @@ body.site-description-hidden .site-header .site-description {
 
 /* Featured Images with Wide Alignment */
 @media only screen and (min-width: 1120px) {
-	.blog-layout-vertical-list .type-post .post-image-archives,
-	.single-post .type-post .post-image-single {
+	.post-template-template-no-sidebar.blog-layout-vertical-list .type-post .post-image-archives,
+	.post-template-template-no-sidebar.single-post .type-post .post-image-single {
 		margin-left: -50px;
 		margin-right: -50px;
 		max-width: 980px;
@@ -1278,8 +1277,8 @@ body.site-description-hidden .site-header .site-description {
 }
 
 @media only screen and (min-width: 1200px) {
-	.blog-layout-vertical-list .type-post .post-image-archives,
-	.single-post .type-post .post-image-single {
+	.post-template-template-no-sidebar.blog-layout-vertical-list .type-post .post-image-archives,
+	.post-template-template-no-sidebar.single-post .type-post .post-image-single {
 		margin-left: -100px;
 		margin-right: -100px;
 		max-width: 1080px;
@@ -1508,7 +1507,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .post-navigation {
 	margin: 0 auto;
-	max-width: 1120px;
+	max-width: 960px;
 	width: 100%;
 }
 
@@ -1564,7 +1563,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 /* Fullwidth Page Template */
 .page-template-template-fullwidth .site-main,
 .page-template-template-fullwidth-no-title .site-main {
-	max-width: 1280px;
+	max-width: 1160px;
 }
 
 .page-template-template-fullwidth .site-main .entry-content > .alignwide,
@@ -1581,7 +1580,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 	.page-template-template-fullwidth-no-title .site-main .entry-content > .alignfull {
 		margin-left: -80px;
 		margin-right: -80px;
-		max-width: 1440px;
+		max-width: 1240px;
 	}
 }
 
@@ -1620,7 +1619,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 .blog-layout-two-column-grid .pagination,
 .blog-layout-three-column-grid .site-main,
 .blog-layout-three-column-grid .pagination {
-	max-width: 1280px;
+	max-width: 1160px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -1810,7 +1809,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .pagination {
 	margin: 0 auto;
-	max-width: 880px;
+	max-width: 800px;
 	width: 100%;
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -2269,7 +2268,7 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 
 .comments-area {
 	margin: 0 auto;
-	max-width: 880px;
+	max-width: 800px;
 	width: 100%;
 	word-wrap: break-word;
 }
@@ -2747,7 +2746,7 @@ object {
 	margin-bottom: 1.5rem;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 880px;
+	max-width: 800px;
 	padding: 0;
 	width: 100%;
 	font-size: 15px;
@@ -2816,7 +2815,7 @@ object {
 .blog-layout-horizontal-list .themezee-breadcrumbs,
 .blog-layout-two-column-grid .themezee-breadcrumbs,
 .blog-layout-three-column-grid .themezee-breadcrumbs {
-	max-width: 1280px;
+	max-width: 1160px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -2965,7 +2964,7 @@ object {
 
 .themezee-related-posts {
 	margin: 0 auto;
-	max-width: 880px;
+	max-width: 800px;
 	width: 100%;
 }
 
@@ -3664,7 +3663,7 @@ object {
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: 1120px;
+		max-width: 960px;
 	}
 }
 
@@ -3709,7 +3708,7 @@ object {
 	.entry-content > .alignfull {
 		margin-left: -280px;
 		margin-right: -280px;
-		max-width: 1440px;
+		max-width: 1240px;
 	}
 }
 
