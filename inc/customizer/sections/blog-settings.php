@@ -39,12 +39,10 @@ function kairos_customize_register_blog_settings( $wp_customize ) {
 		'type'     => 'select',
 		'priority' => 10,
 		'choices'  => array(
-			'horizontal-list'     => esc_html__( 'Horizontal List', 'kairos' ),
-			'horizontal-list-alt' => esc_html__( 'Horizontal List (alternative)', 'kairos' ),
-			'vertical-list'       => esc_html__( 'Vertical List', 'kairos' ),
-			'vertical-list-alt'   => esc_html__( 'Vertical List (alternative)', 'kairos' ),
-			'two-column-grid'     => esc_html__( 'Two Column Grid', 'kairos' ),
-			'three-column-grid'   => esc_html__( 'Three Column Grid', 'kairos' ),
+			'horizontal-list'   => esc_html__( 'Horizontal List', 'kairos' ),
+			'vertical-list'     => esc_html__( 'Vertical List', 'kairos' ),
+			'two-column-grid'   => esc_html__( 'Two Column Grid', 'kairos' ),
+			'three-column-grid' => esc_html__( 'Three Column Grid', 'kairos' ),
 		),
 	) );
 

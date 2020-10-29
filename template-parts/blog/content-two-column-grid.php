@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying articles in the vertical list and grid layouts
+ * The template for displaying articles in the two column grid layout
  *
  * @version 1.0
  * @package Kairos
