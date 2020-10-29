@@ -1,7 +1,7 @@
 /* Read More Button */
 .more-link {
 	display: inline-block;
-	padding: 0.6em 1.2em;
+	padding: 0.6rem 1rem;
 	@include color(--button-text-color);
 	@include background(--button-color);
 	@include font-size(15);

@@ -21,14 +21,17 @@
 				@include font-size(22);
 			}
 
+			.entry-content {
+				@include font-size(16);
+			}
+
 			.entry-meta,
-			.entry-tags,
 			.more-link {
 				@include font-size(15);
 			}
 
-			.entry-content {
-				@include font-size(17);
+			.entry-tags {
+				@include font-size(14);
 			}
 		}
 	}
@@ -54,36 +57,52 @@
 		.post-wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			margin-right: -2rem;
+			margin-right: -1.75rem;
 
 			.type-post {
-				padding-right: 2rem;
-				margin-bottom: 2rem;
+				padding-right: 1.75rem;
 				width: 50%;
 
+				.entry-header,
 				.post-image {
-					margin-bottom: 1rem;
+					margin-bottom: 0.5rem;
 				}
 
 				.entry-title {
 					@include font-size(22);
+				}
+
+				.entry-content {
+					@include font-size(16);
+				}
+
+				.entry-meta,
+				.more-link {
+					@include font-size(15);
+				}
+
+				.entry-tags {
+					@include font-size(14);
 				}
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: 1120px) {
-	.blog-layout-horizontal-list {
+@media only screen and (min-width: 960px) {
+	.blog-layout-two-column-grid,
+	.blog-layout-three-column-grid {
 		.post-wrapper {
+			margin-right: -2rem;
+
 			.type-post {
-				.entry-title {
-					@include font-size(24);
-				}
+				padding-right: 2rem;
 			}
 		}
 	}
+}
 
+@media only screen and (min-width: 1280px) {
 	.blog-layout-two-column-grid,
 	.blog-layout-three-column-grid {
 		.post-wrapper {
@@ -92,46 +111,34 @@
 			.type-post {
 				padding-right: 2.5rem;
 				margin-bottom: 2.5rem;
-
-				.post-image {
-					margin-bottom: 1.5rem;
-				}
-
-				.entry-title {
-					@include font-size(24);
-				}
 			}
 		}
 	}
 
-	.blog-layout-three-column-grid {
-		.post-wrapper {
-			.type-post {
-				width: 33.3333333333333%;
-
-				.entry-title {
-					@include font-size(22);
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: 1280px) {
 	.blog-layout-horizontal-list,
 	.blog-layout-two-column-grid {
 		.post-wrapper {
 			.type-post {
-				.entry-title {
-					@include font-size(26);
+				.entry-header,
+				.post-image {
+					margin-bottom: 0.75rem;
 				}
 
-				.entry-meta {
-					@include font-size(16);
+				.entry-title {
+					@include font-size(24);
 				}
 
 				.entry-content {
-					@include font-size(18);
+					@include font-size(17);
+				}
+
+				.entry-meta,
+				.more-link {
+					@include font-size(16);
+				}
+
+				.entry-tags {
+					@include font-size(15);
 				}
 			}
 		}
@@ -141,10 +148,6 @@
 		.post-wrapper {
 			.type-post {
 				width: 33.3333333333333%;
-
-				.entry-title {
-					@include font-size(24);
-				}
 			}
 		}
 	}

@@ -15,6 +15,19 @@
 		@include font-size(17);
 	}
 
+	.archive-header .archive-title,
+	.search-header .search-title,
+	.post-navigation .nav-links .entry-title,
+	.comments-title,
+	.comment-reply-title {
+		@include font-size(20);
+	}
+
+	.archive-header .archive-description,
+	.comment {
+		@include font-size(17);
+	}
+
 	button,
 	input[type="button"],
 	input[type="reset"],
@@ -26,28 +39,12 @@
 		@include font-size(16);
 	}
 
-	.archive-header .archive-title,
-	.search-header .search-title,
-	.post-navigation .nav-links .entry-title,
-	.comments-title,
-	.comment-reply-title {
-		@include font-size(20);
-	}
-
-	.archive-header .archive-description {
-		@include font-size(17);
-	}
-
-	.comment {
-		@include font-size(17);
-	}
-
 	.entry-tags,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
 	.comment-reply-title small a {
-		@include font-size(16);
+		@include font-size(15);
 	}
 }
 
@@ -68,18 +65,6 @@
 		@include font-size(18);
 	}
 
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"],
-	.entry-meta,
-	.more-link,
-	.pagination,
-	.site-footer,
-	.widget {
-		@include font-size(17);
-	}
-
 	.archive-header .archive-title,
 	.search-header .search-title,
 	.post-navigation .nav-links .entry-title,
@@ -88,18 +73,34 @@
 		@include font-size(22);
 	}
 
-	.archive-header .archive-description {
+	.archive-header .archive-description,
+	.comment {
 		@include font-size(18);
+	}
+
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.entry-meta,
+	.more-link,
+	.pagination,
+	.site-footer {
+		@include font-size(17);
+	}
+
+	.entry-tags,
+	.comment-meta .comment-metadata,
+	.comment .reply,
+	.comment-form .logged-in-as,
+	.comment-reply-title small a {
+		@include font-size(16);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	.site-title {
 		@include font-size(36);
-	}
-
-	.site-description {
-		@include font-size(17);
 	}
 
 	.entry-title {
@@ -116,13 +117,5 @@
 	.comments-title,
 	.comment-reply-title {
 		@include font-size(24);
-	}
-
-	.archive-header .archive-description {
-		@include font-size(19);
-	}
-
-	.comment {
-		@include font-size(18);
 	}
 }
