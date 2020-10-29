@@ -66,7 +66,7 @@ function kairos_default_options() {
 		'meta_tags'           => true,
 		'post_navigation'     => true,
 		'post_image_archives' => true,
-		'post_image_single'   => 'header-image',
+		'post_image_single'   => true,
 		'footer_text'         => '',
 		'credit_link'         => true,
 	);

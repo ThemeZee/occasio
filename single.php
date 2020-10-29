@@ -13,7 +13,7 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 
-	get_template_part( 'template-parts/post/content', esc_html( kairos_get_option( 'post_image_single' ) ) );
+	get_template_part( 'template-parts/post/content', 'single' );
 
 	kairos_post_navigation();
 

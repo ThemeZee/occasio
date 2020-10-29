@@ -177,21 +177,15 @@ function kairos_customize_register_post_settings( $wp_customize ) {
 		'default'           => $default['post_image_single'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'kairos_sanitize_select',
+		'sanitize_callback' => 'kairos_sanitize_checkbox',
 	) );
 
 	$wp_customize->add_control( 'kairos_theme_options[post_image_single]', array(
-		'label'    => esc_html__( 'Featured Images on Single Posts', 'kairos' ),
+		'label'    => esc_html__( 'Display images on single posts', 'kairos' ),
 		'section'  => 'kairos_section_post',
 		'settings' => 'kairos_theme_options[post_image_single]',
-		'type'     => 'select',
+		'type'     => 'checkbox',
 		'priority' => 120,
-		'choices'  => array(
-			'header-image' => esc_html__( 'Display image in the header', 'kairos' ),
-			'above-title'  => esc_html__( 'Display image above post title', 'kairos' ),
-			'below-title'  => esc_html__( 'Display image below post title', 'kairos' ),
-			'hide-image'   => esc_html__( 'Hide featured image', 'kairos' ),
-		),
 	) );
 
 	$wp_customize->selective_refresh->add_partial( 'kairos_theme_options[post_image_single]', array(
@@ -209,6 +203,6 @@ add_action( 'customize_register', 'kairos_customize_register_post_settings' );
 function kairos_customize_partial_single_post() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'template-parts/post/content', esc_html( kairos_get_option( 'post_image_single' ) ) );
+		get_template_part( 'template-parts/post/content', 'single' );
 	}
 }

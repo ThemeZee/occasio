@@ -72,11 +72,8 @@ if ( ! function_exists( 'kairos_header_image' ) ) :
 	 */
 	function kairos_header_image() {
 
-		// Display featured image as header image on single posts and pages.
-		if ( is_single() && has_post_thumbnail() && 'header-image' === kairos_get_option( 'post_image_single' )
-			|| is_page() && has_post_thumbnail()
-			|| is_single() && is_customize_preview() && has_post_thumbnail()
-		) :
+		// Display featured image as header image on static pages.
+		if ( is_page() && has_post_thumbnail() ) :
 			?>
 
 			<div id="headimg" class="header-image featured-header-image">
@@ -171,16 +168,17 @@ if ( ! function_exists( 'kairos_post_image_single' ) ) :
 	 * Displays the featured image on single posts.
 	 */
 	function kairos_post_image_single() {
-		if ( ! has_post_thumbnail() ) {
-			return;
-		}
-		?>
 
-		<figure class="post-image post-image-single">
-			<?php the_post_thumbnail(); ?>
-		</figure>
+		// Display Post Thumbnail if activated.
+		if ( has_post_thumbnail() && true === kairos_get_option( 'post_image_single' ) ) :
+			?>
 
-		<?php
+			<figure class="post-image post-image-single">
+				<?php the_post_thumbnail(); ?>
+			</figure>
+
+			<?php
+		endif;
 	}
 endif;
 

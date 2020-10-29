@@ -81,11 +81,6 @@ function kairos_body_classes( $classes ) {
 		$classes[] = 'post-navigation-hidden';
 	}
 
-	// Hide Featured Header image in Customizer for instant live preview.
-	if ( is_customize_preview() && is_single() && has_post_thumbnail() && 'header-image' !== $theme_options['post_image_single'] ) {
-		$classes[] = 'single-post-header-image-hidden';
-	}
-
 	// Hide Credit Link in Customizer for instant live preview.
 	if ( is_customize_preview() && false === $theme_options['credit_link'] ) {
 		$classes[] = 'credit-link-hidden';
