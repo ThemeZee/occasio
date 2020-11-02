@@ -102,7 +102,7 @@ body.author-hidden .type-post .entry-meta .posted-by,
 body.comments-hidden .type-post .entry-meta .entry-comments,
 body.categories-hidden .type-post .entry-categories,
 body.tags-hidden.single-post .type-post .entry-tags,
-body.post-navigation-hidden.single-post .post-navigation-wrap {
+body.post-navigation-hidden.single-post .post-navigation {
 	position: absolute;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -113,11 +113,12 @@ body.post-navigation-hidden.single-post .post-navigation-wrap {
 body.author-hidden .type-post .entry-meta .posted-by::after,
 body.date-hidden .type-post .entry-meta .posted-on::after,
 body.comments-hidden .type-post .entry-meta .posted-by::after,
+body.author-hidden.comments-hidden .type-post .entry-meta .posted-on::after,
 body.date-hidden.comments-hidden .type-post .entry-meta .posted-by::after {
 	margin: 0;
 	content: "";
 }
 
-body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
+body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .entry-meta {
 	display: none;
 }

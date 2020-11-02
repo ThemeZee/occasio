@@ -34,16 +34,17 @@
 }
 
 #customize-control-kairos_theme_options-retina_logo_title,
-#customize-control-kairos_theme_options-post_details,
+#customize-control-kairos_theme_options-post_details_blog,
+#customize-control-kairos_theme_options-post_details_single,
 #customize-control-kairos_theme_options-single_post,
 #customize-control-kairos_theme_options-featured_images,
 #customize-control-kairos_theme_options-footer_text {
 	margin-bottom: 0;
 }
 
-#customize-control-kairos_theme_options-single_post,
-#customize-control-kairos_theme_options-featured_images,
-#customize-control-kairos_theme_options-post_image_single {
+#customize-control-kairos_theme_options-post_details_blog,
+#customize-control-kairos_theme_options-post_details_single,
+#customize-control-kairos_theme_options-single_post {
 	margin-top: 16px;
 }
 
@@ -51,10 +52,15 @@
 #customize-control-kairos_theme_options-meta_author,
 #customize-control-kairos_theme_options-meta_comments,
 #customize-control-kairos_theme_options-meta_categories,
+#customize-control-kairos_theme_options-single_meta_date,
+#customize-control-kairos_theme_options-single_meta_author,
+#customize-control-kairos_theme_options-single_meta_comments,
+#customize-control-kairos_theme_options-single_meta_categories,
 #customize-control-kairos_theme_options-meta_tags,
 #customize-control-kairos_theme_options-post_navigation,
-#customize-control-kairos_theme_options-post_image_archives {
-	margin-bottom: 4px;
+#customize-control-kairos_theme_options-post_image_archives,
+#customize-control-kairos_theme_options-post_image_single {
+	margin-bottom: 2px;
 }
 
 #customize-control-kairos_theme_options-footer_text textarea {

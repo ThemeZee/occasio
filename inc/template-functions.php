@@ -52,23 +52,27 @@ function kairos_body_classes( $classes ) {
 	}
 
 	// Hide Date?
-	if ( false === $theme_options['meta_date'] ) {
+	if ( ( false === $theme_options['meta_date'] && ! is_single() )
+		or ( false === $theme_options['single_meta_date'] && is_single() ) ) {
 		$classes[] = 'date-hidden';
 	}
 
 	// Hide Author?
-	if ( false === $theme_options['meta_author'] ) {
+	if ( ( false === $theme_options['meta_author'] && ! is_single() )
+		or ( false === $theme_options['single_meta_author'] && is_single() ) ) {
 		$classes[] = 'author-hidden';
 	}
 
-	// Hide Comments?
-	if ( false === $theme_options['meta_comments'] ) {
-		$classes[] = 'comments-hidden';
+	// Hide Categories?
+	if ( ( false === $theme_options['meta_categories'] && ! is_single() )
+		or ( false === $theme_options['single_meta_categories'] && is_single() ) ) {
+		$classes[] = 'categories-hidden';
 	}
 
-	// Hide Categories?
-	if ( false === $theme_options['meta_categories'] ) {
-		$classes[] = 'categories-hidden';
+	// Hide Comments?
+	if ( ( false === $theme_options['meta_comments'] && ! is_single() )
+		or ( false === $theme_options['single_meta_comments'] && is_single() ) ) {
+		$classes[] = 'comments-hidden';
 	}
 
 	// Hide Tags?
