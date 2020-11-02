@@ -73,6 +73,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-border-color: rgba(255, 255, 255, 0.1);
 	--title-color: #2a4861;
 	--title-hover-color: #5d7b94;
+	--post-meta-background-color: #ededef;
 	--widget-title-color: #2a4861;
 	--widget-title-hover-color: #5d7b94;
 	--widget-background-color: #ededef;
@@ -1648,33 +1649,24 @@ body.date-hidden.author-hidden.comments-hidden .type-post .entry-meta {
 }
 
 /* Theme Pagination */
-.pagination-wrap {
-	border-top: 1px solid;
-	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
-}
-
 .pagination {
-	margin: 0 auto;
-	max-width: 800px;
-	width: 100%;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	margin: 0 0 1.5rem;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
-	margin: 0 1em 0 0;
-	padding: 0.4em 1em;
+	margin: 0 0.5rem 0 0;
+	padding: 0.4rem 1rem;
 	text-align: center;
-	color: #5d7b94;
-	color: var(--link-color);
 	text-decoration: none;
+	background-color: #ededef;
+	background-color: var(--post-meta-background-color);
 }
 
 .pagination .page-numbers.dots {
-	padding: 0 0.5rem;
+	padding: 0.4rem;
+	background: none;
 }
 
 .pagination a:hover,
@@ -3359,7 +3351,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.post-navigation {
+	.post-navigation,
+	.pagination {
 		margin-bottom: 1.5rem;
 	}
 
@@ -3410,7 +3403,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.post-navigation {
+	.post-navigation,
+	.pagination {
 		margin-bottom: 1.75rem;
 	}
 
@@ -3448,7 +3442,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.post-navigation {
+	.post-navigation,
+	.pagination {
 		margin-bottom: 2rem;
 	}
 
@@ -3494,7 +3489,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.post-navigation {
+	.post-navigation,
+	.pagination {
 		margin-bottom: 2.5rem;
 	}
 

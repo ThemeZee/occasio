@@ -1,28 +1,21 @@
 /* Theme Pagination */
-.pagination-wrap {
-	border-top: 1px solid;
-	@include border-color(--page-border-color);
-}
-
 .pagination {
-	margin: 0 auto;
-	max-width: $contentWidth;
-	width: 100%;
-	@include font-size(15);
+	margin: 0 0 1.5rem;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
-	margin: 0 1em 0 0;
-	padding: 0.4em 1em;
+	margin: 0 0.5rem 0 0;
+	padding: 0.4rem 1rem;
 	text-align: center;
-	@include color(--link-color);
 	text-decoration: none;
+	@include background(--post-meta-background-color);
 }
 
 .pagination .page-numbers.dots {
-	padding: 0 0.5rem;
+	padding: 0.4rem;
+	background: none;
 }
 
 .pagination a:hover,
