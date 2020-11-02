@@ -78,9 +78,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--widget-title-hover-color: #5d7b94;
 	--widget-background-color: #ededef;
 	--footer-background-color: #2a4861;
-	--footer-text-color: rgba(255, 255, 255, 0.5);
-	--footer-link-color: rgba(255, 255, 255, 0.95);
-	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
+	--footer-text-color: rgba(255, 255, 255, 0.75);
+	--footer-link-color: #fff;
+	--footer-link-hover-color: #fff;
 	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font: "Barlow", arial, helvetica, sans-serif;
@@ -2489,24 +2489,27 @@ object {
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
-.site-footer {
-	font-size: 15px;
-	font-size: 0.9375rem;
-	color: rgba(255, 255, 255, 0.5);
+.footer-wrap {
+	color: rgba(255, 255, 255, 0.75);
 	color: var(--footer-text-color);
 	background-color: #2a4861;
 	background-color: var(--footer-background-color);
 }
 
+.site-footer {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
 .site-footer a:link,
 .site-footer a:visited {
-	color: rgba(255, 255, 255, 0.95);
+	color: #fff;
 	color: var(--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
@@ -2520,7 +2523,7 @@ object {
 	border: 1px solid;
 	border-color: rgba(255, 255, 255, 0.1);
 	border-color: var(--footer-border-color);
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
@@ -2530,7 +2533,7 @@ object {
 .site-footer input[type="password"]:focus,
 .site-footer input[type="search"]:focus,
 .site-footer textarea:focus {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 	color: var(--footer-text-color);
 }
 
@@ -2538,7 +2541,7 @@ object {
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
@@ -2564,7 +2567,7 @@ object {
 }
 
 .site-info .widget .widget-title {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 	color: var(--footer-text-color);
 	font-weight: normal;
 }
@@ -2574,13 +2577,13 @@ object {
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:link,
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
 .site-info .widget .tzwb-comments-list .tzwb-comment-date {
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 	color: var(--footer-link-hover-color);
 }
 
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:hover,
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 	color: var(--footer-text-color);
 }
 
@@ -3711,6 +3714,22 @@ object {
 /* Wide Theme layout */
 body.wide-theme-layout .site {
 	max-width: 100%;
+}
+
+body.wide-theme-layout .site .header-main,
+body.wide-theme-layout .site .site-content,
+body.wide-theme-layout .site .site-footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.wide-theme-layout .site .header-main {
+	max-width: 1160px;
+}
+
+body.wide-theme-layout .site .site-content,
+body.wide-theme-layout .site .site-footer {
+	max-width: 1240px;
 }
 
 /* Centered Theme layout */

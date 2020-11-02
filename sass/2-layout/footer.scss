@@ -1,7 +1,10 @@
-.site-footer {
-	@include font-size(15);
+.footer-wrap {
 	@include color(--footer-text-color);
 	@include background(--footer-background-color);
+}
+
+.site-footer {
+	@include font-size(15);
 }
 
 .site-footer a:link,

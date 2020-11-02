@@ -20,12 +20,18 @@
 
 	<?php do_action( 'kairos_before_footer' ); ?>
 
-	<footer id="colophon" class="site-footer">
+	<div class="footer-wrap">
 
-		<?php do_action( 'kairos_footer_menu' ); ?>
-		<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
+		<?php do_action( 'kairos_footer_widgets' ); ?>
 
-	</footer><!-- #colophon -->
+		<footer id="colophon" class="site-footer">
+
+			<?php do_action( 'kairos_footer_menu' ); ?>
+			<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
+
+		</footer><!-- #colophon -->
+
+	</div>
 
 	<?php do_action( 'kairos_after_footer' ); ?>
 
