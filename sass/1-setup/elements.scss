@@ -49,7 +49,7 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: square;
 }
 
 ol {
@@ -61,11 +61,6 @@ li > ol {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	margin-left: 1.5em;
-}
-
-ul ul,
-ol ul {
-	list-style-type: circle;
 }
 
 dt {

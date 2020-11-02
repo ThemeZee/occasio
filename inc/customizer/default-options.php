@@ -54,7 +54,7 @@ function kairos_default_options() {
 		'site_description'       => true,
 		'theme_layout'           => 'centered',
 		'header_layout'          => 'horizontal',
-		'blog_layout'            => 'vertical-list',
+		'blog_layout'            => 'two-column-grid',
 		'blog_content'           => 'excerpt',
 		'excerpt_length'         => 25,
 		'excerpt_more_text'      => '[...]',

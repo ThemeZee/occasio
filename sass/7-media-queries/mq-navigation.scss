@@ -54,9 +54,9 @@
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		padding: 0.5rem;
-		border: 1px solid;
-		@include border-color(--header-border-color);
+		padding: 0.5rem 0;
+		border-top: 1px solid;
+		@include border-color(--header-text-color);
 	}
 
 	.main-navigation ul li:hover > ul,
@@ -71,8 +71,11 @@
 
 	.main-navigation ul ul ul {
 		left: -999em;
-		margin-top: -1px;
 		top: 0;
+		margin-top: -0.5rem;
+		border: none;
+		border-right: 1px solid;
+		@include border-color(--header-text-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -84,7 +87,7 @@
 	.main-navigation ul ul li a,
 	.main-navigation ul ul ul li a,
 	.main-navigation ul ul ul ul li a {
-		padding: 1rem;
+		padding: 0.75rem 1.25rem;
 		border: none;
 	}
 
@@ -107,7 +110,7 @@
 		left: auto;
 		right: 1em;
 		top: 50%;
-		margin-top: -0.5rem;
+		margin-top: -0.4rem;
 		-webkit-transform: rotate(-90deg);
 		-ms-transform: rotate(-90deg);
 		transform: rotate(-90deg);
