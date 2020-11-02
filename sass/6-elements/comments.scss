@@ -1,7 +1,3 @@
-.comments-wrap {
-	@include background(--page-light-bg-color);
-}
-
 .comments-area {
 	margin: 0 auto;
 	max-width: $contentWidth;
@@ -16,7 +12,7 @@
 	@include color(--title-color);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
-	@include font-size(18);
+	@include font-size(20);
 	@include text-transform(--title-text-transform);
 	line-height: 1.4;
 }

@@ -333,20 +333,12 @@ if ( ! function_exists( 'kairos_post_navigation' ) ) :
 	function kairos_post_navigation() {
 
 		if ( true === kairos_get_option( 'post_navigation' ) || is_customize_preview() ) :
-			?>
 
-			<div class="post-navigation-wrap page-footer">
+			the_post_navigation( array(
+				'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'kairos' ) . '</span><h3 class="entry-title">%title</h3>',
+				'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'kairos' ) . '</span><h3 class="entry-title">%title</h3>',
+			) );
 
-				<?php
-				the_post_navigation( array(
-					'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'kairos' ) . '</span><h3 class="entry-title">%title</h3>',
-					'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'kairos' ) . '</span><h3 class="entry-title">%title</h3>',
-				) );
-				?>
-
-			</div>
-
-			<?php
 		endif;
 	}
 endif;
@@ -357,23 +349,13 @@ if ( ! function_exists( 'kairos_pagination' ) ) :
 	 * Displays pagination on archive pages
 	 */
 	function kairos_pagination() {
-		$pagination = get_the_posts_pagination( array(
+
+		the_posts_pagination( array(
 			'mid_size'  => 2,
 			'prev_text' => '&laquo<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'kairos' ) . '</span>',
 			'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'kairos' ) . '</span>&raquo;',
 		) );
 
-		if ( $pagination ) :
-			?>
-
-		<div class="pagination-wrap page-footer">
-
-			<?php echo $pagination; ?>
-
-		</div>
-
-			<?php
-		endif;
 	}
 endif;
 
@@ -443,7 +425,7 @@ if ( ! function_exists( 'kairos_related_posts' ) ) :
 		if ( function_exists( 'themezee_related_posts' ) ) {
 
 			themezee_related_posts( array(
-				'before'       => '<div class = "related-posts-wrap page-footer">',
+				'before'       => '<div class = "related-posts-wrap">',
 				'after'        => '</div>',
 				'container'    => 'div',
 				'class'        => 'related-posts',

@@ -8,42 +8,6 @@
 		margin-bottom: 1.25rem;
 		@include background(--widget-background-color);
 	}
-
-	.widget-title {
-		position: relative;
-		margin-top: 0;
-		margin-bottom: 1.5rem;
-		@include color(--widget-title-color);
-		@include font-size(22);
-		@include font-family(--title-font);
-		@include font-weight(--title-font-weight);
-		@include text-transform(--title-text-transform);
-	}
-
-	.widget > ul a:link,
-	.widget > ul a:visited,
-	.widget > ol a:link,
-	.widget > ol a:visited,
-	.widget .menu-navigation-container > ul a:link,
-	.widget .menu-navigation-container > ul a:visited {
-		text-decoration: none;
-	}
-
-	.widget > ul a:hover,
-	.widget > ul a:active,
-	.widget > ol a:hover,
-	.widget > ol a:active,
-	.widget .menu-navigation-container > ul a:hover,
-	.widget .menu-navigation-container > ul a:active {
-		text-decoration: underline;
-	}
-
-	.widget .textwidget > *:last-child,
-	.widget .menu-navigation-container > ul,
-	.widget > ul:last-child,
-	.widget > ol:last-child {
-		margin-bottom: 0;
-	}
 }
 
 @media only screen and (min-width: 480px) {
