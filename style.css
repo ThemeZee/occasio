@@ -3705,11 +3705,6 @@ object {
 # - Theme Options
 --------------------------------------------------------------*/
 
-/* Hide Elements in Customizer for instant live preview */
-.credit-link-hidden .site-info .credit-link {
-	display: none;
-}
-
 /* Wide Theme layout */
 body.wide-theme-layout .site {
 	max-width: 100%;
@@ -3753,76 +3748,7 @@ body.wide-theme-layout .site .site-footer {
 	}
 }
 
-/* Centered Header layout */
-@media only screen and (min-width: 960px) {
-	body.vertical-header-layout .site-header {
-		padding: 0;
-	}
-
-	body.vertical-header-layout .header-main {
-		flex-direction: column;
-		align-items: center;
-		padding-top: 1.75rem;
-		padding-bottom: 0;
-	}
-
-	body.vertical-header-layout .header-main .site-branding {
-		margin: 0 0 1.75rem;
-		align-items: center;
-	}
-
-	body.vertical-header-layout .header-main .site-logo {
-		margin: 0 0 1rem;
-	}
-
-	body.vertical-header-layout .header-main .primary-navigation {
-		display: flex;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		justify-content: center;
-		border-top: 1px solid;
-		border-color: rgba(255, 255, 255, 0.1);
-		border-color: var(--header-border-color);
-	}
-
-	body.vertical-header-layout .header-main .main-navigation > ul > li {
-		padding: 0;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation > ul > li > a {
-		padding: 1rem;
-		border: none;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation > ul > li.current-menu-item > a {
-		text-decoration: underline;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation ul li:hover > ul,
-	body.vertical-header-layout .header-main .main-navigation ul li.focus > ul {
-		right: auto;
-		left: 0;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation ul ul ul {
-		border-right: none;
-		border-left: 1px solid;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation ul ul li:hover > ul,
-	body.vertical-header-layout .header-main .main-navigation ul ul li.focus > ul {
-		right: auto;
-		left: 100%;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	body.vertical-header-layout .header-main {
-		padding-top: 2rem;
-	}
-
-	body.vertical-header-layout .header-main .site-branding {
-		margin-bottom: 2rem;
-	}
+/* Hide Elements in Customizer for instant live preview */
+.credit-link-hidden .site-info .credit-link {
+	display: none;
 }

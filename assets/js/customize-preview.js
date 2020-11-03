@@ -57,17 +57,6 @@
 		} );
 	} );
 
-	// Header Layout.
-	wp.customize( 'kairos_theme_options[header_layout]', function( value ) {
-		value.bind( function( newval ) {
-			if ( 'vertical' === newval ) {
-				$( 'body' ).addClass( 'vertical-header-layout' );
-			} else {
-				$( 'body' ).removeClass( 'vertical-header-layout' );
-			}
-		} );
-	} );
-
 	// Blog Layout.
 	wp.customize( 'kairos_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {

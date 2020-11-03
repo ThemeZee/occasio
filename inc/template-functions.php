@@ -23,11 +23,6 @@ function kairos_body_classes( $classes ) {
 		$classes[] = 'centered-theme-layout';
 	}
 
-	// Set Header Layout.
-	if ( 'vertical' === $theme_options['header_layout'] ) {
-		$classes[] = 'vertical-header-layout';
-	}
-
 	// Hide Site Title?
 	if ( false === $theme_options['site_title'] ) {
 		$classes[] = 'site-title-hidden';
