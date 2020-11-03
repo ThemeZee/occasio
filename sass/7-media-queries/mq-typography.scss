@@ -54,9 +54,7 @@
 
 	.archive-header .archive-title,
 	.search-header .search-title,
-	.post-navigation .nav-links .entry-title,
-	.comments-title,
-	.comment-reply-title {
+	.post-navigation .nav-links .entry-title {
 		@include font-size(22);
 	}
 

@@ -22,7 +22,8 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 1.5rem;
 	}
 
@@ -74,18 +75,14 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 1.75rem;
 	}
 
 	.entry-header,
 	.post-image {
 		margin-bottom: 1rem;
-	}
-
-	.comment {
-		padding: 1.75rem;
-		margin-bottom: 1.75rem;
 	}
 }
 
@@ -113,18 +110,14 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 2rem;
 	}
 
 	.entry-header,
 	.post-image {
 		margin-bottom: 1.25rem;
-	}
-
-	.comment {
-		padding: 2rem;
-		margin-bottom: 2rem;
 	}
 }
 
@@ -160,18 +153,14 @@
 	.type-page,
 	.type-attachment,
 	.post-navigation,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 2.5rem;
 	}
 
 	.entry-header,
 	.post-image {
 		margin-bottom: 1.5rem;
-	}
-
-	.comment {
-		padding: 2.5rem;
-		margin-bottom: 2.5rem;
 	}
 }
 
