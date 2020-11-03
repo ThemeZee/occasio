@@ -57,6 +57,19 @@
 		} );
 	} );
 
+	// Sidebar Position.
+	wp.customize( 'kairos_theme_options[sidebar_position]', function( value ) {
+		value.bind( function( newval ) {
+			if( false === $( 'body' ).hasClass( '.page-template-template-sidebar-right' ) ) {
+				if ( 'left-sidebar' === newval ) {
+					$( 'body' ).addClass( 'sidebar-left' );
+				} else {
+					$( 'body' ).removeClass( 'sidebar-left' );
+				}
+			}
+		} );
+	} );
+
 	// Blog Layout.
 	wp.customize( 'kairos_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {

@@ -48,7 +48,7 @@ add_action( 'customize_register', 'kairos_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function kairos_customize_preview_js() {
-	wp_enqueue_script( 'kairos-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20201031', true );
+	wp_enqueue_script( 'kairos-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20201101', true );
 }
 add_action( 'customize_preview_init', 'kairos_customize_preview_js' );
 
@@ -57,7 +57,7 @@ add_action( 'customize_preview_init', 'kairos_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function kairos_customizer_controls_js() {
-	wp_enqueue_script( 'kairos-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20201029', true );
+	wp_enqueue_script( 'kairos-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20201101', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'kairos_customizer_controls_js' );
 

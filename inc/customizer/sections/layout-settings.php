@@ -24,7 +24,7 @@ function kairos_customize_register_layout_settings( $wp_customize ) {
 	// Get Default Settings.
 	$default = kairos_default_options();
 
-	// Add Settings and Controls for theme layout.
+	// Add Settings and Controls for Theme Layout.
 	$wp_customize->add_setting( 'kairos_theme_options[theme_layout]', array(
 		'default'           => $default['theme_layout'],
 		'type'              => 'option',
@@ -41,6 +41,26 @@ function kairos_customize_register_layout_settings( $wp_customize ) {
 		'choices'  => array(
 			'centered' => esc_html__( 'Centered Layout', 'kairos' ),
 			'wide'     => esc_html__( 'Wide Layout', 'kairos' ),
+		),
+	) );
+
+	// Add Settings and Controls for Sidebar Position.
+	$wp_customize->add_setting( 'kairos_theme_options[sidebar_position]', array(
+		'default'           => 'right-sidebar',
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'kairos_sanitize_select',
+	) );
+
+	$wp_customize->add_control( 'kairos_theme_options[sidebar_position]', array(
+		'label'    => esc_html__( 'Sidebar Position', 'kairos' ),
+		'section'  => 'kairos_section_layout',
+		'settings' => 'kairos_theme_options[sidebar_position]',
+		'type'     => 'radio',
+		'priority' => 20,
+		'choices'  => array(
+			'left-sidebar'  => esc_html__( 'Left Sidebar', 'kairos' ),
+			'right-sidebar' => esc_html__( 'Right Sidebar', 'kairos' ),
 		),
 	) );
 }

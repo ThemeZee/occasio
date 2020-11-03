@@ -58,6 +58,7 @@
 		}
 	}
 
+	.sidebar-left.has-sidebar .site-content,
 	.page-template-template-sidebar-left.has-sidebar .site-content {
 		.site-main {
 			order: 2;
@@ -86,6 +87,7 @@
 		}
 	}
 
+	.sidebar-left.has-sidebar .site-content .sidebar,
 	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
 		padding-right: 2rem;
 	}
@@ -106,6 +108,7 @@
 		}
 	}
 
+	.sidebar-left.has-sidebar .site-content .sidebar,
 	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
 		padding-right: 2.5rem;
 	}

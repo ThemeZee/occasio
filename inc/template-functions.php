@@ -23,6 +23,16 @@ function kairos_body_classes( $classes ) {
 		$classes[] = 'centered-theme-layout';
 	}
 
+	// Add Sidebar class.
+	if ( kairos_has_sidebar() ) {
+		$classes[] = 'has-sidebar';
+	}
+
+	// Check if sidebar is displayed on the left.
+	if ( kairos_has_sidebar() && 'left-sidebar' === $theme_options['sidebar_position'] && ! is_page_template( 'templates/template-sidebar-right.php' ) ) {
+		$classes[] = 'sidebar-left';
+	}
+
 	// Hide Site Title?
 	if ( false === $theme_options['site_title'] ) {
 		$classes[] = 'site-title-hidden';
@@ -93,11 +103,6 @@ function kairos_body_classes( $classes ) {
 	// Add Blog Page class?
 	if ( kairos_is_blog_page() ) {
 		$classes[] = 'is-blog-page';
-	}
-
-	// Add Sidebar class.
-	if ( kairos_has_sidebar() ) {
-		$classes[] = 'has-sidebar';
 	}
 
 	// Adds a class of hfeed to non-singular pages.
