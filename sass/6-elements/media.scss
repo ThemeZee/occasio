@@ -10,28 +10,38 @@
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object {
+object,
+figure,
+img,
+picture {
 	max-width: 100%;
 }
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-.wp-caption {
-	margin-bottom: 1em;
+figcaption,
+.wp-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption {
+	@include font-size(16);
+	@include color(--medium-text-color);
+}
+
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption,
+.wp-block-gallery > figcaption {
+	margin: 0.5rem 0 1.5rem;
 	max-width: 100%;
-	@include font-size(15);
-	color: rgba(0, 0, 0, 0.6);
 	width: auto !important;
+	text-align: center;
 }
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
 	margin: 0 auto;
-}
-
-.wp-caption-text {
-	text-align: center;
 }
 
 .wp-caption .wp-caption-text {
@@ -79,13 +89,11 @@ object {
 	display: block;
 	margin: 0.5rem 0 0;
 	@include font-size(15);
-	color: rgba(0, 0, 0, 0.6);
-	line-height: 1.4;
+	@include color(--light-text-color);
 }
 
 /* IE Fallback */
 @media only screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
 	.gallery {
 		display: flex;
 	}

@@ -9,7 +9,8 @@
 .editor-styles-wrapper p {
 	font-size: inherit;
 	@include line-height(--text-line-height);
-	margin-bottom: 1.5em;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 }
 
 .editor-styles-wrapper .mce-content-body {
@@ -39,24 +40,24 @@
 }
 
 .editor-styles-wrapper hr {
-	margin-bottom: 1.5em;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 	height: 1px;
 	border: 0;
 	@include background(--light-border-color);
 }
 
 .editor-styles-wrapper pre {
-	overflow: auto;
-	margin-bottom: 1.5em;
-	padding: 1.5em;
-	max-width: 100%;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+	padding: 1rem 1.25rem;
 	border: 1px solid;
 	@include color(--text-color);
 	@include border-color(--light-border-color);
 	background: rgba(0, 0, 0, 0.05);
 	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.5;
+	@include line-height(--text-line-height);
 }
 
 /* Headings */
@@ -104,8 +105,8 @@
 
 /* Blockquotes */
 .editor-styles-wrapper blockquote {
-	margin-top: 0;
-	margin-bottom: 1.5em;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 	padding-left: 1.5em;
 	border-left: 3px solid;
 	@include border-color(--text-color);
@@ -132,7 +133,8 @@
 .block-library-list .editor-rich-text__tinymce,
 .block-library-list .editor-rich-text__tinymce ol,
 .block-library-list .editor-rich-text__tinymce ul {
-	margin: 0 0 1.5em;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 	padding: 0 0 0 1.25em;
 }
 
@@ -158,7 +160,8 @@
 
 /* Tables */
 .editor-styles-wrapper table {
-	margin: 0 0 1.5em;
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 	width: 100%;
 	border: none;
 	table-layout: fixed;

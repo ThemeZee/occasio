@@ -16,7 +16,8 @@ h4,
 h5,
 h6 {
 	clear: both;
-	margin: 1em 0 0.75em;
+	margin-top: 1em;
+	margin-bottom: 0.75em;
 	@include color(--title-color);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
@@ -49,7 +50,7 @@ h6 {
 }
 
 p {
-	margin: 0 0 1.5em;
+	margin: 1.75rem 0;
 }
 
 dfn,
@@ -60,20 +61,20 @@ i {
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 1.75rem 0;
 }
 
 pre {
 	overflow: auto;
-	margin-bottom: 1.5em;
-	padding: 1.5em;
+	margin: 1.75rem 0;
+	padding: 1rem 1.25rem;
 	max-width: 100%;
 	border: 1px solid;
 	@include border-color(--light-border-color);
 	background: rgba(0, 0, 0, 0.05);
 	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.5;
+	@include line-height(--text-line-height);
 }
 
 code,
