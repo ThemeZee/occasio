@@ -11,15 +11,15 @@
 }
 
 /* Fullwidth Template */
-.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	max-width: calc(#{$contentFullwidth} + 30px);
+.tz-fullwidth-page-layout .wp-block {
+	max-width: calc(#{$contentFullwidth});
 }
 
-.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="wide"] {
-	max-width: calc(#{$wideBlockFullwidth} + 30px);
+.tz-fullwidth-page-layout .wp-block[data-align="wide"] {
+	max-width: calc(#{$wideBlockFullwidth});
 }
 
-.tz-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align="full"] {
+.tz-fullwidth-page-layout .wp-block[data-align="full"] {
 	max-width: none;
 }
 
@@ -35,24 +35,24 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 
 @media only screen and (min-width: 640px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(32);
+		@include font-size(28);
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(40);
+		@include font-size(32);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	body.block-editor-page .editor-post-title__block .editor-post-title__input {
-		@include font-size(48);
+		@include font-size(36);
 	}
 }
 
 /* Hidden Page Title */
-body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
+body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
 	background-color: #fff;
 	background-image:
 		linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd),

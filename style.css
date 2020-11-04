@@ -294,6 +294,8 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
+	color: #2a4861;
+	color: var(--title-color);
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;

@@ -1,40 +1,37 @@
 /* Typography */
 .editor-styles-wrapper {
-	@include font-family(--text-font);
-	@include font-size(17);
-	line-height: 1.75;
 	@include color(--text-color);
+	@include font-size(16);
+	@include font-family(--text-font);
+	@include line-height(--text-line-height);
 }
 
 .editor-styles-wrapper p {
 	font-size: inherit;
-	line-height: 1.75;
+	@include line-height(--text-line-height);
 	margin-bottom: 1.5em;
 }
 
-@media only screen and (min-width: 640px) {
+.editor-styles-wrapper .mce-content-body {
+	@include line-height(--text-line-height);
+}
 
+@media only screen and (min-width: 640px) {
 	.editor-styles-wrapper {
 		@include font-size(17);
 	}
 }
 
 @media only screen and (min-width: 960px) {
-
 	.editor-styles-wrapper {
 		@include font-size(18);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-
 	.editor-styles-wrapper {
 		@include font-size(19);
 	}
-}
-
-.editor-styles-wrapper .mce-content-body {
-	line-height: 1.75;
 }
 
 .editor-styles-wrapper a {
@@ -45,7 +42,7 @@
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	@include background(--page-border-color);
+	@include background(--light-border-color);
 }
 
 .editor-styles-wrapper pre {
@@ -55,8 +52,8 @@
 	max-width: 100%;
 	border: 1px solid;
 	@include color(--text-color);
-	@include border-color(--page-border-color);
-	@include background(--page-light-bg-color);
+	@include border-color(--light-border-color);
+	background: rgba(0, 0, 0, 0.05);
 	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.5;
@@ -70,13 +67,14 @@
 .editor-styles-wrapper h5,
 .editor-styles-wrapper h6 {
 	clear: both;
-	margin: 1em 0 0.75em;
-	@include color(--text-color);
+	margin-top: 1em;
+	margin-bottom: 0.75em;
+	@include color(--title-color);
 	@include font-family(--title-font);
-	line-height: 1.4;
+	@include line-height(--title-line-height);
 
 	&.mce-content-body {
-		line-height: 1.4;
+		@include line-height(--title-line-height);
 	}
 }
 
@@ -170,5 +168,5 @@
 .editor-styles-wrapper td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
-	@include border-color(--page-border-color);
+	@include border-color(--light-border-color);
 }
