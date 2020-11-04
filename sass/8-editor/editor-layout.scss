@@ -1,16 +1,12 @@
-.editor-styles-wrapper {
-	@include background(--page-background-color);
+.wp-block {
+	max-width: calc(#{$contentWidth});
 }
 
-.editor-styles-wrapper .wp-block {
-	max-width: calc(#{$contentWidth} + 30px);
+.wp-block[data-align="wide"] {
+	max-width: calc(#{$wideBlockWidth});
 }
 
-.editor-styles-wrapper .wp-block[data-align="wide"] {
-	max-width: calc(#{$wideBlockWidth} + 30px);
-}
-
-.editor-styles-wrapper .wp-block[data-align="full"] {
+.wp-block[data-align="full"] {
 	max-width: none;
 }
 

@@ -14,6 +14,8 @@ $textColor: rgba(0, 0, 0, 0.9);
 
 // Theme Colors
 $themeColors: (
+
+	// Block Editor Colors
 	--primary-color                  : #5d7b94,
 	--secondary-color                : #2a4861,
 	--accent-color                   : #078896,
@@ -21,31 +23,42 @@ $themeColors: (
 	--light-gray-color               : #e4e4e4,
 	--gray-color                     : #848484,
 	--dark-gray-color                : #242424,
+
+	// Text Colors
 	--text-color                     : rgba(0, 0, 0, 0.9),
 	--medium-text-color              : rgba(0, 0, 0, 0.7),
 	--light-text-color               : rgba(0, 0, 0, 0.5),
+	--medium-border-color            : rgba(0, 0, 0, 0.3),
+	--light-border-color             : rgba(0, 0, 0, 0.1),
+
+	// Links and Buttons
 	--link-color                     : #5d7b94,
 	--link-hover-color               : #2a4861,
 	--button-color                   : #2a4861,
 	--button-text-color              : #fff,
 	--button-hover-color             : #5d7b94,
 	--button-hover-text-color        : #fff,
-	--page-background-color          : #fff,
-	--page-border-color              : rgba(0, 0, 0, 0.1),
-	--page-light-bg-color            : rgba(0, 0, 0, 0.05),
+
+	// Header
 	--header-background-color        : #2a4861,
 	--header-text-color              : #fff,
 	--header-text-hover-color        : rgba(255, 255, 255, 0.5),
 	--header-border-color            : rgba(255, 255, 255, 0.1),
+
+	// Posts
 	--title-color                    : #2a4861,
 	--title-hover-color              : #5d7b94,
 	--post-meta-background-color     : #ededef,
+	--comments-background-color      : #ededef,
+
+	// Widgets
 	--widget-title-color             : #2a4861,
 	--widget-title-hover-color       : #5d7b94,
 	--widget-background-color        : #ededef,
-	--comments-background-color      : #ededef,
+
+	// Footer
 	--footer-background-color        : #2a4861,
-	--footer-text-color              : rgba(255, 255, 255, 0.75),
+	--footer-text-color              : rgba(255, 255, 255, 0.6),
 	--footer-link-color              : #fff,
 	--footer-link-hover-color        : #fff,
 	--footer-border-color            : rgba(255, 255, 255, 0.1),

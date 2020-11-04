@@ -58,15 +58,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
+	--medium-border-color: rgba(0, 0, 0, 0.3);
+	--light-border-color: rgba(0, 0, 0, 0.1);
 	--link-color: #5d7b94;
 	--link-hover-color: #2a4861;
 	--button-color: #2a4861;
 	--button-text-color: #fff;
 	--button-hover-color: #5d7b94;
 	--button-hover-text-color: #fff;
-	--page-background-color: #fff;
-	--page-border-color: rgba(0, 0, 0, 0.1);
-	--page-light-bg-color: rgba(0, 0, 0, 0.05);
 	--header-background-color: #2a4861;
 	--header-text-color: #fff;
 	--header-text-hover-color: rgba(255, 255, 255, 0.5);
@@ -74,12 +73,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-color: #2a4861;
 	--title-hover-color: #5d7b94;
 	--post-meta-background-color: #ededef;
+	--comments-background-color: #ededef;
 	--widget-title-color: #2a4861;
 	--widget-title-hover-color: #5d7b94;
 	--widget-background-color: #ededef;
-	--comments-background-color: #ededef;
 	--footer-background-color: #2a4861;
-	--footer-text-color: rgba(255, 255, 255, 0.75);
+	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
 	--footer-link-hover-color: #fff;
 	--footer-border-color: rgba(255, 255, 255, 0.1);
@@ -357,9 +356,8 @@ pre {
 	max-width: 100%;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
-	background-color: rgba(0, 0, 0, 0.05);
-	background-color: var(--page-light-bg-color);
+	border-color: var(--light-border-color);
+	background: rgba(0, 0, 0, 0.05);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -441,7 +439,7 @@ hr {
 	height: 1px;
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.1);
-	background-color: var(--page-border-color);
+	background-color: var(--light-border-color);
 }
 
 ul,
@@ -493,7 +491,7 @@ td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
+	border-color: var(--light-border-color);
 }
 
 a {
@@ -566,8 +564,9 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border: 1px solid var(--page-border-color);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 	background: none;
 	color: rgba(0, 0, 0, 0.7);
 	color: var(--medium-text-color);
@@ -579,8 +578,9 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 1px solid rgba(0, 0, 0, 0.5);
-	border: 1px solid var(--light-text-color);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-color: var(--medium-border-color);
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
 	outline: none;
@@ -689,8 +689,7 @@ textarea {
 	width: 100%;
 	overflow: hidden;
 	max-width: 1240px;
-	background-color: #fff;
-	background-color: var(--page-background-color);
+	background: #fff;
 }
 
 .site-header,
@@ -1696,7 +1695,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .ent
 	padding: 2rem 0;
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
+	border-color: var(--light-border-color);
 }
 
 .infinite-scroll .infinite-loader .spinner {
@@ -1909,7 +1908,7 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .ent
 	border-bottom: 3px solid;
 	border-top: 3px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
+	border-color: var(--light-border-color);
 }
 
 .wp-block-pullquote blockquote {
@@ -2506,7 +2505,7 @@ object {
 # - Footer
 --------------------------------------------------------------*/
 .footer-wrap {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-text-color);
 	background-color: #2a4861;
 	background-color: var(--footer-background-color);
@@ -2549,7 +2548,7 @@ object {
 .site-footer input[type="password"]:focus,
 .site-footer input[type="search"]:focus,
 .site-footer textarea:focus {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-text-color);
 }
 
@@ -2583,7 +2582,7 @@ object {
 }
 
 .site-info .widget .widget-title {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-text-color);
 	font-weight: normal;
 }
@@ -2599,7 +2598,7 @@ object {
 
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:hover,
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:active {
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-text-color);
 }
 
@@ -2831,7 +2830,7 @@ object {
 .related-posts-wrap {
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
+	border-color: var(--light-border-color);
 }
 
 .themezee-related-posts {

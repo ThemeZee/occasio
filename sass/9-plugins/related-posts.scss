@@ -1,7 +1,7 @@
 /* ThemeZee Related Posts Plugin */
 .related-posts-wrap {
 	border-top: 1px solid;
-	@include border-color(--page-border-color);
+	@include border-color(--light-border-color);
 }
 
 .themezee-related-posts {

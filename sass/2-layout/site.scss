@@ -5,7 +5,7 @@
 	width: 100%;
 	overflow: hidden;
 	max-width: $themeWidth;
-	@include background(--page-background-color);
+	background: #fff;
 }
 
 .site-header,

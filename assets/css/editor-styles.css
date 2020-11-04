@@ -18,15 +18,14 @@
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
+	--medium-border-color: rgba(0, 0, 0, 0.3);
+	--light-border-color: rgba(0, 0, 0, 0.1);
 	--link-color: #5d7b94;
 	--link-hover-color: #2a4861;
 	--button-color: #2a4861;
 	--button-text-color: #fff;
 	--button-hover-color: #5d7b94;
 	--button-hover-text-color: #fff;
-	--page-background-color: #fff;
-	--page-border-color: rgba(0, 0, 0, 0.1);
-	--page-light-bg-color: rgba(0, 0, 0, 0.05);
 	--header-background-color: #2a4861;
 	--header-text-color: #fff;
 	--header-text-hover-color: rgba(255, 255, 255, 0.5);
@@ -34,12 +33,12 @@
 	--title-color: #2a4861;
 	--title-hover-color: #5d7b94;
 	--post-meta-background-color: #ededef;
+	--comments-background-color: #ededef;
 	--widget-title-color: #2a4861;
 	--widget-title-hover-color: #5d7b94;
 	--widget-background-color: #ededef;
-	--comments-background-color: #ededef;
 	--footer-background-color: #2a4861;
-	--footer-text-color: rgba(255, 255, 255, 0.75);
+	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
 	--footer-link-hover-color: #fff;
 	--footer-border-color: rgba(255, 255, 255, 0.1);
@@ -57,20 +56,15 @@
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
-.editor-styles-wrapper {
-	background-color: #fff;
-	background-color: var(--page-background-color);
+.wp-block {
+	max-width: calc(800px);
 }
 
-.editor-styles-wrapper .wp-block {
-	max-width: calc(800px + 30px);
+.wp-block[data-align="wide"] {
+	max-width: calc(960px);
 }
 
-.editor-styles-wrapper .wp-block[data-align="wide"] {
-	max-width: calc(960px + 30px);
-}
-
-.editor-styles-wrapper .wp-block[data-align="full"] {
+.wp-block[data-align="full"] {
 	max-width: none;
 }
 
@@ -186,7 +180,6 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.1);
 	background-color: var(--page-border-color);
 }
 
@@ -198,9 +191,7 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	border: 1px solid;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
-	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--page-border-color);
-	background-color: rgba(0, 0, 0, 0.05);
 	background-color: var(--page-light-bg-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -333,7 +324,6 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper td {
 	padding: 0.4em 0.6em;
 	border: 1px solid;
-	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--page-border-color);
 }
 
@@ -467,7 +457,7 @@ body.tz-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	border-bottom: 3px solid;
 	border-top: 3px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--page-border-color);
+	border-color: var(--light-border-color);
 }
 
 .wp-block-pullquote blockquote {
