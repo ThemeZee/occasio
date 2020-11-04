@@ -360,79 +360,43 @@ if ( ! function_exists( 'kairos_pagination' ) ) :
 endif;
 
 
-/**
- * Displays footer text on footer line
- */
-function kairos_footer_text() {
-	if ( '' !== kairos_get_option( 'footer_text' ) || is_customize_preview() ) :
-		?>
-
-		<span class="footer-text">
-			<?php echo do_shortcode( wp_kses_post( kairos_get_option( 'footer_text' ) ) ); ?> 
-		</span>
-
-		<?php
-	endif;
-}
-
-
-/**
- * Displays credit link on footer line
- */
-function kairos_credit_link() {
-	if ( true === kairos_get_option( 'credit_link' ) || is_customize_preview() ) :
-		?>
-
-		<span class="credit-link">
-			<?php
-			// translators: Theme Name and Link to ThemeZee.
-			printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'kairos' ),
-				esc_html__( 'Kairos', 'kairos' ),
-				'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
-			);
-			?>
-		</span>
-
-		<?php
-	endif;
-}
-
-
-if ( ! function_exists( 'kairos_breadcrumbs' ) ) :
+if ( ! function_exists( 'kairos_footer_text' ) ) :
 	/**
-	 * Displays ThemeZee Breadcrumbs plugin
+	 * Displays footer text on footer line
 	 */
-	function kairos_breadcrumbs() {
+	function kairos_footer_text() {
+		if ( '' !== kairos_get_option( 'footer_text' ) || is_customize_preview() ) :
+			?>
 
-		if ( function_exists( 'themezee_breadcrumbs' ) ) {
+			<span class="footer-text">
+				<?php echo do_shortcode( wp_kses_post( kairos_get_option( 'footer_text' ) ) ); ?> 
+			</span>
 
-			themezee_breadcrumbs( array(
-				'before' => '<div class="breadcrumbs-container">',
-				'after'  => '</div>',
-			) );
-
-		}
+			<?php
+		endif;
 	}
 endif;
 
 
-if ( ! function_exists( 'kairos_related_posts' ) ) :
+if ( ! function_exists( 'kairos_credit_link' ) ) :
 	/**
-	 * Displays ThemeZee Related Posts plugin
+	 * Displays credit link on footer line
 	 */
-	function kairos_related_posts() {
+	function kairos_credit_link() {
+		if ( true === kairos_get_option( 'credit_link' ) || is_customize_preview() ) :
+			?>
 
-		if ( function_exists( 'themezee_related_posts' ) ) {
+			<span class="credit-link">
+				<?php
+				// translators: Theme Name and Link to ThemeZee.
+				printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'kairos' ),
+					esc_html__( 'Kairos', 'kairos' ),
+					'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
+				);
+				?>
+			</span>
 
-			themezee_related_posts( array(
-				'before'       => '<div class = "related-posts-wrap">',
-				'after'        => '</div>',
-				'container'    => 'div',
-				'class'        => 'related-posts',
-				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
-				'after_title'  => '</h2></header>',
-			) );
-
-		}
+			<?php
+		endif;
 	}
 endif;

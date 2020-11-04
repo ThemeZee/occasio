@@ -17,7 +17,7 @@ while ( have_posts() ) :
 
 	kairos_post_navigation();
 
-	kairos_related_posts();
+	do_action( 'kairos_related_posts' );
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :

@@ -13,22 +13,14 @@ function kairos_theme_addons_setup() {
 	// Add theme support for Kairos Pro plugin.
 	add_theme_support( 'kairos-pro' );
 
-	// Add theme support for ThemeZee Breadcrumbs plugin.
-	add_theme_support( 'themezee-breadcrumbs' );
-
 	// Add theme support for ThemeZee Widget Bundle plugin.
 	add_theme_support( 'themezee-widget-bundle', array(
 		'thumbnail_size' => array( 150, 150 ),
 		'svg_icons'      => true,
 	) );
 
-	// Add theme support for ThemeZee Related Posts plugin.
-	add_theme_support( 'themezee-related-posts', array(
-		'thumbnail_size' => array( 720, 360 ),
-	) );
-
 	// Add theme support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
+	add_theme_support( 'themezee-infinite-scroll', array(
 		'container'      => 'post-wrapper',
 		'footer_widgets' => 'footer',
 		'wrapper'        => false,
