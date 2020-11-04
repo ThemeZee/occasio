@@ -10,7 +10,9 @@
 :root {
 	--primary-color: #2a4861;
 	--secondary-color: #5d7b94;
+	--tertiary-color: #90aec7;
 	--accent-color: #60945d;
+	--contrast-color: #e63e4c;
 	--highlight-color: #915d94;
 	--light-gray-color: #ededef;
 	--gray-color: #84848f;
@@ -596,9 +598,19 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	color: var(--secondary-color);
 }
 
+.has-tertiary-color {
+	color: #90aec7;
+	color: var(--tertiary-color);
+}
+
 .has-accent-color {
 	color: #60945d;
 	color: var(--accent-color);
+}
+
+.has-contrast-color {
+	color: #e63e4c;
+	color: var(--contrast-color);
 }
 
 .has-highlight-color {
@@ -640,9 +652,19 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 	background-color: var(--secondary-color);
 }
 
+.has-tertiary-background-color {
+	background-color: #90aec7;
+	background-color: var(--tertiary-color);
+}
+
 .has-accent-background-color {
 	background-color: #60945d;
 	background-color: var(--accent-color);
+}
+
+.has-contrast-background-color {
+	background-color: #e63e4c;
+	background-color: var(--contrast-color);
 }
 
 .has-highlight-background-color {

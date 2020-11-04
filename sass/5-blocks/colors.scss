@@ -7,8 +7,16 @@
 	@include color(--secondary-color);
 }
 
+.has-tertiary-color {
+	@include color(--tertiary-color);
+}
+
 .has-accent-color {
 	@include color(--accent-color);
+}
+
+.has-contrast-color {
+	@include color(--contrast-color);
 }
 
 .has-highlight-color {
@@ -44,8 +52,16 @@
 	@include background(--secondary-color);
 }
 
+.has-tertiary-background-color {
+	@include background(--tertiary-color);
+}
+
 .has-accent-background-color {
 	@include background(--accent-color);
+}
+
+.has-contrast-background-color {
+	@include background(--contrast-color);
 }
 
 .has-highlight-background-color {

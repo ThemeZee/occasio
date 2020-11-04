@@ -20,7 +20,9 @@ function kairos_gutenberg_support() {
 	$color_palette = apply_filters( 'kairos_color_palette', array(
 		'primary_color'    => '#2a4861',
 		'secondary_color'  => '#5d7b94',
+		'tertiary_color'   => '#90aec7',
 		'accent_color'     => '#60945d',
+		'contrast_color'   => '#e63e4c',
 		'highlight_color'  => '#915d94',
 		'light_gray_color' => '#ededef',
 		'gray_color'       => '#84848f',
@@ -40,9 +42,19 @@ function kairos_gutenberg_support() {
 			'color' => esc_html( $color_palette['secondary_color'] ),
 		),
 		array(
+			'name'  => esc_html_x( 'Tertiary', 'block color', 'kairos' ),
+			'slug'  => 'tertiary',
+			'color' => esc_html( $color_palette['tertiary_color'] ),
+		),
+		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'kairos' ),
 			'slug'  => 'accent',
 			'color' => esc_html( $color_palette['accent_color'] ),
+		),
+		array(
+			'name'  => esc_html_x( 'Contrast', 'block color', 'kairos' ),
+			'slug'  => 'contrast',
+			'color' => esc_html( $color_palette['contrast_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Highlight', 'block color', 'kairos' ),
