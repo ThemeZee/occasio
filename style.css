@@ -48,13 +48,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #5d7b94;
-	--secondary-color: #2a4861;
-	--accent-color: #078896;
-	--highlight-color: #5bb021;
-	--light-gray-color: #e4e4e4;
-	--gray-color: #848484;
-	--dark-gray-color: #242424;
+	--primary-color: #2a4861;
+	--secondary-color: #5d7b94;
+	--accent-color: #60945d;
+	--highlight-color: #915d94;
+	--light-gray-color: #ededef;
+	--gray-color: #84848f;
+	--dark-gray-color: #24242f;
 	--text-color: rgba(0, 0, 0, 0.9);
 	--medium-text-color: rgba(0, 0, 0, 0.7);
 	--light-text-color: rgba(0, 0, 0, 0.5);
@@ -2034,22 +2034,22 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #5d7b94;
+	color: #2a4861;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #2a4861;
+	color: #5d7b94;
 	color: var(--secondary-color);
 }
 
 .has-accent-color {
-	color: #078896;
+	color: #60945d;
 	color: var(--accent-color);
 }
 
 .has-highlight-color {
-	color: #5bb021;
+	color: #915d94;
 	color: var(--highlight-color);
 }
 
@@ -2058,17 +2058,17 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .has-light-gray-color {
-	color: #e4e4e4;
+	color: #ededef;
 	color: var(--light-gray-color);
 }
 
 .has-gray-color {
-	color: #848484;
+	color: #84848f;
 	color: var(--gray-color);
 }
 
 .has-dark-gray-color {
-	color: #242424;
+	color: #24242f;
 	color: var(--dark-gray-color);
 }
 
@@ -2078,22 +2078,22 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #5d7b94;
+	background-color: #2a4861;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #2a4861;
+	background-color: #5d7b94;
 	background-color: var(--secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #078896;
+	background-color: #60945d;
 	background-color: var(--accent-color);
 }
 
 .has-highlight-background-color {
-	background-color: #5bb021;
+	background-color: #915d94;
 	background-color: var(--highlight-color);
 }
 
@@ -2102,17 +2102,17 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 }
 
 .has-light-gray-background-color {
-	background-color: #e4e4e4;
+	background-color: #ededef;
 	background-color: var(--light-gray-color);
 }
 
 .has-gray-background-color {
-	background-color: #848484;
+	background-color: #84848f;
 	background-color: var(--gray-color);
 }
 
 .has-dark-gray-background-color {
-	background-color: #242424;
+	background-color: #24242f;
 	background-color: var(--dark-gray-color);
 }
 

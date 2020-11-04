@@ -18,13 +18,13 @@ function kairos_gutenberg_support() {
 
 	// Define block color palette.
 	$color_palette = apply_filters( 'kairos_color_palette', array(
-		'primary_color'    => '#c9493b',
-		'secondary_color'  => '#e36355',
-		'accent_color'     => '#078896',
-		'highlight_color'  => '#5bb021',
-		'light_gray_color' => '#e4e4e4',
-		'gray_color'       => '#848484',
-		'dark_gray_color'  => '#242424',
+		'primary_color'    => '#2a4861',
+		'secondary_color'  => '#5d7b94',
+		'accent_color'     => '#60945d',
+		'highlight_color'  => '#915d94',
+		'light_gray_color' => '#ededef',
+		'gray_color'       => '#84848f',
+		'dark_gray_color'  => '#24242f',
 	) );
 
 	// Add theme support for block color palette.
