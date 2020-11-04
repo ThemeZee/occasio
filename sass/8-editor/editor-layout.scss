@@ -7,7 +7,7 @@
 }
 
 .wp-block[data-align="full"] {
-	max-width: none;
+	max-width: calc(#{$themeWidth});
 }
 
 /* Fullwidth Template */
@@ -15,12 +15,19 @@
 	max-width: calc(#{$contentFullwidth});
 }
 
-.tz-fullwidth-page-layout .wp-block[data-align="wide"] {
-	max-width: calc(#{$wideBlockFullwidth});
+.tz-fullwidth-page-layout .wp-block[data-align="wide"],
+.tz-fullwidth-page-layout .wp-block[data-align="full"] {
+	max-width: calc(#{$themeWidth});
 }
 
-.tz-fullwidth-page-layout .wp-block[data-align="full"] {
+/* Wide Theme Layout */
+.tz-wide-theme-layout .wp-block[data-align="full"],
+.tz-wide-theme-layout.tz-fullwidth-page-layout .wp-block[data-align="full"] {
 	max-width: none;
+}
+
+.tz-wide-theme-layout.tz-fullwidth-page-layout .wp-block[data-align="wide"] {
+	max-width: calc(#{$wideBlockFullwidth});
 }
 
 /* Post and Page Title */

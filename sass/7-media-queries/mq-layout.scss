@@ -121,14 +121,6 @@
 	}
 }
 
-@media only screen and (min-width: 1120px) {
-	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-		max-width: $wideBlockWidth;
-	}
-}
-
 @media only screen and (min-width: 1280px) {
 	.site-header,
 	.site-container {
@@ -161,13 +153,5 @@
 	.entry-header,
 	.post-image {
 		margin-bottom: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 1440px) {
-	.entry-content > .alignfull {
-		margin-left: -280px;
-		margin-right: -280px;
-		max-width: $wideBlockFullwidth;
 	}
 }

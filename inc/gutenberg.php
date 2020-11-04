@@ -153,6 +153,11 @@ function kairos_block_editor_body_classes( $classes ) {
 		return $classes;
 	}
 
+	// Set Theme Layout.
+	if ( 'wide' === kairos_get_option( 'theme_layout' ) ) {
+		$classes .= ' tz-wide-theme-layout ';
+	}
+
 	// Fullwidth Page Template?
 	if ( 'templates/template-fullwidth.php' === get_page_template_slug( $post->ID ) ) {
 		$classes .= ' tz-fullwidth-page-layout ';
