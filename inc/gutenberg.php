@@ -168,6 +168,8 @@ function kairos_block_editor_body_classes( $classes ) {
 	// Set Theme Layout.
 	if ( 'wide' === kairos_get_option( 'theme_layout' ) ) {
 		$classes .= ' tz-wide-theme-layout ';
+	} else {
+		$classes .= ' tz-centered-theme-layout ';
 	}
 
 	// Fullwidth Page Template?

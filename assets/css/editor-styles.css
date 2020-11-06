@@ -59,25 +59,25 @@
 # - Layout
 --------------------------------------------------------------*/
 .wp-block {
-	max-width: calc(800px);
+	max-width: 800px;
 }
 
 .wp-block[data-align="wide"] {
-	max-width: calc(960px);
+	max-width: 960px;
 }
 
 .wp-block[data-align="full"] {
-	max-width: calc(1240px);
+	max-width: 1240px;
 }
 
 /* Fullwidth Template */
 .tz-fullwidth-page-layout .wp-block {
-	max-width: calc(1160px);
+	max-width: 1160px;
 }
 
 .tz-fullwidth-page-layout .wp-block[data-align="wide"],
 .tz-fullwidth-page-layout .wp-block[data-align="full"] {
-	max-width: calc(1240px);
+	max-width: 1240px;
 }
 
 /* Wide Theme Layout */
@@ -87,7 +87,15 @@
 }
 
 .tz-wide-theme-layout.tz-fullwidth-page-layout .wp-block[data-align="wide"] {
-	max-width: calc(1320px);
+	max-width: 1320px;
+}
+
+/* Centered Theme Layout */
+.tz-centered-theme-layout .editor-styles-wrapper {
+	max-width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 /* Post and Page Title */
