@@ -33,25 +33,23 @@ p.has-background {
 }
 
 /* Button Block */
-.wp-block-button {
-	color: inherit;
+.wp-block-button.aligncenter {
+	text-align: center;
 }
 
 .wp-block-button__link {
 	margin: 0;
-	padding: 0.75rem 1.25rem;
-	font-size: 1em;
+	padding: 0.6rem 1rem;
 	border: none;
 	border-radius: 0;
+	color: inherit;
 	text-decoration: none;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link {
-	padding: calc(0.75rem - 2px) calc(1.25rem - 2px);
+	@include font-size(17);
 }
 
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -65,10 +63,39 @@ p.has-background {
 	@include background(--button-color);
 }
 
-.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
-.wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
-	@include color(--button-text-hover-color);
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	@include background(--button-hover-color);
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:active,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-background:hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.has-background:active {
+	text-decoration: underline;
+}
+
+/* Outline Style */
+.wp-block-button.is-style-outline .wp-block-button__link {
+	padding: calc(0.6em - 2px) calc(1em - 2px);
+	background-color: transparent !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
+.wp-block-button__link.is-style-outline:not(.has-text-color),
+.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-media-text .wp-block-button.is-style-outline .wp-block-button__link {
+	color: inherit;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-outline .wp-block-button__link:active {
+	text-decoration: underline;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):hover,
+.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):active {
+	color: inherit;
 }
 
 /* Separator Block */
