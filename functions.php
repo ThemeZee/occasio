@@ -76,7 +76,7 @@ function kairos_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'kairos_custom_background_args', array(
-		'default-color' => '353535',
+		'default-color' => 'ededef',
 	) ) );
 
 	// Add Theme Support for Selective Refresh in Customizer.

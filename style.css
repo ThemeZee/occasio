@@ -408,31 +408,33 @@ big {
 
 body {
 	margin: 0;
-	background: #353535; /* Fallback for when there is no custom background color defined. */
+	background: #ededef; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote {
 	margin: 1.75rem 0;
-	padding-left: 1.5em;
-	border-left: 3px solid;
-	border-color: rgba(0, 0, 0, 0.9);
-	border-color: var(--text-color);
+	padding-left: 1.5rem;
+	border-left: 5px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
 }
 
 blockquote p {
-	margin-bottom: 0.75em;
+	margin-bottom: 1rem;
 }
 
 blockquote cite {
 	display: block;
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
+	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: var(--text-font);
 	font-size: 16px;
 	font-size: 1rem;
+	font-style: normal;
 }
 
 blockquote cite::before {
@@ -1853,14 +1855,25 @@ p.has-background {
 }
 
 /* Quote Block */
+.wp-block-quote.has-text-align-center:not(.is-style-large),
+.wp-block-quote.has-text-align-right:not(.is-style-large) {
+	padding-left: 0;
+	border-left: 0;
+}
+
+.wp-block-quote.has-text-align-right:not(.is-style-large) {
+	padding-right: 1.5rem;
+	border-right: 5px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
+}
+
 .wp-block-quote.is-style-large {
-	border: none;
-	margin: 0 0 1.75rem;
+	margin: 1.75rem 0;
 	padding: 0;
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
+	border: none;
+	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 .wp-block-quote.is-style-large p {
@@ -1871,8 +1884,8 @@ p.has-background {
 
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
-	font-family: "Barlow", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 /* Pullquote Block */
