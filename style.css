@@ -377,6 +377,14 @@ var {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 2px 5px;
+}
+
+pre code {
+	background: none;
+	padding: 0;
 }
 
 abbr,
@@ -1791,6 +1799,11 @@ p.has-background {
 	font-size: 4.5rem;
 	line-height: 0.7;
 	font-weight: bold;
+}
+
+/* Code Block */
+.wp-block-code {
+	border-radius: 3px;
 }
 
 /* Buttons Block */
