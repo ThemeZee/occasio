@@ -510,6 +510,16 @@ td {
 	border-color: var(--light-border-color);
 }
 
+th {
+	font-weight: normal;
+	text-align: initial;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+tfoot td {
+	background: rgba(0, 0, 0, 0.05);
+}
+
 a {
 	color: #5d7b94;
 	color: var(--link-color);
@@ -1786,7 +1796,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 .wp-block-embed,
 .wp-block-image,
 .wp-block-gallery,
-.wp-block-cover {
+.wp-block-cover,
+.wp-block-table {
 	margin-bottom: 1.75rem;
 }
 
@@ -1804,6 +1815,38 @@ p.has-background {
 /* Code Block */
 .wp-block-code {
 	border-radius: 3px;
+}
+
+/* Table Block */
+.wp-block-table table {
+	margin: 0;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom: none;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.wp-block-table.is-style-stripes thead {
+	border-bottom: 2px solid;
+}
+
+.wp-block-table.is-style-stripes tfoot {
+	border-top: 2px solid;
+}
+
+.wp-block-table.is-style-stripes thead,
+.wp-block-table.is-style-stripes tfoot {
+	border-color: rgba(0, 0, 0, 0.9);
+	border-color: var(--text-color);
+}
+
+.wp-block-table.is-style-stripes thead th,
+.wp-block-table.is-style-stripes tfoot td {
+	background: none;
 }
 
 /* Buttons Block */
@@ -2509,7 +2552,8 @@ figcaption,
 .wp-caption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption,
-.wp-block-audio figcaption {
+.wp-block-audio figcaption,
+.wp-block-table figcaption {
 	font-size: 16px;
 	font-size: 1rem;
 	color: rgba(0, 0, 0, 0.7);
@@ -2519,11 +2563,16 @@ figcaption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption,
 .wp-block-audio figcaption,
+.wp-block-table figcaption,
 .wp-block-gallery > figcaption {
 	margin: 0.5rem 0 1.5rem;
 	max-width: 100%;
 	width: auto !important;
 	text-align: center;
+}
+
+.wp-block-table figcaption {
+	margin-bottom: 0;
 }
 
 .wp-caption img[class*="wp-image-"] {

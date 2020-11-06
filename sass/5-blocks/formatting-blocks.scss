@@ -6,7 +6,8 @@
 .wp-block-embed,
 .wp-block-image,
 .wp-block-gallery,
-.wp-block-cover {
+.wp-block-cover,
+.wp-block-table {
 	margin-bottom: 1.75rem;
 }
 
@@ -24,6 +25,37 @@ p.has-background {
 /* Code Block */
 .wp-block-code {
 	border-radius: 3px;
+}
+
+/* Table Block */
+.wp-block-table table {
+	margin: 0;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom: none;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.wp-block-table.is-style-stripes thead {
+	border-bottom: 2px solid;
+}
+
+.wp-block-table.is-style-stripes tfoot {
+	border-top: 2px solid;
+}
+
+.wp-block-table.is-style-stripes thead,
+.wp-block-table.is-style-stripes tfoot {
+	@include border-color(--text-color);
+}
+
+.wp-block-table.is-style-stripes thead th,
+.wp-block-table.is-style-stripes tfoot td {
+	background: none;
 }
 
 /* Buttons Block */

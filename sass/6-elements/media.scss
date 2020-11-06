@@ -24,7 +24,8 @@ figcaption,
 .wp-caption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption,
-.wp-block-audio figcaption {
+.wp-block-audio figcaption,
+.wp-block-table figcaption {
 	@include font-size(16);
 	@include color(--medium-text-color);
 }
@@ -32,11 +33,16 @@ figcaption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption,
 .wp-block-audio figcaption,
+.wp-block-table figcaption,
 .wp-block-gallery > figcaption {
 	margin: 0.5rem 0 1.5rem;
 	max-width: 100%;
 	width: auto !important;
 	text-align: center;
+}
+
+.wp-block-table figcaption {
+	margin-bottom: 0;
 }
 
 .wp-caption img[class*="wp-image-"] {
