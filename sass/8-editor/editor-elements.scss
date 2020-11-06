@@ -121,7 +121,9 @@
 
 .editor-styles-wrapper blockquote cite,
 .wp-block-quote cite,
-.wp-block-quote__citation {
+.wp-block-quote__citation,
+.wp-block-pullquote__citation,
+.wp-block-pullquote cite {
 	display: block;
 	@include color(--text-color);
 	@include font-family(--text-font);
@@ -129,8 +131,15 @@
 }
 
 .wp-block-quote cite::before,
-.wp-block-quote__citation::before {
+.wp-block-quote__citation::before,
+.wp-block-pullquote__citation::before,
+.wp-block-pullquote cite::before {
 	content: "\2014\00a0";
+}
+
+.wp-block-pullquote:not(.is-style-solid-color) .wp-block-pullquote__citation {
+	@include color(--text-color);
+	text-transform: none;
 }
 
 /* Lists */

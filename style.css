@@ -1890,22 +1890,19 @@ p.has-background {
 
 /* Pullquote Block */
 .wp-block-pullquote {
-	margin-bottom: 1.75rem;
-	padding: 1.75rem 0;
-	border-bottom: 1px solid;
-	border-top: 1px solid;
+	margin: 1.75rem 0;
+	padding: 0;
+	border-bottom: 5px solid;
+	border-top: 5px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
 }
 
 .wp-block-pullquote blockquote {
 	border: none;
-	margin: 0;
 	padding: 0;
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
+	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 .wp-block-pullquote p {
@@ -1916,19 +1913,20 @@ p.has-background {
 .wp-block-pullquote blockquote cite {
 	color: rgba(0, 0, 0, 0.9);
 	color: var(--text-color);
-	font-family: "Barlow", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
-	font-style: normal;
+}
+
+.wp-block-pullquote.is-style-solid-color {
+	padding: 1px 2rem;
 }
 
 .wp-block-pullquote.is-style-solid-color blockquote {
+	margin-left: 0;
+	margin-right: 0;
 	max-width: 100%;
-	padding-left: 1.75rem;
-	padding-right: 1.75rem;
 }
 
 .wp-block-pullquote.is-style-solid-color blockquote p {
-	margin-bottom: 1rem;
+	margin: 1.75rem 0 1rem;
 	font-size: inherit;
 }
 
