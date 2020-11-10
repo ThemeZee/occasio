@@ -55,46 +55,57 @@
 }
 
 /* Block Background Colors */
-.has-primary-background-color {
+.has-primary-background-color,
+.has-primary-background-color[class] {
 	@include background(--primary-color);
 }
 
-.has-secondary-background-color {
+.has-secondary-background-color,
+.has-secondary-background-color[class] {
 	@include background(--secondary-color);
 }
 
-.has-tertiary-background-color {
+.has-tertiary-background-color,
+.has-tertiary-background-color[class] {
 	@include background(--tertiary-color);
 }
 
-.has-accent-background-color {
+.has-accent-background-color,
+.has-accent-background-color[class] {
 	@include background(--accent-color);
 }
 
-.has-contrast-background-color {
+.has-contrast-background-color,
+.has-contrast-background-color[class] {
 	@include background(--contrast-color);
 }
 
-.has-highlight-background-color {
+.has-highlight-background-color,
+.has-highlight-background-color[class] {
 	@include background(--highlight-color);
 }
 
-.has-white-background-color {
+.has-white-background-color,
+.has-white-background-color[class] {
 	background-color: #fff;
 }
 
-.has-light-gray-background-color {
+.has-light-gray-background-color,
+.has-light-gray-background-color[class] {
 	@include background(--light-gray-color);
 }
 
-.has-gray-background-color {
+.has-gray-background-color,
+.has-gray-background-color[class] {
 	@include background(--gray-color);
 }
 
-.has-dark-gray-background-color {
+.has-dark-gray-background-color,
+.has-dark-gray-background-color[class] {
 	@include background(--dark-gray-color);
 }
 
-.has-black-background-color {
+.has-black-background-color,
+.has-black-background-color[class] {
 	background-color: #000;
 }
