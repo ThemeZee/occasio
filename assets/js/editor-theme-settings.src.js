@@ -36,6 +36,12 @@ class pageTemplateBodyClass extends Component {
 		} else if ( 'templates/template-fullwidth-no-title.php' === pageTemplate ) {
 			document.body.classList.add( 'tz-fullwidth-page-layout' );
 			document.body.classList.add( 'tz-page-title-hidden' );
+		} else if ( 'templates/template-sidebar-left-no-title.php' === pageTemplate ) {
+			document.body.classList.add( 'tz-page-title-hidden' );
+			document.body.classList.remove( 'tz-fullwidth-page-layout' );
+		} else if ( 'templates/template-sidebar-right-no-title.php' === pageTemplate ) {
+			document.body.classList.add( 'tz-page-title-hidden' );
+			document.body.classList.remove( 'tz-fullwidth-page-layout' );
 		} else {
 			document.body.classList.remove( 'tz-fullwidth-page-layout' );
 			document.body.classList.remove( 'tz-page-title-hidden' );
@@ -62,6 +68,6 @@ const plugin = compose(
 /**
  * Register plugin in Editor
  */
-registerPlugin( 'tz-theme-settings', {
+registerPlugin( 'themezee-page-template-switcher', {
 	render: plugin,
 } );
