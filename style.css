@@ -873,6 +873,10 @@ body.site-description-hidden .site-header .site-description {
 
 .main-navigation > ul {
 	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	border-top: 1px solid;
+	border-color: #fff;
+	border-color: var(--header-text-color);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -897,7 +901,7 @@ body.site-description-hidden .site-header .site-description {
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid;
+	border-bottom: 1px solid;
 	border-color: rgba(255, 255, 255, 0.1);
 	border-color: var(--header-border-color);
 	text-decoration: none;
@@ -3413,7 +3417,7 @@ figcaption,
 		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 		margin: 0;
-		border-bottom: none;
+		border: none;
 	}
 
 	.main-navigation > ul > li {
