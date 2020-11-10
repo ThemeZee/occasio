@@ -131,8 +131,8 @@ function kairos_block_editor_assets() {
 	// Enqueue Editor Styling.
 	wp_enqueue_style( 'kairos-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
 
-	// Enqueue Theme Settings Editor plugin.
-	wp_enqueue_script( 'kairos-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	// Enqueue Page Template Switcher Editor plugin.
+	wp_enqueue_script( 'kairos-page-template-switcher', get_theme_file_uri( '/assets/js/page-template-switcher.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
 }
 add_action( 'enqueue_block_editor_assets', 'kairos_block_editor_assets' );
 
@@ -167,26 +167,26 @@ function kairos_block_editor_body_classes( $classes ) {
 
 	// Set Theme Layout.
 	if ( 'wide' === kairos_get_option( 'theme_layout' ) ) {
-		$classes .= ' tz-wide-theme-layout ';
+		$classes .= ' kairos-wide-theme-layout ';
 	} else {
-		$classes .= ' tz-centered-theme-layout ';
+		$classes .= ' kairos-centered-theme-layout ';
 	}
 
 	// Fullwidth Page Template?
 	if ( 'templates/template-fullwidth.php' === get_page_template_slug( $post->ID ) ) {
-		$classes .= ' tz-fullwidth-page-layout ';
+		$classes .= ' kairos-fullwidth-page-layout ';
 	}
 
 	// No Title Page Template?
 	if ( 'templates/template-no-title.php' === get_page_template_slug( $post->ID ) or
 		'templates/template-sidebar-left-no-title.php' === get_page_template_slug( $post->ID ) or
 		'templates/template-sidebar-right-no-title.php' === get_page_template_slug( $post->ID ) ) {
-		$classes .= ' tz-page-title-hidden ';
+		$classes .= ' kairos-page-title-hidden ';
 	}
 
 	// Full-width / No Title Page Template?
 	if ( 'templates/template-fullwidth-no-title.php' === get_page_template_slug( $post->ID ) ) {
-		$classes .= ' tz-fullwidth-page-layout tz-page-title-hidden ';
+		$classes .= ' kairos-fullwidth-page-layout kairos-page-title-hidden ';
 	}
 
 	return $classes;

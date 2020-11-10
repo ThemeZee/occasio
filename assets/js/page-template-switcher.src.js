@@ -1,5 +1,7 @@
 /**
- * Editor Theme Settings
+ * Page Template Switcher
+ * 
+ * Updates body classes on Gutenberg Editor when page templates are changed.
  * 
  * @package Kairos
  */
@@ -13,7 +15,7 @@ const { compose } = wp.compose;
 const { withSelect } = wp.data;
 
 /**
- * Theme Settings Editor Plugin
+ * Page Template Switcher Editor Plugin
  */
 class pageTemplateBodyClass extends Component {
 	componentDidUpdate() {
@@ -27,24 +29,27 @@ class pageTemplateBodyClass extends Component {
 			return null;
 		}
 
+		const fullWidthClass = 'kairos-fullwidth-page-layout';
+		const noTitleClass = 'kairos-page-title-hidden';
+
 		if ( 'templates/template-fullwidth.php' === pageTemplate ) {
-			document.body.classList.add( 'tz-fullwidth-page-layout' );
-			document.body.classList.remove( 'tz-page-title-hidden' );
+			document.body.classList.add( fullWidthClass );
+			document.body.classList.remove( noTitleClass );
 		} else if ( 'templates/template-no-title.php' === pageTemplate ) {
-			document.body.classList.add( 'tz-page-title-hidden' );
-			document.body.classList.remove( 'tz-fullwidth-page-layout' );
+			document.body.classList.add( noTitleClass );
+			document.body.classList.remove( fullWidthClass );
 		} else if ( 'templates/template-fullwidth-no-title.php' === pageTemplate ) {
-			document.body.classList.add( 'tz-fullwidth-page-layout' );
-			document.body.classList.add( 'tz-page-title-hidden' );
+			document.body.classList.add( fullWidthClass );
+			document.body.classList.add( noTitleClass );
 		} else if ( 'templates/template-sidebar-left-no-title.php' === pageTemplate ) {
-			document.body.classList.add( 'tz-page-title-hidden' );
-			document.body.classList.remove( 'tz-fullwidth-page-layout' );
+			document.body.classList.add( noTitleClass );
+			document.body.classList.remove( fullWidthClass );
 		} else if ( 'templates/template-sidebar-right-no-title.php' === pageTemplate ) {
-			document.body.classList.add( 'tz-page-title-hidden' );
-			document.body.classList.remove( 'tz-fullwidth-page-layout' );
+			document.body.classList.add( noTitleClass );
+			document.body.classList.remove( fullWidthClass );
 		} else {
-			document.body.classList.remove( 'tz-fullwidth-page-layout' );
-			document.body.classList.remove( 'tz-page-title-hidden' );
+			document.body.classList.remove( fullWidthClass );
+			document.body.classList.remove( noTitleClass );
 		}
 	}
 
@@ -68,6 +73,6 @@ const plugin = compose(
 /**
  * Register plugin in Editor
  */
-registerPlugin( 'themezee-page-template-switcher', {
+registerPlugin( 'kairos-page-template-switcher', {
 	render: plugin,
 } );
