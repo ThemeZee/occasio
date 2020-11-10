@@ -1127,12 +1127,14 @@ body.site-description-hidden .site-header .site-description {
 	}
 
 	.sidebar-left.has-sidebar .site-content .site-main,
-	.page-template-template-sidebar-left.has-sidebar .site-content .site-main {
+	.page-template-template-sidebar-left.has-sidebar .site-content .site-main,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .site-main {
 		order: 2;
 	}
 
 	.sidebar-left.has-sidebar .site-content .sidebar,
-	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .sidebar {
 		order: 1;
 		padding-left: 0;
 		padding-right: 1.75rem;
@@ -1149,7 +1151,8 @@ body.site-description-hidden .site-header .site-description {
 	}
 
 	.sidebar-left.has-sidebar .site-content .sidebar,
-	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .sidebar {
 		padding-right: 2rem;
 	}
 }
@@ -1164,7 +1167,8 @@ body.site-description-hidden .site-header .site-description {
 	}
 
 	.sidebar-left.has-sidebar .site-content .sidebar,
-	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar,
+	.page-template-template-sidebar-left-no-title.has-sidebar .site-content .sidebar {
 		padding-right: 2.5rem;
 	}
 }

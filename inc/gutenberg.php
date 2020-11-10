@@ -178,7 +178,9 @@ function kairos_block_editor_body_classes( $classes ) {
 	}
 
 	// No Title Page Template?
-	if ( 'templates/template-no-title.php' === get_page_template_slug( $post->ID ) ) {
+	if ( 'templates/template-no-title.php' === get_page_template_slug( $post->ID ) or
+		'templates/template-sidebar-left-no-title.php' === get_page_template_slug( $post->ID ) or
+		'templates/template-sidebar-right-no-title.php' === get_page_template_slug( $post->ID ) ) {
 		$classes .= ' tz-page-title-hidden ';
 	}
 

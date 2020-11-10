@@ -29,7 +29,8 @@ function kairos_body_classes( $classes ) {
 	}
 
 	// Check if sidebar is displayed on the left.
-	if ( kairos_has_sidebar() && 'left-sidebar' === $theme_options['sidebar_position'] && ! is_page_template( 'templates/template-sidebar-right.php' ) ) {
+	if ( kairos_has_sidebar() && 'left-sidebar' === $theme_options['sidebar_position'] &&
+		! is_page_template( 'templates/template-sidebar-right.php' ) && ! is_page_template( 'templates/template-sidebar-right-no-title.php' ) ) {
 		$classes[] = 'sidebar-left';
 	}
 
@@ -139,7 +140,8 @@ function kairos_has_sidebar() {
 		return true;
 	}
 
-	if ( is_page_template( 'templates/template-sidebar-left.php' ) or is_page_template( 'templates/template-sidebar-right.php' ) ) {
+	if ( is_page_template( 'templates/template-sidebar-left.php' ) or is_page_template( 'templates/template-sidebar-left-no-title.php' ) or
+		is_page_template( 'templates/template-sidebar-right.php' ) or is_page_template( 'templates/template-sidebar-right-no-title.php' ) ) {
 		return true;
 	}
 
