@@ -957,7 +957,8 @@ body.site-description-hidden .site-header .site-description {
 
 /* Main Navigation Toggle */
 .primary-menu-toggle {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin: 0;
 	margin-left: auto;
 	padding: 1rem;
@@ -3400,8 +3401,8 @@ figcaption,
 --------------------------------------------------------------*/
 @media only screen and (min-width: 400px) {
 	.primary-menu-toggle .menu-toggle-text {
-		display: inline-block;
-		margin-left: 0.5rem;
+		display: block;
+		margin-left: 0.75rem;
 	}
 }
 
@@ -3640,28 +3641,6 @@ body.wide-theme-layout .site .header-main {
 body.wide-theme-layout .site .site-content,
 body.wide-theme-layout .site .site-footer {
 	max-width: 1240px;
-}
-
-/* Centered Theme layout */
-@media only screen and (min-width: 960px) {
-	body.centered-theme-layout {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-}
-
-@media only screen and (min-width: 1120px) {
-	body.centered-theme-layout {
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	body.centered-theme-layout {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
 }
 
 /* Hide Elements in Customizer for instant live preview */
