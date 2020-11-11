@@ -5,7 +5,6 @@
 
 	.widget {
 		padding: 1.5rem;
-		margin-bottom: 1.25rem;
 		@include background(--widget-background-color);
 	}
 }
@@ -14,15 +13,6 @@
 	.sidebar {
 		.widget {
 			padding: 2rem;
-			margin-bottom: 1.5rem;
-		}
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.sidebar {
-		.widget {
-			margin-bottom: 1.75rem;
 		}
 	}
 }
@@ -68,12 +58,6 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.sidebar {
-		.widget {
-			margin-bottom: 2rem;
-		}
-	}
-
 	.has-sidebar {
 		.site-content {
 			.sidebar {
@@ -90,12 +74,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-	.sidebar {
-		.widget {
-			margin-bottom: 2.5rem;
-		}
-	}
-
 	.has-sidebar {
 		.site-content {
 			.sidebar {

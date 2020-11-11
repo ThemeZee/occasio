@@ -52,3 +52,5 @@
 			<?php do_action( 'kairos_breadcrumbs' ); ?>
 
 			<main id="main" class="site-main" role="main">
+
+				<?php do_action( 'kairos_before_content' ); ?>
