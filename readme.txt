@@ -43,7 +43,7 @@ GNU General Public License for more details.
 
 == Ressources ==
 
-Kairos bundles the following third-party resources:
+Kairos bundles and uses the following third-party resources:
 
 1. Genericons Neue - https://github.com/Automattic/genericons-neue
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
@@ -61,11 +61,15 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
 
-6. Barlow Font - https://fonts.google.com/specimen/Barlow
+6. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
+License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
+Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
+
+7. Barlow Font - https://fonts.google.com/specimen/Barlow
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 Copyright: Jeremy Tribby
 
-7. Modern Art image used in screenshot.jpg is from the great Steve Johnson:
+8. Modern Art image used in screenshot.jpg is from the great Steve Johnson:
 https://stocksnap.io/photo/OZCMRCGRX9
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
 Copyright: Steve Johnson (https://stocksnap.io/author/stevejohnson)
