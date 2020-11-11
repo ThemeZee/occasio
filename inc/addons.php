@@ -15,7 +15,7 @@ function kairos_theme_addons_setup() {
 
 	// Add theme support for ThemeZee Widget Bundle plugin.
 	add_theme_support( 'themezee-widget-bundle', array(
-		'thumbnail_size' => array( 150, 150 ),
+		'thumbnail_size' => array( 110, 110 ),
 		'svg_icons'      => true,
 	) );
 

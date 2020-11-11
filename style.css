@@ -2938,7 +2938,7 @@ figcaption,
 .tzwb-posts-list .wp-post-image {
 	float: left;
 	margin: 0 1rem 0 0;
-	max-width: 100px;
+	max-width: 55px;
 	height: auto;
 }
 
@@ -3024,13 +3024,13 @@ figcaption,
 .tzwb-tabbed-content .tzwb-tabnavi li a {
 	display: block;
 	margin: 0;
-	padding: 0.4em 0.8em;
+	padding: 0.4rem 0.65rem;
 	color: #fff;
 	color: var(--button-text-color);
 	background-color: #2a4861;
 	background-color: var(--button-color);
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li a:link,
@@ -3039,7 +3039,6 @@ figcaption,
 	color: var(--button-text-color);
 }
 
-.tzwb-tabbed-content .tzwb-tabnavi li a.current-tab,
 .tzwb-tabbed-content .tzwb-tabnavi li a:hover,
 .tzwb-tabbed-content .tzwb-tabnavi li a:active {
 	color: #fff;
@@ -3047,6 +3046,10 @@ figcaption,
 	background-color: #5d7b94;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
+}
+
+.tzwb-tabbed-content .tzwb-tabnavi li a.current-tab {
+	text-decoration: underline;
 }
 
 .tzwb-tabbed-content .tzwb-tabnavi li a:focus {
@@ -3078,7 +3081,7 @@ figcaption,
 .tzwb-social-icons .social-icons-menu li a {
 	display: block;
 	margin: 2px 2px 0 0;
-	padding: 0.6rem 0.8rem 0.8rem;
+	padding: 0.5rem 0.75rem 0.75rem;
 	background-color: #2a4861;
 	background-color: var(--button-color);
 }
@@ -3092,8 +3095,8 @@ figcaption,
 
 .tzwb-social-icons .social-icons-menu li a .icon {
 	margin: 0;
-	width: 24px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
 	vertical-align: middle;
 	fill: #fff;
 	fill: var(--button-text-color);
