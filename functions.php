@@ -141,7 +141,13 @@ add_action( 'wp_enqueue_scripts', 'kairos_scripts' );
 * Enqueue theme fonts.
 */
 function kairos_theme_fonts() {
-	wp_enqueue_style( 'kairos-theme-fonts', kairos_get_webfont_url(), array(), '20201110' );
+	$fonts_url = kairos_get_fonts_url();
+
+	// Load Fonts if necessary.
+	if ( $fonts_url ) {
+		require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+		wp_enqueue_style( 'kairos-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), '20201110' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'kairos_theme_fonts', 1 );
 add_action( 'enqueue_block_editor_assets', 'kairos_theme_fonts', 1 );
@@ -150,9 +156,7 @@ add_action( 'enqueue_block_editor_assets', 'kairos_theme_fonts', 1 );
 /**
  * Retrieve webfont URL to load fonts locally.
  */
-function kairos_get_webfont_url() {
-	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-
+function kairos_get_fonts_url() {
 	$font_families = array(
 		'Barlow:400,400italic,700,700italic',
 	);
@@ -163,9 +167,7 @@ function kairos_get_webfont_url() {
 		'display' => urlencode( 'swap' ),
 	);
 
-	$fonts_url = apply_filters( 'kairos_get_webfont_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
-
-	return wptt_get_webfont_url( $fonts_url );
+	return apply_filters( 'kairos_get_fonts_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
 }
 
 
