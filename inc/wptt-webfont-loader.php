@@ -1,6 +1,7 @@
 <?php
 /**
  * Download webfonts locally.
+ * https://make.wordpress.org/themes/2020/09/25/new-package-to-allow-locally-hosting-webfonts/
  *
  * @version 1.1.1
  * @package wptt/font-loader

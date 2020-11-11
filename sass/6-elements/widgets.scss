@@ -5,13 +5,13 @@
 	.widget-title {
 		margin: 0 0 1rem;
 		padding: 0;
-		@include color(--title-color);
+		@include color(--widget-title-color);
 		-ms-word-wrap: break-word;
 		word-wrap: break-word;
 		@include font-size(20);
-		@include font-family(--title-font);
-		@include font-weight(--title-font-weight);
-		@include text-transform(--title-text-transform);
+		@include font-family(--widget-title-font);
+		@include font-weight(--widget-title-font-weight);
+		@include text-transform(--widget-title-text-transform);
 		@include line-height(--title-line-height);
 	}
 

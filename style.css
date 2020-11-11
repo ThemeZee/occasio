@@ -87,10 +87,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--text-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font: "Barlow", arial, helvetica, sans-serif;
 	--navi-font: "Barlow", arial, helvetica, sans-serif;
+	--widget-title-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
 	--navi-font-weight: normal;
+	--widget-title-font-weight: bold;
 	--title-text-transform: none;
 	--navi-text-transform: none;
+	--widget-title-text-transform: none;
 	--text-line-height: 1.75;
 	--title-line-height: 1.4;
 }
@@ -2250,17 +2253,17 @@ p.has-background {
 	margin: 0 0 1rem;
 	padding: 0;
 	color: #2a4861;
-	color: var(--title-color);
+	color: var(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--widget-title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--widget-title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--widget-title-text-transform);
 	line-height: 1.4;
 	line-height: var(--title-line-height);
 }
