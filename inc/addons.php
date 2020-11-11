@@ -19,14 +19,6 @@ function kairos_theme_addons_setup() {
 		'svg_icons'      => true,
 	) );
 
-	// Add theme support for Infinite Scroll.
-	add_theme_support( 'themezee-infinite-scroll', array(
-		'container'      => 'post-wrapper',
-		'footer_widgets' => 'footer',
-		'wrapper'        => false,
-		'render'         => 'kairos_infinite_scroll_render',
-	) );
-
 	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );
 
@@ -34,41 +26,6 @@ function kairos_theme_addons_setup() {
 	add_theme_support( 'amp' );
 }
 add_action( 'after_setup_theme', 'kairos_theme_addons_setup' );
-
-
-/**
- * Custom render function for Infinite Scroll.
- */
-function kairos_infinite_scroll_render() {
-	while ( have_posts() ) {
-		the_post();
-		get_template_part( 'template-parts/blog/content', esc_html( kairos_get_option( 'blog_layout' ) ) );
-	}
-}
-
-
-/**
- * Set wrapper start for wooCommerce
- */
-function kairos_wrapper_start() {
-	echo '<main id="main" class="site-main" role="main">';
-}
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-add_action( 'woocommerce_before_main_content', 'kairos_wrapper_start', 10 );
-
-
-/**
- * Set wrapper end for wooCommerce
- */
-function kairos_wrapper_end() {
-	echo '</main><!-- #main -->';
-}
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-add_action( 'woocommerce_after_main_content', 'kairos_wrapper_end', 10 );
-
-
-/* Remove sidebar from wooCommerce templates */
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 
 /**
