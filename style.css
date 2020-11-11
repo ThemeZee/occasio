@@ -1325,7 +1325,7 @@ body.site-description-hidden .site-header .site-description {
 .entry-tags {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 1.5rem 0 0;
+	margin: 1.25rem 0 0;
 	align-items: center;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -3180,8 +3180,7 @@ figcaption,
 	}
 
 	.archive-header .archive-title,
-	.search-header .search-title,
-	.post-navigation .nav-links .entry-title {
+	.search-header .search-title {
 		font-size: 22px;
 		font-size: 1.375rem;
 	}
@@ -3268,6 +3267,10 @@ figcaption,
 		margin-bottom: 0.75rem;
 	}
 
+	.entry-tags {
+		margin-top: 1.5rem;
+	}
+
 	.post-navigation .nav-links {
 		display: flex;
 	}
@@ -3320,6 +3323,10 @@ figcaption,
 	.post-image {
 		margin-bottom: 1rem;
 	}
+
+	.entry-tags {
+		margin-top: 1.75rem;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -3355,6 +3362,10 @@ figcaption,
 	.post-image {
 		margin-bottom: 1.25rem;
 	}
+
+	.entry-tags {
+		margin-top: 2rem;
+	}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -3389,6 +3400,10 @@ figcaption,
 	.entry-header,
 	.post-image {
 		margin-bottom: 1.5rem;
+	}
+
+	.entry-tags {
+		margin-top: 2.5rem;
 	}
 }
 

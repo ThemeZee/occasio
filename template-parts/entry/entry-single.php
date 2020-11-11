@@ -15,5 +15,5 @@
 </div><!-- .entry-content -->
 
 <?php do_action( 'kairos_after_posts' ); ?>
-<?php kairos_entry_tags(); ?>
 <?php do_action( 'kairos_author_bio' ); ?>
+<?php kairos_entry_tags(); ?>
