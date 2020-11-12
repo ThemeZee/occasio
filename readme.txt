@@ -8,11 +8,11 @@ Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Kairos is a highly versatile WordPress Theme.
+Kairos is a sleek and modern Blogging & Magazine WordPress Theme.
 
 == Description ==
 
-Kairos is a highly versatile WordPress Theme and was specially designed for use with the new WordPress Block Editor. The theme supports the latest Gutenberg features and provides different blog layouts and extensive post settings. The clean and elegant design is perfect to create all kinds of websites. You should really try it!
+Kairos is a sleek and modern Blogging & Magazine WordPress Theme, carefully designed for writers using the Gutenberg Block Editor. The theme supports several blog layouts, extensive post settings and various page templates. It is also AMP-ready and accessible. Start your blog now!
 For more information about Kairos please go to https://themezee.com/themes/kairos/
 
 == Installation ==
@@ -23,7 +23,7 @@ For more information about Kairos please go to https://themezee.com/themes/kairo
 
 == Changelog ==
 
-= 1.0 - 2019-11-20 =
+= 1.0 - 2020-11-12 =
 * First Release
 
 == Copyright ==
