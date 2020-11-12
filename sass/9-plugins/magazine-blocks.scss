@@ -14,16 +14,16 @@
 }
 
 .tz-magazine-block .tz-entry-title {
-	@include font-size(24);
+	@include font-size(22);
 }
 
 .tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
-	@include font-size(20);
+	@include font-size(18);
 }
 
 .tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
 .tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
-	@include font-size(18);
+	@include font-size(17);
 }
 
 .tz-magazine-block .tz-entry-meta {
@@ -69,16 +69,16 @@
 	}
 
 	.tz-magazine-block .tz-entry-title {
-		@include font-size(28);
+		@include font-size(24);
 	}
 
 	.tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
-		@include font-size(22);
+		@include font-size(20);
 	}
 
 	.tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
 	.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
-		@include font-size(20);
+		@include font-size(18);
 	}
 
 	.tz-magazine-block .tz-entry-meta {
