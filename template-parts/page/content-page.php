@@ -9,6 +9,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php kairos_post_image_page(); ?>
+
 	<header class="page-header entry-header">
 
 		<?php the_title( '<h1 class="page-title entry-title">', '</h1>' ); ?>

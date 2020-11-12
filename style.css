@@ -1180,7 +1180,6 @@ body.site-description-hidden .site-header .site-description {
 
 /* Entry Header */
 .entry-header {
-	padding-bottom: 0.5rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -2691,8 +2690,8 @@ figcaption,
 }
 
 .site-footer {
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .site-footer a:link,
@@ -3127,8 +3126,7 @@ figcaption,
 	input[type="submit"],
 	.entry-meta,
 	.more-link,
-	.pagination,
-	.site-footer {
+	.pagination {
 		font-size: 16px;
 		font-size: 1rem;
 	}
@@ -3137,7 +3135,8 @@ figcaption,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
-	.comment-reply-title small a {
+	.comment-reply-title small a,
+	.site-footer {
 		font-size: 15px;
 		font-size: 0.9375rem;
 	}
@@ -3182,8 +3181,7 @@ figcaption,
 	input[type="submit"],
 	.entry-meta,
 	.more-link,
-	.pagination,
-	.site-footer {
+	.pagination {
 		font-size: 17px;
 		font-size: 1.0625rem;
 	}
@@ -3192,7 +3190,8 @@ figcaption,
 	.comment-meta .comment-metadata,
 	.comment .reply,
 	.comment-form .logged-in-as,
-	.comment-reply-title small a {
+	.comment-reply-title small a,
+	.site-footer {
 		font-size: 16px;
 		font-size: 1rem;
 	}

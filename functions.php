@@ -38,9 +38,6 @@ function kairos_setup() {
 	// Set default Post Thumbnail size.
 	set_post_thumbnail_size( 800, 440, true );
 
-	// Add image size for header image on single posts and pages.
-	add_image_size( 'kairos-featured-header-image', 1240, 480, true );
-
 	// Add image size for posts with the Horizontal Blog layout enabled.
 	add_image_size( 'kairos-horizontal-list-post', 400, 400, true );
 
@@ -68,8 +65,8 @@ function kairos_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'kairos_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 1440,
-		'height'      => 600,
+		'width'       => 1240,
+		'height'      => 200,
 		'flex-width'  => true,
 		'flex-height' => true,
 	) ) );
