@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kairos\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2020-03-04 15:22+0100\n"
+"POT-Creation-Date: 2020-11-12 17:31+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -21,55 +21,64 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:19
+#: 404.php:17
 msgid "404: Page not found"
 msgstr ""
 
-#: 404.php:24
+#: 404.php:22
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search or one "
 "of the links below?"
 msgstr ""
 
-#: comments.php:35
+#: comments.php:33
 msgid "One comment"
 msgstr ""
 
-#: comments.php:38
+#: comments.php:36
 #, php-format
 msgid "%s comments"
 msgstr ""
 
-#: comments.php:60
+#: comments.php:58
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:49
+#: functions.php:46
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:117 inc/addons.php:130 inc/addons.php:131
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:118 inc/addons.php:130 inc/addons.php:131
 msgid "Collapse child menu"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:180
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:182
+msgctxt "widget area description"
+msgid "Appears on blog pages and single posts."
+msgstr ""
+
+#: functions.php:191
 msgid "Footer Copyright"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:193
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
-#: functions.php:173
+#: functions.php:208
 msgid "Kairos Single Post"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:209
 msgid "Kairos List Post"
 msgstr ""
 
@@ -179,50 +188,42 @@ msgid "Horizontal List"
 msgstr ""
 
 #: inc/customizer/sections/blog-settings.php:43
-msgid "Horizontal List (alternative)"
-msgstr ""
-
-#: inc/customizer/sections/blog-settings.php:44
 msgid "Vertical List"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:45
-msgid "Vertical List (alternative)"
-msgstr ""
-
-#: inc/customizer/sections/blog-settings.php:46
+#: inc/customizer/sections/blog-settings.php:44
 msgid "Two Column Grid"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:47
+#: inc/customizer/sections/blog-settings.php:45
 msgid "Three Column Grid"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:60
+#: inc/customizer/sections/blog-settings.php:58
 msgid "Blog Content"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:66
+#: inc/customizer/sections/blog-settings.php:64
 msgid "Full post"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:67
+#: inc/customizer/sections/blog-settings.php:65
 msgid "Post excerpt"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:80
+#: inc/customizer/sections/blog-settings.php:78
 msgid "Excerpt Length"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:96
+#: inc/customizer/sections/blog-settings.php:94
 msgid "Excerpt More Text"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:126
+#: inc/customizer/sections/blog-settings.php:124
 msgid "Read More Link"
 msgstr ""
 
-#: inc/customizer/sections/blog-settings.php:142
+#: inc/customizer/sections/blog-settings.php:140
 msgid "Number of Posts"
 msgstr ""
 
@@ -255,15 +256,15 @@ msgid "Wide Layout"
 msgstr ""
 
 #: inc/customizer/sections/layout-settings.php:56
-msgid "Header Layout"
+msgid "Sidebar Position"
 msgstr ""
 
 #: inc/customizer/sections/layout-settings.php:62
-msgid "Horizontal"
+msgid "Left Sidebar"
 msgstr ""
 
 #: inc/customizer/sections/layout-settings.php:63
-msgid "Vertical"
+msgid "Right Sidebar"
 msgstr ""
 
 #: inc/customizer/sections/post-settings.php:19
@@ -271,63 +272,55 @@ msgid "Post Settings"
 msgstr ""
 
 #: inc/customizer/sections/post-settings.php:30
-msgid "Post Details"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:46
-msgid "Display date"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:62
-msgid "Display author"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:78
-msgid "Display comments"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:94
-msgid "Display categories"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:104
-msgid "Single Post"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:120
-msgid "Display tags"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:136
-msgid "Display previous/next post navigation"
-msgstr ""
-
-#: inc/customizer/sections/post-settings.php:146
 msgid "Featured Images"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:162
+#: inc/customizer/sections/post-settings.php:46
 msgid "Display images on blog and archives"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:184
-msgid "Featured Images on Single Posts"
+#: inc/customizer/sections/post-settings.php:68
+msgid "Display images on single posts"
 msgstr ""
 
+#: inc/customizer/sections/post-settings.php:84
+msgid "Post Details on blog and archives"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:100
+#: inc/customizer/sections/post-settings.php:174
+msgid "Display date"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:116
 #: inc/customizer/sections/post-settings.php:190
-msgid "Display image in the header"
+msgid "Display author"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:191
-msgid "Display image above post title"
+#: inc/customizer/sections/post-settings.php:132
+#: inc/customizer/sections/post-settings.php:206
+msgid "Display categories"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:192
-msgid "Display image below post title"
+#: inc/customizer/sections/post-settings.php:148
+#: inc/customizer/sections/post-settings.php:222
+msgid "Display comments"
 msgstr ""
 
-#: inc/customizer/sections/post-settings.php:193
-msgid "Hide featured image"
+#: inc/customizer/sections/post-settings.php:158
+msgid "Post Details on single posts"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:232
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:248
+msgid "Display tags"
+msgstr ""
+
+#: inc/customizer/sections/post-settings.php:264
+msgid "Display previous/next post navigation"
 msgstr ""
 
 #: inc/customizer/sections/theme-info-settings.php:19 inc/theme-info.php:20
@@ -360,135 +353,139 @@ msgstr ""
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/gutenberg.php:33
+#: inc/gutenberg.php:35
 msgctxt "block color"
 msgid "Primary"
 msgstr ""
 
-#: inc/gutenberg.php:38
+#: inc/gutenberg.php:40
 msgctxt "block color"
 msgid "Secondary"
 msgstr ""
 
-#: inc/gutenberg.php:43
+#: inc/gutenberg.php:45
+msgctxt "block color"
+msgid "Tertiary"
+msgstr ""
+
+#: inc/gutenberg.php:50
 msgctxt "block color"
 msgid "Accent"
 msgstr ""
 
-#: inc/gutenberg.php:48
+#: inc/gutenberg.php:55
+msgctxt "block color"
+msgid "Contrast"
+msgstr ""
+
+#: inc/gutenberg.php:60
 msgctxt "block color"
 msgid "Highlight"
 msgstr ""
 
-#: inc/gutenberg.php:53
+#: inc/gutenberg.php:65
 msgctxt "block color"
 msgid "White"
 msgstr ""
 
-#: inc/gutenberg.php:58
+#: inc/gutenberg.php:70
 msgctxt "block color"
 msgid "Light Gray"
 msgstr ""
 
-#: inc/gutenberg.php:63
+#: inc/gutenberg.php:75
 msgctxt "block color"
 msgid "Gray"
 msgstr ""
 
-#: inc/gutenberg.php:68
+#: inc/gutenberg.php:80
 msgctxt "block color"
 msgid "Dark Gray"
 msgstr ""
 
-#: inc/gutenberg.php:73
+#: inc/gutenberg.php:85
 msgctxt "block color"
 msgid "Black"
 msgstr ""
 
-#: inc/gutenberg.php:82
+#: inc/gutenberg.php:94
 msgctxt "block font size"
 msgid "Small"
 msgstr ""
 
-#: inc/gutenberg.php:87
+#: inc/gutenberg.php:99
 msgctxt "block font size"
 msgid "Medium"
 msgstr ""
 
-#: inc/gutenberg.php:92
+#: inc/gutenberg.php:104
 msgctxt "block font size"
 msgid "Large"
 msgstr ""
 
-#: inc/gutenberg.php:97
+#: inc/gutenberg.php:109
 msgctxt "block font size"
 msgid "Extra Large"
 msgstr ""
 
-#: inc/gutenberg.php:102
+#: inc/gutenberg.php:114
 msgctxt "block font size"
 msgid "Huge"
 msgstr ""
 
-#: inc/template-tags.php:135
+#: inc/template-tags.php:120
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:242
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/template-tags.php:243
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#: inc/template-tags.php:286
+#: inc/template-tags.php:285
 msgid "No comments"
 msgstr ""
 
-#: inc/template-tags.php:287
+#: inc/template-tags.php:286
 msgid "1 comment"
 msgstr ""
 
-#: inc/template-tags.php:288
+#: inc/template-tags.php:287
 #, php-format
 msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:306
+#: inc/template-tags.php:305
 msgid "Tags"
 msgstr ""
 
-#: inc/template-tags.php:349
+#: inc/template-tags.php:344
 msgctxt "post navigation"
 msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:350
+#: inc/template-tags.php:345
 msgctxt "post navigation"
 msgid "Next Post"
 msgstr ""
 
-#: inc/template-tags.php:369
+#: inc/template-tags.php:361
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:370
+#: inc/template-tags.php:362
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
 
-#: inc/template-tags.php:414
+#: inc/template-tags.php:398
 #, php-format
 msgid "WordPress Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/template-tags.php:415
+#: inc/template-tags.php:399
 msgid "Kairos"
 msgstr ""
 
