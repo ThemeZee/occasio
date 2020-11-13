@@ -112,7 +112,7 @@ function kairos_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) && ! kairos_is_amp() ) {
-		wp_enqueue_script( 'kairos-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200822', true );
+		wp_enqueue_script( 'kairos-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20201112', true );
 		$kairos_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'kairos' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'kairos' ),
