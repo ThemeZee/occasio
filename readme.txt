@@ -69,7 +69,20 @@ Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 Copyright: Jeremy Tribby
 
-8. Modern Art image used in screenshot.jpg is from the great Steve Johnson:
-https://stocksnap.io/photo/OZCMRCGRX9
+8. Images used in screenshot.jpg are from StockSnap
+
+a) https://stocksnap.io/photo/umbrellas-sky-MIFDXUR2VY
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
-Copyright: Steve Johnson (https://stocksnap.io/author/stevejohnson)
+Copyright: Adrianna Calvo (https://stocksnap.io/author/16808)
+
+b) https://stocksnap.io/photo/modern-building-8KGCJNXKCJ
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: Bob Richards (https://stocksnap.io/author/bobrichards)
+
+c) https://stocksnap.io/photo/lake-mountains-XX0FZY0UPY
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: Eberhard Grossgasteiger (https://stocksnap.io/author/eberhardgross)
+
+d) https://stocksnap.io/photo/food-dragonfruit-DVR50CKWR7
+License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: Brooke Lark (https://stocksnap.io/author/29623)

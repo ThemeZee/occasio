@@ -205,7 +205,7 @@ add_action( 'widgets_init', 'kairos_widgets_init', 30 );
  */
 function kairos_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'                => esc_html__( 'Kairos Single Post', 'kairos' ),
+		'post-thumbnail'              => esc_html__( 'Kairos Single Post', 'kairos' ),
 		'kairos-horizontal-list-post' => esc_html__( 'Kairos List Post', 'kairos' ),
 	) );
 }
