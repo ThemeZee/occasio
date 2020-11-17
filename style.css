@@ -82,7 +82,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-background-color: #2a4861;
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
-	--footer-link-hover-color: #fff;
+	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font: "Barlow", arial, helvetica, sans-serif;
@@ -2099,12 +2099,6 @@ p.has-background {
 	color: var(--accent-color);
 }
 
-.has-contrast-color,
-.wp-block-button__link.has-contrast-color {
-	color: #e63e4c;
-	color: var(--contrast-color);
-}
-
 .has-highlight-color,
 .wp-block-button__link.has-highlight-color {
 	color: #915d94;
@@ -2162,12 +2156,6 @@ p.has-background {
 .has-accent-background-color[class] {
 	background-color: #60945d;
 	background-color: var(--accent-color);
-}
-
-.has-contrast-background-color,
-.has-contrast-background-color[class] {
-	background-color: #e63e4c;
-	background-color: var(--contrast-color);
 }
 
 .has-highlight-background-color,
@@ -2698,12 +2686,12 @@ figcaption,
 .site-footer a:visited {
 	color: #fff;
 	color: var(--footer-link-color);
+	text-decoration: none;
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	color: #fff;
-	color: var(--footer-link-hover-color);
+	text-decoration: underline;
 }
 
 .site-footer input[type="text"],
@@ -2716,7 +2704,7 @@ figcaption,
 	border: 1px solid;
 	border-color: rgba(255, 255, 255, 0.1);
 	border-color: var(--footer-border-color);
-	color: #fff;
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-link-hover-color);
 }
 
@@ -2734,7 +2722,7 @@ figcaption,
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-link-hover-color);
 }
 
@@ -2770,7 +2758,7 @@ figcaption,
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:link,
 .site-info .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
 .site-info .widget .tzwb-comments-list .tzwb-comment-date {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.6);
 	color: var(--footer-link-hover-color);
 }
 

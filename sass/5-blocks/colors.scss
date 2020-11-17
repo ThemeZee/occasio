@@ -19,11 +19,6 @@
 	@include color(--accent-color);
 }
 
-.has-contrast-color,
-.wp-block-button__link.has-contrast-color {
-	@include color(--contrast-color);
-}
-
 .has-highlight-color,
 .wp-block-button__link.has-highlight-color {
 	@include color(--highlight-color);
@@ -73,11 +68,6 @@
 .has-accent-background-color,
 .has-accent-background-color[class] {
 	@include background(--accent-color);
-}
-
-.has-contrast-background-color,
-.has-contrast-background-color[class] {
-	@include background(--contrast-color);
 }
 
 .has-highlight-background-color,

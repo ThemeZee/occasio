@@ -42,7 +42,7 @@
 	--footer-background-color: #2a4861;
 	--footer-text-color: rgba(255, 255, 255, 0.6);
 	--footer-link-color: #fff;
-	--footer-link-hover-color: #fff;
+	--footer-link-hover-color: rgba(255, 255, 255, 0.6);
 	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font: "Barlow", arial, helvetica, sans-serif;
@@ -782,12 +782,6 @@ p.has-background {
 	color: var(--accent-color);
 }
 
-.has-contrast-color,
-.wp-block-button__link.has-contrast-color {
-	color: #e63e4c;
-	color: var(--contrast-color);
-}
-
 .has-highlight-color,
 .wp-block-button__link.has-highlight-color {
 	color: #915d94;
@@ -845,12 +839,6 @@ p.has-background {
 .has-accent-background-color[class] {
 	background-color: #60945d;
 	background-color: var(--accent-color);
-}
-
-.has-contrast-background-color,
-.has-contrast-background-color[class] {
-	background-color: #e63e4c;
-	background-color: var(--contrast-color);
 }
 
 .has-highlight-background-color,
