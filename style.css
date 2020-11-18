@@ -1302,7 +1302,8 @@ body.site-description-hidden .site-header .site-description {
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
 	text-decoration: none;
-	background: #ededef;
+	background-color: #ededef;
+	background-color: var(--post-meta-background-color);
 }
 
 /* Entry Tags */

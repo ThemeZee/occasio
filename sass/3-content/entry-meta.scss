@@ -65,7 +65,7 @@
 	margin: 0 2px 2px 0;
 	padding: 0.1em 0.6em;
 	text-decoration: none;
-	background: #ededef;
+	@include background(--post-meta-background-color);
 }
 
 /* Entry Tags */
