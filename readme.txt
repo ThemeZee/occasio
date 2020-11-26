@@ -23,8 +23,11 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.1 - 2020-11-26 =
+* added theme screenshot
+
 = 1.0 - 2020-11-12 =
-* First Release
+* Initial Release
 
 == Copyright ==
 
