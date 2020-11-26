@@ -5,7 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="content">
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 ?><!DOCTYPE html>
@@ -22,18 +22,18 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 
-	<?php do_action( 'kairos_before_site' ); ?>
+	<?php do_action( 'occasio_before_site' ); ?>
 
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kairos' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'occasio' ); ?></a>
 
-		<?php do_action( 'kairos_before_header' ); ?>
+		<?php do_action( 'occasio_before_header' ); ?>
 
 		<header id="masthead" class="site-header" role="banner">
 
 			<div class="header-main">
 
-				<?php kairos_site_logo(); ?>
+				<?php occasio_site_logo(); ?>
 
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 
@@ -43,14 +43,14 @@
 
 		</header><!-- #masthead -->
 
-		<?php do_action( 'kairos_after_header' ); ?>
+		<?php do_action( 'occasio_after_header' ); ?>
 
-		<?php kairos_header_image(); ?>
+		<?php occasio_header_image(); ?>
 
 		<div id="content" class="site-content">
 
-			<?php do_action( 'kairos_breadcrumbs' ); ?>
+			<?php do_action( 'occasio_breadcrumbs' ); ?>
 
 			<main id="main" class="site-main" role="main">
 
-				<?php do_action( 'kairos_before_content' ); ?>
+				<?php do_action( 'occasio_before_content' ); ?>

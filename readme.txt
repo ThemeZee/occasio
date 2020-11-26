@@ -1,6 +1,6 @@
-=== Kairos ===
+=== Occasio ===
 Author URI: https://themezee.com/
-Theme URI: https://themezee.com/themes/kairos/
+Theme URI: https://themezee.com/themes/occasio/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
@@ -8,18 +8,18 @@ Tested up to: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Kairos is a sleek and modern Blogging & Magazine WordPress Theme.
+Occasio is a sleek and modern Blogging & Magazine WordPress Theme.
 
 == Description ==
 
-Kairos is a sleek and modern Blogging & Magazine WordPress Theme, carefully designed for writers using the Gutenberg Block Editor. The theme supports several blog layouts, extensive post settings and various page templates. It is also AMP-ready and accessible. Start your blog now!
-For more information about Kairos please go to https://themezee.com/themes/kairos/
+Occasio is a sleek and modern Blogging & Magazine WordPress Theme, carefully designed for writers using the Gutenberg Block Editor. The theme supports several blog layouts, extensive post settings and various page templates. It is also AMP-ready and accessible. Start your blog now!
+For more information about Occasio please go to https://themezee.com/themes/occasio/
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
-3. Go to https://themezee.com/en/docs/kairos-documentation/ for a guide on how to use and customize this theme.
+3. Go to https://themezee.com/en/docs/occasio-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
 
@@ -28,8 +28,8 @@ For more information about Kairos please go to https://themezee.com/themes/kairo
 
 == Copyright ==
 
-Kairos WordPress Theme, Copyright 2019 ThemeZee.de
-Kairos is distributed under the terms of the GNU GPL
+Occasio WordPress Theme, Copyright 2019 ThemeZee.de
+Occasio is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -43,7 +43,7 @@ GNU General Public License for more details.
 
 == Ressources ==
 
-Kairos bundles and uses the following third-party resources:
+Occasio bundles and uses the following third-party resources:
 
 1. Genericons Neue - https://github.com/Automattic/genericons-neue
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)

@@ -3,7 +3,7 @@
  *
  * Adds Javascript for Customizer Controls.
  *
- * @package Kairos
+ * @package Occasio
  */
 
 ( function( wp, $ ) {
@@ -13,7 +13,7 @@
 		setting.bind( function( value ) { 
 			if ( '' !== value ) {
 				// Set retina logo option to false when a new logo image is uploaded.
-				wp.customize.instance( 'kairos_theme_options[retina_logo]' ).set( false );
+				wp.customize.instance( 'occasio_theme_options[retina_logo]' ).set( false );
 			}
 		});
 
@@ -29,12 +29,12 @@
 			setting.bind( setActiveState );
 			control.active.validate = isDisplayed;
 		};
-		wp.customize.control( 'kairos_theme_options[retina_logo_title]', setupControl );
-		wp.customize.control( 'kairos_theme_options[retina_logo]', setupControl );
+		wp.customize.control( 'occasio_theme_options[retina_logo_title]', setupControl );
+		wp.customize.control( 'occasio_theme_options[retina_logo]', setupControl );
 	} );
 
 	// Based on https://make.xwp.co/2016/07/24/dependently-contextual-customizer-controls/
-	wp.customize( 'kairos_theme_options[blog_content]', function( setting ) {
+	wp.customize( 'occasio_theme_options[blog_content]', function( setting ) {
 		var setupControl = function( control ) {
 			var setActiveState, isDisplayed;
 			isDisplayed = function() {
@@ -47,15 +47,15 @@
 			setting.bind( setActiveState );
 			control.active.validate = isDisplayed;
 		};
-		wp.customize.control( 'kairos_theme_options[excerpt_length]', setupControl );
-		wp.customize.control( 'kairos_theme_options[excerpt_more_text]', setupControl );
+		wp.customize.control( 'occasio_theme_options[excerpt_length]', setupControl );
+		wp.customize.control( 'occasio_theme_options[excerpt_more_text]', setupControl );
 	} );
 
 	/**
 	 * The Customizer looks for wp.customizer.controlConstructor[type] functions
 	 * where type == the type member of a WP_Customize_Control
 	 */
-	wp.customize.controlConstructor.kairos_custom_font = wp.customize.Control.extend({
+	wp.customize.controlConstructor.occasio_custom_font = wp.customize.Control.extend({
 		/**
 		 * This method is called when the control is ready to run.
 		 */

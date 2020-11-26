@@ -5,7 +5,7 @@
  * Used to validate the user input of the theme settings
  * Based on https://github.com/WPTRT/code-examples/blob/master/customizer/sanitization-callbacks.php
  *
- * @package Kairos
+ * @package Occasio
  */
 
 /**
@@ -14,7 +14,7 @@
  * @param bool $checked Whether the checkbox is checked.
  * @return bool Whether the checkbox is checked.
  */
-function kairos_sanitize_checkbox( $checked ) {
+function occasio_sanitize_checkbox( $checked ) {
 
 	// Boolean check.
 	return ( ( isset( $checked ) && true === $checked ) ? true : false );
@@ -30,7 +30,7 @@ function kairos_sanitize_checkbox( $checked ) {
  * @param WP_Customize_Setting $setting Setting instance.
  * @return string Sanitized slug if it is a valid choice; otherwise, the setting default.
  */
-function kairos_sanitize_select( $input, $setting ) {
+function occasio_sanitize_select( $input, $setting ) {
 
 	// Ensure input is a slug.
 	$input = sanitize_key( $input );
@@ -48,7 +48,7 @@ function kairos_sanitize_select( $input, $setting ) {
  * @param String $value / Value of the setting.
  * @return string
  */
-function kairos_sanitize_footer_text( $value ) {
+function occasio_sanitize_footer_text( $value ) {
 
 	if ( current_user_can( 'unfiltered_html' ) ) :
 		return $value;

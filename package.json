@@ -1,22 +1,22 @@
 {
-  "name": "kairos",
+  "name": "occasio",
   "version": "1.0.0",
-  "description": "Kairos WordPress Theme",
+  "description": "Occasio WordPress Theme",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "git archive HEAD -9 --prefix kairos/ --format=zip > ../../kairos.zip"
+    "export": "git archive HEAD -9 --prefix occasio/ --format=zip > ../../occasio.zip"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThemeZee/kairos.git"
+    "url": "git+https://github.com/ThemeZee/occasio.git"
   },
   "author": "ThemeZee",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ThemeZee/kairos/issues"
+    "url": "https://github.com/ThemeZee/occasio/issues"
   },
-  "homepage": "https://github.com/ThemeZee/kairos#readme",
+  "homepage": "https://github.com/ThemeZee/occasio#readme",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "gulp": "^4.0.2",

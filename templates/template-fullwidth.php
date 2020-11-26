@@ -5,7 +5,7 @@
  *
  * Description: A custom template for displaying a fullwidth layout.
  *
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();

@@ -1,8 +1,8 @@
-/* global kairosScreenReaderText */
+/* global occasioScreenReaderText */
 /**
  * Theme Navigation
  *
- * @package Kairos
+ * @package Occasio
  */
 
 (function( $ ) {
@@ -28,7 +28,7 @@
 			// Add an initial value for the attribute.
 			menuToggle.attr( 'aria-expanded', 'false' );
 
-			menuToggle.on( 'click.kairos_', function() {
+			menuToggle.on( 'click.occasio_', function() {
 				navigation.toggleClass( 'toggled-on' );
 
 				$( this ).attr( 'aria-expanded', navigation.hasClass( 'toggled-on' ) );
@@ -39,8 +39,8 @@
 		(function() {
 
 			var dropdownToggle = $( '<button />', { 'class': 'dropdown-toggle', 'aria-expanded': false } )
-				.append( kairosScreenReaderText.icon )
-				.append( $( '<span />', { 'class': 'screen-reader-text', text: kairosScreenReaderText.expand } ) );
+				.append( occasioScreenReaderText.icon )
+				.append( $( '<span />', { 'class': 'screen-reader-text', text: occasioScreenReaderText.expand } ) );
 
 			navigation.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( dropdownToggle );
 
@@ -49,7 +49,7 @@
 				.addClass( 'toggled-on' )
 				.attr( 'aria-expanded', 'true' )
 				.find( '.screen-reader-text' )
-				.text( kairosScreenReaderText.collapse );
+				.text( occasioScreenReaderText.collapse );
 
 			// Set the active submenu initial state.
 			navigation.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
@@ -64,7 +64,7 @@
 
 				_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 
-				screenReaderSpan.text( screenReaderSpan.text() === kairosScreenReaderText.expand ? kairosScreenReaderText.collapse : kairosScreenReaderText.expand );
+				screenReaderSpan.text( screenReaderSpan.text() === occasioScreenReaderText.expand ? occasioScreenReaderText.collapse : occasioScreenReaderText.expand );
 			} );
 		})();
 
@@ -80,14 +80,14 @@
 			function toggleFocusClassTouchScreen() {
 				if ( 'none' === $( '.menu-toggle' ).css( 'display' ) ) {
 
-					$( document.body ).on( 'touchstart.kairos_', function( e ) {
+					$( document.body ).on( 'touchstart.occasio_', function( e ) {
 						if ( ! $( e.target ).closest( naviClass + ' li' ).length ) {
 							$( naviClass + ' li' ).removeClass( 'focus' );
 						}
 					});
 
 					menuList.find( '.menu-item-has-children > a, .page_item_has_children > a' )
-						.on( 'touchstart.kairos_', function( e ) {
+						.on( 'touchstart.occasio_', function( e ) {
 							var el = $( this ).parent( 'li' );
 
 							if ( ! el.hasClass( 'focus' ) ) {
@@ -98,16 +98,16 @@
 						});
 
 				} else {
-					menuList.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.kairos_' );
+					menuList.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.occasio_' );
 				}
 			}
 
 			if ( 'ontouchstart' in window ) {
-				$( window ).on( 'resize.kairos_', toggleFocusClassTouchScreen );
+				$( window ).on( 'resize.occasio_', toggleFocusClassTouchScreen );
 				toggleFocusClassTouchScreen();
 			}
 
-			menuList.find( 'a' ).on( 'focus.kairos_ blur.kairos_', function() {
+			menuList.find( 'a' ).on( 'focus.occasio_ blur.occasio_', function() {
 				$( this ).parents( '.menu-item, .page_item' ).toggleClass( 'focus' );
 			});
 		})();

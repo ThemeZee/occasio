@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();
@@ -24,7 +24,7 @@ if ( have_posts() ) :
 
 	endwhile;
 
-	kairos_pagination();
+	occasio_pagination();
 
 else :
 

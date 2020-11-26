@@ -3,13 +3,13 @@
  * The template used for displaying page content in page.php
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php kairos_post_image_page(); ?>
+	<?php occasio_post_image_page(); ?>
 
 	<header class="page-header entry-header">
 
@@ -24,6 +24,6 @@
 
 	</div><!-- .entry-content -->
 
-	<?php do_action( 'kairos_after_pages' ); ?>
+	<?php do_action( 'occasio_after_pages' ); ?>
 
 </article>

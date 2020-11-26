@@ -5,7 +5,7 @@
  *
  * Description: A custom template for displaying a page without title.
  *
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();

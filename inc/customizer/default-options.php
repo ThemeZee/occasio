@@ -4,7 +4,7 @@
  *
  * Uses sane defaults in case the user has not configured any theme options yet.
  *
- * @package Kairos
+ * @package Occasio
  */
 
 /**
@@ -12,10 +12,10 @@
 *
 * @return mixed
 */
-function kairos_get_option( $option_name = '' ) {
+function occasio_get_option( $option_name = '' ) {
 
 	// Get all Theme Options from Database.
-	$theme_options = kairos_theme_options();
+	$theme_options = occasio_theme_options();
 
 	// Return single option.
 	if ( isset( $theme_options[ $option_name ] ) ) {
@@ -31,13 +31,13 @@ function kairos_get_option( $option_name = '' ) {
  *
  * @return array
  */
-function kairos_theme_options() {
+function occasio_theme_options() {
 
 	// Merge theme options array from database with default options array.
-	$theme_options = wp_parse_args( get_option( 'kairos_theme_options', array() ), kairos_default_options() );
+	$theme_options = wp_parse_args( get_option( 'occasio_theme_options', array() ), occasio_default_options() );
 
 	// Return theme options.
-	return apply_filters( 'kairos_theme_options', $theme_options );
+	return apply_filters( 'occasio_theme_options', $theme_options );
 }
 
 
@@ -46,7 +46,7 @@ function kairos_theme_options() {
  *
  * @return array
  */
-function kairos_default_options() {
+function occasio_default_options() {
 
 	$default_options = array(
 		'retina_logo'            => false,
@@ -58,7 +58,7 @@ function kairos_default_options() {
 		'blog_content'           => 'excerpt',
 		'excerpt_length'         => 25,
 		'excerpt_more_text'      => '[...]',
-		'read_more_link'         => esc_html__( 'Continue reading', 'kairos' ),
+		'read_more_link'         => esc_html__( 'Continue reading', 'occasio' ),
 		'meta_date'              => true,
 		'meta_author'            => false,
 		'meta_comments'          => false,
@@ -75,5 +75,5 @@ function kairos_default_options() {
 		'credit_link'            => true,
 	);
 
-	return apply_filters( 'kairos_default_options', $default_options );
+	return apply_filters( 'occasio_default_options', $default_options );
 }

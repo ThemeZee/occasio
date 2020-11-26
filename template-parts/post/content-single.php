@@ -3,21 +3,21 @@
  * The template for displaying single posts
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php kairos_post_image_single(); ?>
+	<?php occasio_post_image_single(); ?>
 
 	<header class="post-header entry-header">
 
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
-		<?php kairos_entry_meta(); ?>
+		<?php occasio_entry_meta(); ?>
 
-		<?php kairos_entry_categories(); ?>
+		<?php occasio_entry_categories(); ?>
 
 	</header><!-- .entry-header -->
 

@@ -5,14 +5,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();
 
 if ( have_posts() ) :
 
-	kairos_search_header();
+	occasio_search_header();
 
 	while ( have_posts() ) :
 		the_post();
@@ -21,7 +21,7 @@ if ( have_posts() ) :
 
 	endwhile;
 
-	kairos_pagination();
+	occasio_pagination();
 
 else :
 

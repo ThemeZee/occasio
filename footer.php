@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 ?>
@@ -18,22 +18,22 @@
 
 	</div><!-- #content -->
 
-	<?php do_action( 'kairos_before_footer' ); ?>
+	<?php do_action( 'occasio_before_footer' ); ?>
 
 	<div class="footer-wrap">
 
-		<?php do_action( 'kairos_footer_widgets' ); ?>
+		<?php do_action( 'occasio_footer_widgets' ); ?>
 
 		<footer id="colophon" class="site-footer">
 
-			<?php do_action( 'kairos_footer_menu' ); ?>
+			<?php do_action( 'occasio_footer_menu' ); ?>
 			<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
 
 		</footer><!-- #colophon -->
 
 	</div>
 
-	<?php do_action( 'kairos_after_footer' ); ?>
+	<?php do_action( 'occasio_after_footer' ); ?>
 
 </div><!-- #page -->
 

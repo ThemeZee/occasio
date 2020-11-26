@@ -2,11 +2,11 @@
 /**
  * The sidebar containing the widget area on blog pages.
  *
- * @package Kairos
+ * @package Occasio
  */
 
 // Check if Sidebar should be displayed.
-if ( kairos_has_sidebar() ) : ?>
+if ( occasio_has_sidebar() ) : ?>
 
 	<section id="secondary" class="sidebar widget-area" role="complementary">
 

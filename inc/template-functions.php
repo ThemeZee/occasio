@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Kairos
+ * @package Occasio
  */
 
 /**
@@ -11,10 +11,10 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function kairos_body_classes( $classes ) {
+function occasio_body_classes( $classes ) {
 
 	// Get theme options from database.
-	$theme_options = kairos_theme_options();
+	$theme_options = occasio_theme_options();
 
 	// Set Theme Layout.
 	if ( 'wide' === $theme_options['theme_layout'] ) {
@@ -24,12 +24,12 @@ function kairos_body_classes( $classes ) {
 	}
 
 	// Add Sidebar class.
-	if ( kairos_has_sidebar() ) {
+	if ( occasio_has_sidebar() ) {
 		$classes[] = 'has-sidebar';
 	}
 
 	// Check if sidebar is displayed on the left.
-	if ( kairos_has_sidebar() && 'left-sidebar' === $theme_options['sidebar_position'] &&
+	if ( occasio_has_sidebar() && 'left-sidebar' === $theme_options['sidebar_position'] &&
 		! is_page_template( 'templates/template-sidebar-right.php' ) && ! is_page_template( 'templates/template-sidebar-right-no-title.php' ) ) {
 		$classes[] = 'sidebar-left';
 	}
@@ -97,12 +97,12 @@ function kairos_body_classes( $classes ) {
 	}
 
 	// Check for AMP pages.
-	if ( kairos_is_amp() ) {
+	if ( occasio_is_amp() ) {
 		$classes[] = 'is-amp-page';
 	}
 
 	// Add Blog Page class?
-	if ( kairos_is_blog_page() ) {
+	if ( occasio_is_blog_page() ) {
 		$classes[] = 'is-blog-page';
 	}
 
@@ -113,7 +113,7 @@ function kairos_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'kairos_body_classes' );
+add_filter( 'body_class', 'occasio_body_classes' );
 
 
 /**
@@ -121,7 +121,7 @@ add_filter( 'body_class', 'kairos_body_classes' );
  *
  * @return bool
  */
-function kairos_is_blog_page() {
+function occasio_is_blog_page() {
 	return ( 'post' === get_post_type() ) && ( is_home() || is_archive() || is_single() );
 }
 
@@ -131,12 +131,12 @@ function kairos_is_blog_page() {
  *
  * @return bool
  */
-function kairos_has_sidebar() {
+function occasio_has_sidebar() {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		return false;
 	}
 
-	if ( kairos_is_blog_page() && ! is_page_template( 'templates/template-no-sidebar.php' ) ) {
+	if ( occasio_is_blog_page() && ! is_page_template( 'templates/template-no-sidebar.php' ) ) {
 		return true;
 	}
 
@@ -154,9 +154,9 @@ function kairos_has_sidebar() {
  *
  * @return void
  */
-function kairos_retina_logo() {
+function occasio_retina_logo() {
 	// Return early if there is no logo image or option for retina logo is disabled.
-	if ( ! has_custom_logo() or false === kairos_get_option( 'retina_logo' ) ) {
+	if ( ! has_custom_logo() or false === occasio_get_option( 'retina_logo' ) ) {
 		return;
 	}
 
@@ -167,9 +167,9 @@ function kairos_retina_logo() {
 	$css = '.site-logo .custom-logo { width: ' . absint( floor( $logo[1] / 2 ) ) . 'px; }';
 
 	// Add Custom CSS.
-	wp_add_inline_style( 'kairos-stylesheet', $css );
+	wp_add_inline_style( 'occasio-stylesheet', $css );
 }
-add_filter( 'wp_enqueue_scripts', 'kairos_retina_logo', 11 );
+add_filter( 'wp_enqueue_scripts', 'occasio_retina_logo', 11 );
 
 
 /**
@@ -178,14 +178,14 @@ add_filter( 'wp_enqueue_scripts', 'kairos_retina_logo', 11 );
  * @param int $length Length of excerpt in number of words.
  * @return int
  */
-function kairos_excerpt_length( $length ) {
+function occasio_excerpt_length( $length ) {
 
 	if ( is_admin() ) {
 		return $length;
 	}
 
 	// Get excerpt length from database.
-	$excerpt_length = kairos_get_option( 'excerpt_length' );
+	$excerpt_length = occasio_get_option( 'excerpt_length' );
 
 	// Return excerpt text.
 	if ( $excerpt_length >= 0 ) :
@@ -194,7 +194,7 @@ function kairos_excerpt_length( $length ) {
 		return 55; // Number of words.
 	endif;
 }
-add_filter( 'excerpt_length', 'kairos_excerpt_length' );
+add_filter( 'excerpt_length', 'occasio_excerpt_length' );
 
 
 /**
@@ -203,12 +203,12 @@ add_filter( 'excerpt_length', 'kairos_excerpt_length' );
  * @param String $more_text Excerpt More Text.
  * @return string
  */
-function kairos_excerpt_more( $more_text ) {
+function occasio_excerpt_more( $more_text ) {
 
 	if ( is_admin() ) {
 		return $more_text;
 	}
 
-	return esc_html( ' ' . kairos_get_option( 'excerpt_more_text' ) );
+	return esc_html( ' ' . occasio_get_option( 'excerpt_more_text' ) );
 }
-add_filter( 'excerpt_more', 'kairos_excerpt_more' );
+add_filter( 'excerpt_more', 'occasio_excerpt_more' );

@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();
@@ -13,7 +13,7 @@ get_header();
 if ( have_posts() ) :
 	?>
 
-	<?php kairos_archive_header(); ?>
+	<?php occasio_archive_header(); ?>
 
 	<div id="post-wrapper" class="post-wrapper">
 
@@ -21,7 +21,7 @@ if ( have_posts() ) :
 	while ( have_posts() ) :
 		the_post();
 
-		get_template_part( 'template-parts/blog/content', esc_html( kairos_get_option( 'blog_layout' ) ) );
+		get_template_part( 'template-parts/blog/content', esc_html( occasio_get_option( 'blog_layout' ) ) );
 
 	endwhile;
 	?>
@@ -29,7 +29,7 @@ if ( have_posts() ) :
 	</div>
 
 	<?php
-	kairos_pagination();
+	occasio_pagination();
 
 else :
 

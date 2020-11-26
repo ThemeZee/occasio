@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Kairos\n"
+"Project-Id-Version: Occasio\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2020-11-12 17:31+0100\n"
+"POT-Creation-Date: 2020-11-26 13:11+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -75,11 +75,11 @@ msgid "Appears in the bottom footer line."
 msgstr ""
 
 #: functions.php:208
-msgid "Kairos Single Post"
+msgid "Occasio Single Post"
 msgstr ""
 
 #: functions.php:209
-msgid "Kairos List Post"
+msgid "Occasio List Post"
 msgstr ""
 
 #: header.php:28
@@ -98,7 +98,7 @@ msgid "Theme Links"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:28 inc/theme-info.php:47
-msgid "https://themezee.com/themes/kairos/"
+msgid "https://themezee.com/themes/occasio/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:29 inc/theme-info.php:47
@@ -111,7 +111,7 @@ msgstr ""
 
 #: inc/customizer/controls/links-control.php:40 inc/theme-info.php:49
 #: inc/theme-info.php:71
-msgid "https://themezee.com/docs/kairos-documentation/"
+msgid "https://themezee.com/docs/occasio-documentation/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:41 inc/theme-info.php:49
@@ -122,7 +122,7 @@ msgstr ""
 #: inc/customizer/controls/links-control.php:46
 msgid ""
 "https://themezee.com/changelogs/?action=themezee-"
-"changelog&type=theme&slug=kairos/"
+"changelog&type=theme&slug=occasio/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:47 inc/theme-info.php:50
@@ -131,7 +131,7 @@ msgstr ""
 
 #: inc/customizer/controls/links-control.php:52 inc/theme-info.php:51
 #: inc/theme-info.php:155
-msgid "https://wordpress.org/support/theme/kairos/reviews/"
+msgid "https://wordpress.org/support/theme/occasio/reviews/"
 msgstr ""
 
 #: inc/customizer/controls/links-control.php:53 inc/theme-info.php:51
@@ -155,7 +155,7 @@ msgid ""
 msgstr ""
 
 #: inc/customizer/controls/upgrade-control.php:32 inc/theme-info.php:117
-msgid "https://themezee.com/addons/kairos-pro/"
+msgid "https://themezee.com/addons/occasio-pro/"
 msgstr ""
 
 #: inc/customizer/controls/upgrade-control.php:33 inc/theme-info.php:118
@@ -353,82 +353,77 @@ msgstr ""
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/gutenberg.php:35
+#: inc/gutenberg.php:34
 msgctxt "block color"
 msgid "Primary"
 msgstr ""
 
-#: inc/gutenberg.php:40
+#: inc/gutenberg.php:39
 msgctxt "block color"
 msgid "Secondary"
 msgstr ""
 
-#: inc/gutenberg.php:45
+#: inc/gutenberg.php:44
 msgctxt "block color"
 msgid "Tertiary"
 msgstr ""
 
-#: inc/gutenberg.php:50
+#: inc/gutenberg.php:49
 msgctxt "block color"
 msgid "Accent"
 msgstr ""
 
-#: inc/gutenberg.php:55
-msgctxt "block color"
-msgid "Contrast"
-msgstr ""
-
-#: inc/gutenberg.php:60
+#: inc/gutenberg.php:54
 msgctxt "block color"
 msgid "Highlight"
 msgstr ""
 
-#: inc/gutenberg.php:65
+#: inc/gutenberg.php:59
 msgctxt "block color"
 msgid "White"
 msgstr ""
 
-#: inc/gutenberg.php:70
+#: inc/gutenberg.php:64
 msgctxt "block color"
 msgid "Light Gray"
 msgstr ""
 
-#: inc/gutenberg.php:75
+#: inc/gutenberg.php:69
 msgctxt "block color"
 msgid "Gray"
 msgstr ""
 
-#: inc/gutenberg.php:80
+#: inc/gutenberg.php:74
 msgctxt "block color"
 msgid "Dark Gray"
 msgstr ""
 
-#: inc/gutenberg.php:85
+#: inc/gutenberg.php:79
 msgctxt "block color"
 msgid "Black"
 msgstr ""
 
-#: inc/gutenberg.php:94
+#: inc/gutenberg.php:88
 msgctxt "block font size"
 msgid "Small"
 msgstr ""
 
-#: inc/gutenberg.php:99
+#: inc/gutenberg.php:93
 msgctxt "block font size"
 msgid "Medium"
 msgstr ""
 
-#: inc/gutenberg.php:104
+#: inc/gutenberg.php:98
 msgctxt "block font size"
 msgid "Large"
 msgstr ""
 
-#: inc/gutenberg.php:109
+#: inc/gutenberg.php:103
 msgctxt "block font size"
 msgid "Extra Large"
 msgstr ""
 
-#: inc/gutenberg.php:114
+#: inc/gutenberg.php:108
 msgctxt "block font size"
 msgid "Huge"
 msgstr ""
@@ -486,7 +481,7 @@ msgid "WordPress Theme: %1$s by %2$s."
 msgstr ""
 
 #: inc/template-tags.php:399
-msgid "Kairos"
+msgid "Occasio"
 msgstr ""
 
 #: inc/theme-info.php:19 inc/theme-info.php:40
@@ -497,7 +492,7 @@ msgstr ""
 #: inc/theme-info.php:50
 msgid ""
 "https://themezee.com/changelogs/?action=themezee-"
-"changelog&type=theme&slug=kairos"
+"changelog&type=theme&slug=occasio"
 msgstr ""
 
 #: inc/theme-info.php:58

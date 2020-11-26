@@ -3,7 +3,7 @@
  *
  * Reloads changes on Theme Customizer Preview asynchronously for better usability
  *
- * @package Kairos
+ * @package Occasio
  */
 
 ( function( $ ) {
@@ -23,7 +23,7 @@
 	} );
 
 	// Site Title checkbox.
-	wp.customize( 'kairos_theme_options[site_title]', function( value ) {
+	wp.customize( 'occasio_theme_options[site_title]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
 				$( 'body' ).addClass( 'site-title-hidden' );
@@ -34,7 +34,7 @@
 	} );
 
 	// Site Description checkbox.
-	wp.customize( 'kairos_theme_options[site_description]', function( value ) {
+	wp.customize( 'occasio_theme_options[site_description]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
 				$( 'body' ).addClass( 'site-description-hidden' );
@@ -45,7 +45,7 @@
 	} );
 
 	// Theme Layout.
-	wp.customize( 'kairos_theme_options[theme_layout]', function( value ) {
+	wp.customize( 'occasio_theme_options[theme_layout]', function( value ) {
 		value.bind( function( newval ) {
 			if ( 'wide' === newval ) {
 				$( 'body' ).addClass( 'wide-theme-layout' );
@@ -58,7 +58,7 @@
 	} );
 
 	// Sidebar Position.
-	wp.customize( 'kairos_theme_options[sidebar_position]', function( value ) {
+	wp.customize( 'occasio_theme_options[sidebar_position]', function( value ) {
 		value.bind( function( newval ) {
 			if( false === $( 'body' ).hasClass( '.page-template-template-sidebar-right' ) ) {
 				if ( 'left-sidebar' === newval ) {
@@ -71,7 +71,7 @@
 	} );
 
 	// Blog Layout.
-	wp.customize( 'kairos_theme_options[blog_layout]', function( value ) {
+	wp.customize( 'occasio_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {
 			$( 'body' ).removeClass( 'blog-layout-horizontal-list' );
 			$( 'body' ).removeClass( 'blog-layout-vertical-list' );
@@ -91,14 +91,14 @@
 	} );
 
 	// Read More Link textfield.
-	wp.customize( 'kairos_theme_options[read_more_link]', function( value ) {
+	wp.customize( 'occasio_theme_options[read_more_link]', function( value ) {
 		value.bind( function( to ) {
 			$( 'a.more-link' ).text( to );
 		} );
 	} );
 
 	// Post Date checkbox.
-	wp.customize( 'kairos_theme_options[meta_date]', function( value ) {
+	wp.customize( 'occasio_theme_options[meta_date]', function( value ) {
 		value.bind( function( newval ) {
 			if( ! $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -111,7 +111,7 @@
 	} );
 
 	// Post Author checkbox.
-	wp.customize( 'kairos_theme_options[meta_author]', function( value ) {
+	wp.customize( 'occasio_theme_options[meta_author]', function( value ) {
 		value.bind( function( newval ) {
 			if( ! $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -124,7 +124,7 @@
 	} );
 
 	// Post Categories checkbox.
-	wp.customize( 'kairos_theme_options[meta_categories]', function( value ) {
+	wp.customize( 'occasio_theme_options[meta_categories]', function( value ) {
 		value.bind( function( newval ) {
 			if( ! $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -137,7 +137,7 @@
 	} );
 
 	// Post Comments checkbox.
-	wp.customize( 'kairos_theme_options[meta_comments]', function( value ) {
+	wp.customize( 'occasio_theme_options[meta_comments]', function( value ) {
 		value.bind( function( newval ) {
 			if( ! $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -150,7 +150,7 @@
 	} );
 
 	// Single Post Date checkbox.
-	wp.customize( 'kairos_theme_options[single_meta_date]', function( value ) {
+	wp.customize( 'occasio_theme_options[single_meta_date]', function( value ) {
 		value.bind( function( newval ) {
 			if( $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -163,7 +163,7 @@
 	} );
 
 	// Single Post Author checkbox.
-	wp.customize( 'kairos_theme_options[single_meta_author]', function( value ) {
+	wp.customize( 'occasio_theme_options[single_meta_author]', function( value ) {
 		value.bind( function( newval ) {
 			if( $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -176,7 +176,7 @@
 	} );
 
 	// Single Post Categories checkbox.
-	wp.customize( 'kairos_theme_options[single_meta_categories]', function( value ) {
+	wp.customize( 'occasio_theme_options[single_meta_categories]', function( value ) {
 		value.bind( function( newval ) {
 			if( $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -189,7 +189,7 @@
 	} );
 
 	// Single Post Comments checkbox.
-	wp.customize( 'kairos_theme_options[single_meta_comments]', function( value ) {
+	wp.customize( 'occasio_theme_options[single_meta_comments]', function( value ) {
 		value.bind( function( newval ) {
 			if( $( 'body' ).hasClass( 'single-post' ) ) {
 				if ( false === newval ) {
@@ -202,7 +202,7 @@
 	} );
 
 	// Post Tags checkbox.
-	wp.customize( 'kairos_theme_options[meta_tags]', function( value ) {
+	wp.customize( 'occasio_theme_options[meta_tags]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
 				$( 'body' ).addClass( 'tags-hidden' );
@@ -213,7 +213,7 @@
 	} );
 
 	// Post Navigation checkbox.
-	wp.customize( 'kairos_theme_options[post_navigation]', function( value ) {
+	wp.customize( 'occasio_theme_options[post_navigation]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
 				$( 'body' ).addClass( 'post-navigation-hidden' );
@@ -224,14 +224,14 @@
 	} );
 
 	// Footer textfield.
-	wp.customize( 'kairos_theme_options[footer_text]', function( value ) {
+	wp.customize( 'occasio_theme_options[footer_text]', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-info .footer-text' ).text( to );
 		} );
 	} );
 
 	// Credit Link checkbox.
-	wp.customize( 'kairos_theme_options[credit_link]', function( value ) {
+	wp.customize( 'occasio_theme_options[credit_link]', function( value ) {
 		value.bind( function( newval ) {
 			if ( false === newval ) {
 				$( 'body' ).addClass( 'credit-link-hidden' );

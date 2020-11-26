@@ -3,7 +3,7 @@
  * 
  * Updates body classes on Gutenberg Editor when page templates are changed.
  * 
- * @package Kairos
+ * @package Occasio
  */
 
 /**
@@ -29,8 +29,8 @@ class pageTemplateBodyClass extends Component {
 			return null;
 		}
 
-		const fullWidthClass = 'kairos-fullwidth-page-layout';
-		const noTitleClass = 'kairos-page-title-hidden';
+		const fullWidthClass = 'occasio-fullwidth-page-layout';
+		const noTitleClass = 'occasio-page-title-hidden';
 
 		if ( 'templates/template-fullwidth.php' === pageTemplate ) {
 			document.body.classList.add( fullWidthClass );
@@ -73,6 +73,6 @@ const plugin = compose(
 /**
  * Register plugin in Editor
  */
-registerPlugin( 'kairos-page-template-switcher', {
+registerPlugin( 'occasio-page-template-switcher', {
 	render: plugin,
 } );

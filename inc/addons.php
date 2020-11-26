@@ -2,16 +2,16 @@
 /**
  * Add Support for Theme Addons
  *
- * @package Kairos
+ * @package Occasio
  */
 
 /**
  * Register support for Jetpack and theme addons
  */
-function kairos_theme_addons_setup() {
+function occasio_theme_addons_setup() {
 
-	// Add theme support for Kairos Pro plugin.
-	add_theme_support( 'kairos-pro' );
+	// Add theme support for Occasio Pro plugin.
+	add_theme_support( 'occasio-pro' );
 
 	// Add theme support for ThemeZee Widget Bundle plugin.
 	add_theme_support( 'themezee-widget-bundle', array(
@@ -25,13 +25,13 @@ function kairos_theme_addons_setup() {
 	// Add theme support for AMP.
 	add_theme_support( 'amp' );
 }
-add_action( 'after_setup_theme', 'kairos_theme_addons_setup' );
+add_action( 'after_setup_theme', 'occasio_theme_addons_setup' );
 
 
 /**
  * Checks if AMP page is rendered.
  */
-function kairos_is_amp() {
+function occasio_is_amp() {
 	return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
 }
 
@@ -39,8 +39,8 @@ function kairos_is_amp() {
 /**
  * Adds amp support for menu toggle.
  */
-function kairos_amp_menu_toggle() {
-	if ( kairos_is_amp() ) {
+function occasio_amp_menu_toggle() {
+	if ( occasio_is_amp() ) {
 		echo "[aria-expanded]=\"primaryMenuExpanded? 'true' : 'false'\" ";
 		echo 'on="tap:AMP.setState({primaryMenuExpanded: !primaryMenuExpanded})"';
 	}
@@ -50,8 +50,8 @@ function kairos_amp_menu_toggle() {
 /**
  * Adds amp support for mobile dropdown navigation menu.
  */
-function kairos_amp_menu_is_toggled() {
-	if ( kairos_is_amp() ) {
+function occasio_amp_menu_is_toggled() {
+	if ( occasio_is_amp() ) {
 		echo "[class]=\"'main-navigation' + ( primaryMenuExpanded ? ' toggled-on' : '' )\"";
 	}
 }
@@ -66,10 +66,10 @@ function kairos_amp_menu_is_toggled() {
  * @param object $item          Nav menu item.
  * @return string Modified nav menu item HTML.
  */
-function kairos_amp_menu_dropdown_toggles( $item_output, $item, $depth, $args ) {
+function occasio_amp_menu_dropdown_toggles( $item_output, $item, $depth, $args ) {
 
 	// Return early if AMP is not used.
-	if ( ! kairos_is_amp() ) {
+	if ( ! occasio_is_amp() ) {
 		return $item_output;
 	}
 
@@ -122,13 +122,13 @@ function kairos_amp_menu_dropdown_toggles( $item_output, $item, $depth, $args ) 
 	$dropdown_button .= '>';
 
 	// Add SVG icon.
-	$dropdown_button .= $expanded ? kairos_get_svg( 'collapse' ) : kairos_get_svg( 'expand' );
+	$dropdown_button .= $expanded ? occasio_get_svg( 'collapse' ) : occasio_get_svg( 'expand' );
 
 	// Let the screen reader text in the button also update based on the expanded state.
 	$dropdown_button .= sprintf(
 		'<span class="screen-reader-text" [text]="%s">%s</span>',
-		esc_attr( sprintf( "$expanded_state_id ? %s : %s", wp_json_encode( esc_html__( 'Collapse child menu', 'kairos' ) ), wp_json_encode( esc_html__( 'Expand child menu', 'kairos' ) ) ) ),
-		esc_html( $expanded ? esc_html__( 'Collapse child menu', 'kairos' ) : esc_html__( 'Expand child menu', 'kairos' ) )
+		esc_attr( sprintf( "$expanded_state_id ? %s : %s", wp_json_encode( esc_html__( 'Collapse child menu', 'occasio' ) ), wp_json_encode( esc_html__( 'Expand child menu', 'occasio' ) ) ) ),
+		esc_html( $expanded ? esc_html__( 'Collapse child menu', 'occasio' ) : esc_html__( 'Expand child menu', 'occasio' ) )
 	);
 
 	$dropdown_button .= '</button>';
@@ -136,4 +136,4 @@ function kairos_amp_menu_dropdown_toggles( $item_output, $item, $depth, $args ) 
 	$item_output .= $dropdown_button;
 	return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'kairos_amp_menu_dropdown_toggles', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'occasio_amp_menu_dropdown_toggles', 10, 4 );

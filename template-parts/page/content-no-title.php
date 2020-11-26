@@ -3,7 +3,7 @@
  * The template used for displaying page content for the no title page templates.
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 ?>
 
@@ -16,6 +16,6 @@
 
 	</div><!-- .entry-content -->
 
-	<?php do_action( 'kairos_after_pages' ); ?>
+	<?php do_action( 'occasio_after_pages' ); ?>
 
 </article>

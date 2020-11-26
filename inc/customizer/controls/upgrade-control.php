@@ -2,7 +2,7 @@
 /**
  * Upgrade Control for the Customizer
  *
- * @package Kairos
+ * @package Occasio
  */
 
 /**
@@ -13,7 +13,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 	/**
 	 * Displays the upgrade teaser in the Customizer.
 	 */
-	class Kairos_Customize_Upgrade_Control extends WP_Customize_Control {
+	class Occasio_Customize_Upgrade_Control extends WP_Customize_Control {
 		/**
 		 * Render Control
 		 */
@@ -22,15 +22,15 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			<div class="upgrade-pro-version">
 
-				<span class="customize-control-title"><?php esc_html_e( 'Pro Version Add-on', 'kairos' ); ?></span>
+				<span class="customize-control-title"><?php esc_html_e( 'Pro Version Add-on', 'occasio' ); ?></span>
 
 				<span class="textfield">
-					<?php printf( esc_html__( 'Purchase the %s Pro Add-on to get additional features and advanced customization options.', 'kairos' ), 'Kairos' ); ?>
+					<?php printf( esc_html__( 'Purchase the %s Pro Add-on to get additional features and advanced customization options.', 'occasio' ), 'Occasio' ); ?>
 				</span>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://themezee.com/addons/kairos-pro/', 'kairos' ) ); ?>?utm_source=customizer&utm_medium=button&utm_campaign=kairos&utm_content=pro-version" target="_blank" class="button button-secondary">
-						<?php printf( esc_html__( 'Learn more about %s Pro', 'kairos' ), 'Kairos' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/addons/occasio-pro/', 'occasio' ) ); ?>?utm_source=customizer&utm_medium=button&utm_campaign=occasio&utm_content=pro-version" target="_blank" class="button button-secondary">
+						<?php printf( esc_html__( 'Learn more about %s Pro', 'occasio' ), 'Occasio' ); ?>
 					</a>
 				</p>
 

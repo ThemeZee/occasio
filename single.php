@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @version 1.0
- * @package Kairos
+ * @package Occasio
  */
 
 get_header();
@@ -15,9 +15,9 @@ while ( have_posts() ) :
 
 	get_template_part( 'template-parts/post/content', 'single' );
 
-	kairos_post_navigation();
+	occasio_post_navigation();
 
-	do_action( 'kairos_related_posts' );
+	do_action( 'occasio_related_posts' );
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :
