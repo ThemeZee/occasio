@@ -19,7 +19,7 @@ function occasio_get_svg( $icon = null ) {
 
 	// Create SVG markup.
 	$svg  = '<svg class="icon icon-' . esc_attr( $icon ) . '" aria-hidden="true" role="img">';
-	$svg .= ' <use xlink:href="' . get_parent_theme_file_uri( '/assets/icons/genericons-neue.svg#' ) . esc_html( $icon ) . '"></use> ';
+	$svg .= ' <use xlink:href="' . esc_attr( get_parent_theme_file_uri( '/assets/icons/genericons-neue.svg#' ) . $icon ) . '"></use> ';
 	$svg .= '</svg>';
 
 	return $svg;
