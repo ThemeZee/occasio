@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/occasio/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 5.5
+Tested up to: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,11 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 3. Go to https://themezee.com/en/docs/occasio-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.0.2 - 2020-12-16 =
+* added focus styling for Read More buttons and Tags
+* changed escaping of SVG icons attribute
+* fixed secondary menu script loading
 
 = 1.0.1 - 2020-11-26 =
 * added theme screenshot
