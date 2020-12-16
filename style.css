@@ -1332,7 +1332,8 @@ body.site-description-hidden .site-header .site-description {
 }
 
 .entry-tags a:hover,
-.entry-tags a:active {
+.entry-tags a:active,
+.entry-tags a:focus {
 	color: #fff;
 	color: var(--button-hover-text-color);
 	background-color: #5d7b94;
@@ -1387,11 +1388,16 @@ body.date-hidden.author-hidden.categories-hidden.comments-hidden .type-post .ent
 }
 
 .more-link:hover,
-.more-link:active {
+.more-link:active,
+.more-link:focus {
 	color: #fff;
 	color: var(--button-hover-text-color);
 	background-color: #5d7b94;
 	background-color: var(--button-hover-color);
+}
+
+.more-link:focus {
+	outline: -webkit-focus-ring-color auto 1px;
 }
 
 .more-link::after {

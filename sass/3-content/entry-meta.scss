@@ -91,7 +91,8 @@
 }
 
 .entry-tags a:hover,
-.entry-tags a:active {
+.entry-tags a:active,
+.entry-tags a:focus {
 	@include color(--button-hover-text-color);
 	@include background(--button-hover-color);
 }

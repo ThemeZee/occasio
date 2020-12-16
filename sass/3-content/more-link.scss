@@ -15,9 +15,14 @@
 }
 
 .more-link:hover,
-.more-link:active {
+.more-link:active,
+.more-link:focus {
 	@include color(--button-hover-text-color);
 	@include background(--button-hover-color);
+}
+
+.more-link:focus {
+	outline: -webkit-focus-ring-color auto 1px;
 }
 
 .more-link::after {
