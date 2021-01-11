@@ -23,6 +23,9 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.3 - 2021-01-11 =
+* fixed No Sidebar post template
+
 = 1.0.2 - 2020-12-16 =
 * added focus styling for Read More buttons and Tags
 * changed escaping of SVG icons attribute
