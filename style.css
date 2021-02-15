@@ -2464,6 +2464,7 @@ p.has-background {
 .comment-navigation a:hover,
 .comment-navigation a:active {
 	color: rgba(0, 0, 0, 0.9);
+	color: var(--text-color);
 }
 
 .comment-navigation .nav-previous a::before {
