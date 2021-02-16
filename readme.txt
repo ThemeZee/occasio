@@ -23,6 +23,10 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.4 - 2021-02-16 =
+* added support for ThemeZee Breadcrumbs plugin
+* added support for ThemeZee Related Posts plugin
+
 = 1.0.3 - 2021-01-11 =
 * fixed No Sidebar post template
 
