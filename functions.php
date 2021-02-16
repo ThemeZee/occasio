@@ -205,7 +205,7 @@ add_action( 'widgets_init', 'occasio_widgets_init', 30 );
  */
 function occasio_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'              => esc_html__( 'Occasio Single Post', 'occasio' ),
+		'post-thumbnail'               => esc_html__( 'Occasio Single Post', 'occasio' ),
 		'occasio-horizontal-list-post' => esc_html__( 'Occasio List Post', 'occasio' ),
 	) );
 }

@@ -2786,6 +2786,83 @@ figcaption,
 # - Plugins
 --------------------------------------------------------------*/
 
+/* Styling for ThemeZee Breadcrumbs Plugin */
+.breadcrumbs {
+	margin: 0 0 1.25rem;
+	padding: 0;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+.breadcrumbs-container {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.breadcrumbs .trail-browse,
+.breadcrumbs .trail-items,
+.breadcrumbs .trail-items li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs .trail-browse {
+	margin-right: 0.5rem;
+	font-weight: normal;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.breadcrumbs .trail-items {
+	list-style: none;
+}
+
+.breadcrumbs .trail-items li::after {
+	padding: 0 0.5em;
+	content: "\00bb"; /* Raquo */
+}
+
+.trail-separator-slash .trail-items li::after {
+	content: "\002F";
+}
+
+.trail-separator-dash .trail-items li::after {
+	content: "\2013";
+}
+
+.trail-separator-bull .trail-items li::after {
+	content: "\2022";
+}
+
+.trail-separator-arrow-bracket .trail-items li::after {
+	content: "\003e";
+}
+
+.trail-separator-raquo .trail-items li::after {
+	content: "\00bb";
+}
+
+.trail-separator-single-arrow .trail-items li::after {
+	content: "\2192";
+}
+
+.trail-separator-double-arrow .trail-items li::after {
+	content: "\21D2";
+}
+
+.breadcrumbs .trail-items li:last-of-type::after {
+	display: none;
+}
+
+@media only screen and (min-width: 640px) {
+	.breadcrumbs-container,
+	.breadcrumbs .trail-browse {
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+}
+
 /* ThemeZee Magazine Blocks */
 :root {
 	--tz-column-gap: 1.5rem;
@@ -2890,6 +2967,242 @@ figcaption,
 	.tz-magazine-block .tz-entry-content .more-link {
 		font-size: 16px;
 		font-size: 1rem;
+	}
+}
+
+/* Styling for ThemeZee Related Posts Plugin */
+.themezee-related-posts {
+	margin: 0 0 1.5rem;
+}
+
+.themezee-related-posts .entry-meta > span:last-child::after {
+	content: "";
+}
+
+.themezee-related-posts ul.related-posts-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.themezee-related-posts .related-posts-list li {
+	display: block;
+	margin-top: 1.5rem;
+	list-style: none;
+}
+
+.themezee-related-posts .related-posts-list li .wp-post-image {
+	margin: 0 0 1rem 0;
+}
+
+.themezee-related-posts .related-posts-list li .entry-header {
+	margin-bottom: 0.5rem;
+}
+
+.themezee-related-posts .related-posts-list li .entry-title {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.themezee-related-posts .related-posts-list li .entry-meta {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.themezee-related-posts .related-posts-grid {
+	margin: 1.5rem 0 0;
+}
+
+.themezee-related-posts .related-posts-columns .related-post-column {
+	margin-top: 1rem;
+}
+
+.themezee-related-posts .related-posts-columns .related-post-column .wp-post-image {
+	margin: 0 0 0.75rem 0;
+	padding: 0;
+	border: none;
+}
+
+.themezee-related-posts .related-posts-columns .related-post-column .entry-header {
+	margin-bottom: 0.5rem;
+}
+
+.themezee-related-posts .related-posts-columns .related-post-column .entry-title {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.themezee-related-posts .related-posts-columns .related-post-column .entry-meta {
+	margin: 0;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.themezee-related-posts .related-posts .clearfix::before,
+.themezee-related-posts .related-posts .clearfix::after {
+	display: inline;
+	content: none;
+}
+
+@media only screen and (min-width: 400px) {
+	.themezee-related-posts .related-posts-list li {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: auto 1fr;
+		grid-column-gap: 1rem;
+	}
+
+	.themezee-related-posts .related-posts-list li > a {
+		grid-row: 1 / span 2;
+	}
+
+	.themezee-related-posts .related-posts-list li .wp-post-image {
+		margin: 0;
+	}
+
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.themezee-related-posts .related-posts-list li .entry-meta {
+		margin: 0;
+		align-content: flex-start;
+	}
+
+	.themezee-related-posts .related-posts-two-columns,
+	.themezee-related-posts .related-posts-four-columns {
+		display: grid;
+		grid-gap: 1.5rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column,
+	.themezee-related-posts .related-posts-four-columns .related-post-column {
+		margin-top: 0;
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column .entry-title,
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-three-columns {
+		display: grid;
+		grid-gap: 1.5rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.themezee-related-posts .related-posts-three-columns .related-post-column {
+		margin-top: 0;
+	}
+
+	.themezee-related-posts .related-posts-three-columns .related-post-column .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column .entry-title,
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column .entry-title,
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	.themezee-related-posts .related-posts-three-columns .related-post-column .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column .entry-title,
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-three-columns .related-post-column .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-four-columns {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.themezee-related-posts .related-posts-three-columns .related-post-column .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-two-columns .related-post-column .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.themezee-related-posts .related-posts-list li {
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 1.5rem;
+	}
+
+	.themezee-related-posts .related-posts-list li .entry-meta {
+		font-size: 15px;
+		font-size: 0.9375rem;
+	}
+
+	.themezee-related-posts .related-posts-list li .entry-title {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+
+	.themezee-related-posts .related-posts-four-columns .related-post-column .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.themezee-related-posts .related-posts-columns .related-post-column .entry-meta {
+		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 }
 
@@ -3239,7 +3552,8 @@ figcaption,
 	.post-navigation,
 	.pagination,
 	.widget,
-	.comments-area {
+	.comments-area,
+	.themezee-related-posts {
 		margin-bottom: 1.5rem;
 	}
 
@@ -3297,7 +3611,8 @@ figcaption,
 	.post-navigation,
 	.pagination,
 	.widget,
-	.comments-area {
+	.comments-area,
+	.themezee-related-posts {
 		margin-bottom: 1.75rem;
 	}
 
@@ -3337,7 +3652,8 @@ figcaption,
 	.post-navigation,
 	.pagination,
 	.widget,
-	.comments-area {
+	.comments-area,
+	.themezee-related-posts {
 		margin-bottom: 2rem;
 	}
 
@@ -3377,7 +3693,8 @@ figcaption,
 	.post-navigation,
 	.pagination,
 	.widget,
-	.comments-area {
+	.comments-area,
+	.themezee-related-posts {
 		margin-bottom: 2.5rem;
 	}
 

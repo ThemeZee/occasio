@@ -406,3 +406,41 @@ if ( ! function_exists( 'occasio_credit_link' ) ) :
 		endif;
 	}
 endif;
+
+
+if ( ! function_exists( 'occasio_breadcrumbs' ) ) :
+	/**
+	 * Displays ThemeZee Breadcrumbs plugin
+	 */
+	function occasio_breadcrumbs() {
+
+		if ( function_exists( 'themezee_breadcrumbs' ) ) {
+
+			themezee_breadcrumbs( array(
+				'before' => '<div class="breadcrumbs-container">',
+				'after'  => '</div>',
+			) );
+
+		}
+	}
+endif;
+
+
+if ( ! function_exists( 'occasio_related_posts' ) ) :
+	/**
+	 * Displays ThemeZee Related Posts plugin
+	 */
+	function occasio_related_posts() {
+
+		if ( function_exists( 'themezee_related_posts' ) ) {
+
+			themezee_related_posts( array(
+				'container'    => 'div',
+				'class'        => 'related-posts',
+				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
+				'after_title'  => '</h2></header>',
+			) );
+
+		}
+	}
+endif;

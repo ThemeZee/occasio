@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @version 1.0
+ * @version 1.1
  * @package Occasio
  */
 
@@ -49,8 +49,8 @@
 
 		<div id="content" class="site-content">
 
-			<?php do_action( 'occasio_breadcrumbs' ); ?>
-
 			<main id="main" class="site-main" role="main">
+
+				<?php occasio_breadcrumbs(); ?>
 
 				<?php do_action( 'occasio_before_content' ); ?>
