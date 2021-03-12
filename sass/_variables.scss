@@ -38,6 +38,12 @@ $themeColors: (
 	--button-hover-color             : #5d7b94,
 	--button-hover-text-color        : #fff,
 
+	// Header Bar
+	--header-bar-background-color    : #2a4861,
+	--header-bar-text-color          : #fff,
+	--header-bar-text-hover-color    : rgba(255, 255, 255, 0.5),
+	--header-bar-border-color        : rgba(255, 255, 255, 0.1),
+
 	// Header
 	--header-background-color        : #2a4861,
 	--header-text-color              : #fff,
@@ -54,6 +60,13 @@ $themeColors: (
 	--widget-title-color             : #2a4861,
 	--widget-title-hover-color       : #5d7b94,
 	--widget-background-color        : #ededef,
+
+	// Footer Widgets
+	--footer-widgets-background-color: #2a4861,
+	--footer-widgets-text-color      : #fff,
+	--footer-widgets-link-color      : rgba(255, 255, 255, 0.6),
+	--footer-widgets-link-hover-color: #fff,
+	--footer-widgets-border-color    : rgba(255, 255, 255, 0.1),
 
 	// Footer
 	--footer-background-color        : #2a4861,
