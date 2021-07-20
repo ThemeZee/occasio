@@ -23,6 +23,10 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.6 - 2021-07-20 =
+* added Widget Title block style
+* fixed error messages on new block-based Widgets Editor
+
 = 1.0.5 - 2021-06-05 =
 * added related posts to No Sidebar template
 * fixed typo in pagination function
