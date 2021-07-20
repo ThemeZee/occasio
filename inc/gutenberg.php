@@ -125,8 +125,13 @@ function occasio_block_editor_assets() {
 	// Enqueue Editor Styling.
 	wp_enqueue_style( 'occasio-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
 
+	// Get current screen.
+	$current_screen = get_current_screen();
+
 	// Enqueue Page Template Switcher Editor plugin.
-	wp_enqueue_script( 'occasio-page-template-switcher', get_theme_file_uri( '/assets/js/page-template-switcher.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	if ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) {
+		wp_enqueue_script( 'occasio-page-template-switcher', get_theme_file_uri( '/assets/js/page-template-switcher.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	}
 }
 add_action( 'enqueue_block_editor_assets', 'occasio_block_editor_assets' );
 
@@ -155,7 +160,7 @@ function occasio_block_editor_body_classes( $classes ) {
 	$current_screen = get_current_screen();
 
 	// Return early if we are not in the Gutenberg Editor.
-	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) ) {
 		return $classes;
 	}
 
