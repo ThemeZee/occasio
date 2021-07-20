@@ -753,6 +753,25 @@ p.has-background {
 	margin-bottom: 0;
 }
 
+/* Editor Block Styles */
+.editor-styles-wrapper .wp-block-heading.is-style-widget-title {
+	padding: 0;
+	color: #2a4861;
+	color: var(--widget-title-color);
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: var(--widget-title-font);
+	font-weight: bold;
+	font-weight: var(--widget-title-font-weight);
+	text-transform: none;
+	text-transform: var(--widget-title-text-transform);
+	line-height: 1.4;
+	line-height: var(--title-line-height);
+}
+
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/

@@ -110,6 +110,17 @@ function occasio_gutenberg_support() {
 			'slug' => 'huge',
 		),
 	) ) );
+
+	// Check if block style functions are available.
+	if ( function_exists( 'register_block_style' ) ) {
+
+		// Register Widget Title Block style.
+		register_block_style( 'core/heading', array(
+			'name'         => 'widget-title',
+			'label'        => esc_html__( 'Widget Title', 'occasio' ),
+			'style_handle' => 'occasio-stylesheet',
+		) );
+	}
 }
 add_action( 'after_setup_theme', 'occasio_gutenberg_support' );
 

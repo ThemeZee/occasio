@@ -2228,7 +2228,8 @@ p.has-background {
 	padding: 0;
 }
 
-.widget .widget-title {
+.widget .widget-title,
+.widget .is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0;
 	color: #2a4861;
