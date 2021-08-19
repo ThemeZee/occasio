@@ -28,6 +28,10 @@ p.has-background {
 }
 
 /* Separator Block */
+.wp-block-separator {
+	border: none;
+}
+
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots),
 .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
 	margin-left: auto;
@@ -79,6 +83,10 @@ p.has-background {
 }
 
 /* Button Block */
+.wp-block-button {
+	@include font-size(17);
+}
+
 .wp-block-button.aligncenter {
 	text-align: center;
 }
@@ -89,8 +97,8 @@ p.has-background {
 	border: none;
 	border-radius: 0;
 	color: inherit;
+	font-size: inherit;
 	text-decoration: none;
-	@include font-size(17);
 }
 
 .wp-block-button__link:link,
@@ -158,7 +166,6 @@ p.has-background {
 }
 
 .wp-block-quote.is-style-large {
-	margin: 1.75rem 0;
 	padding: 0;
 	border: none;
 	@include font-size(28);
@@ -193,6 +200,15 @@ p.has-background {
 .wp-block-pullquote p {
 	font-size: inherit;
 	line-height: inherit;
+}
+
+.wp-block-pullquote blockquote > p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wp-block-pullquote.alignleft p,
+.wp-block-pullquote.alignright p {
+	font-size: 0.75em;
 }
 
 .wp-block-pullquote blockquote cite {

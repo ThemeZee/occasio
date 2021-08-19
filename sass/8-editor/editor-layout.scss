@@ -4,6 +4,8 @@
 
 .wp-block[data-align="wide"] {
 	max-width: $wideBlockWidth;
+	margin-top: 0;
+	margin-bottom: 1.75rem;
 }
 
 .wp-block[data-align="full"] {
