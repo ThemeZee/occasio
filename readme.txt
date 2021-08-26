@@ -23,6 +23,10 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.7 - 2021-08-26 =
+* updated block styling
+* fixed table layout styling
+
 = 1.0.6 - 2021-07-20 =
 * added Widget Title block style
 * fixed error messages on new block-based Widgets Editor
