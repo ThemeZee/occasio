@@ -23,6 +23,9 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.0.9 - 2022-02-24 =
+* fixed keyboard navigation of dropdown menus
+
 = 1.0.8 - 2021-11-05 =
 * updated navigation.js to use vanilla js instead of jQuery
 
