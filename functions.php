@@ -112,7 +112,7 @@ function occasio_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) && ! occasio_is_amp() ) {
-		wp_enqueue_script( 'occasio-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array(), '20211104', true );
+		wp_enqueue_script( 'occasio-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array(), '20220224', true );
 		$occasio_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'occasio' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'occasio' ),
