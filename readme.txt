@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/occasio/
 Contributors: themezee
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 5.2
-Tested up to: 5.9
+Tested up to: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,10 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 3. Go to https://themezee.com/en/docs/occasio-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.1 - 2022-07-12 =
+* added block support for custom spacing and line heights
+* improved styling of columns block
 
 = 1.0.9 - 2022-02-24 =
 * fixed keyboard navigation of dropdown menus
