@@ -23,6 +23,9 @@ For more information about Occasio please go to https://themezee.com/themes/occa
 
 == Changelog ==
 
+= 1.1.1 - 2022-08-23 =
+* updated footer credit link
+
 = 1.1 - 2022-07-12 =
 * added block support for custom spacing and line heights
 * improved styling of columns block
