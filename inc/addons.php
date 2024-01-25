@@ -17,15 +17,21 @@ function occasio_theme_addons_setup() {
 	add_theme_support( 'themezee-breadcrumbs' );
 
 	// Add theme support for ThemeZee Widget Bundle plugin.
-	add_theme_support( 'themezee-widget-bundle', array(
-		'thumbnail_size' => array( 110, 110 ),
-		'svg_icons'      => true,
-	) );
+	add_theme_support(
+		'themezee-widget-bundle',
+		array(
+			'thumbnail_size' => array( 110, 110 ),
+			'svg_icons'      => true,
+		)
+	);
 
 	// Add theme support for Related Posts.
-	add_theme_support( 'themezee-related-posts', array(
-		'thumbnail_size' => array( 800, 440 ),
-	) );
+	add_theme_support(
+		'themezee-related-posts',
+		array(
+			'thumbnail_size' => array( 800, 440 ),
+		)
+	);
 
 	// Add theme support for wooCommerce.
 	add_theme_support( 'woocommerce' );

@@ -42,39 +42,62 @@ function occasio_setup() {
 	add_image_size( 'occasio-horizontal-list-post', 400, 400, true );
 
 	// Register Navigation Menus.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Main Navigation', 'occasio' ),
-	) );
+	register_nav_menus(
+		array(
+			'primary' => esc_html__( 'Main Navigation', 'occasio' ),
+		)
+	);
 
 	// Switch default core markup for galleries and captions to output valid HTML5.
-	add_theme_support( 'html5', array(
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+	add_theme_support(
+		'html5',
+		array(
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		)
+	);
 
 	// Set up the WordPress core custom logo feature.
-	add_theme_support( 'custom-logo', apply_filters( 'occasio_custom_logo_args', array(
-		'height'      => 60,
-		'width'       => 300,
-		'flex-height' => true,
-		'flex-width'  => true,
-	) ) );
+	add_theme_support(
+		'custom-logo',
+		apply_filters(
+			'occasio_custom_logo_args',
+			array(
+				'height'      => 60,
+				'width'       => 300,
+				'flex-height' => true,
+				'flex-width'  => true,
+			)
+		)
+	);
 
 	// Set up the WordPress core custom header feature.
-	add_theme_support( 'custom-header', apply_filters( 'occasio_custom_header_args', array(
-		'header-text' => false,
-		'width'       => 1240,
-		'height'      => 200,
-		'flex-width'  => true,
-		'flex-height' => true,
-	) ) );
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'occasio_custom_header_args',
+			array(
+				'header-text' => false,
+				'width'       => 1240,
+				'height'      => 200,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		)
+	);
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'occasio_custom_background_args', array(
-		'default-color' => 'ededef',
-	) ) );
+	add_theme_support(
+		'custom-background',
+		apply_filters(
+			'occasio_custom_background_args',
+			array(
+				'default-color' => 'ededef',
+			)
+		)
+	);
 
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -138,8 +161,8 @@ add_action( 'wp_enqueue_scripts', 'occasio_scripts' );
 
 
 /**
-* Enqueue theme fonts.
-*/
+ * Enqueue theme fonts.
+ */
 function occasio_theme_fonts() {
 	$fonts_url = occasio_get_fonts_url();
 
@@ -179,26 +202,30 @@ function occasio_get_fonts_url() {
 function occasio_widgets_init() {
 
 	// Register Blog Sidebar widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'occasio' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'occasio' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'occasio' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'occasio' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 
 	// Register Footer Copyright widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Copyright', 'occasio' ),
-		'id'            => 'footer-copyright',
-		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'occasio' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class = "widget-title">',
-		'after_title'   => '</h4>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Copyright', 'occasio' ),
+			'id'            => 'footer-copyright',
+			'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'occasio' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class = "widget-title">',
+			'after_title'   => '</h4>',
+		)
+	);
 }
 add_action( 'widgets_init', 'occasio_widgets_init', 30 );
 
@@ -207,10 +234,13 @@ add_action( 'widgets_init', 'occasio_widgets_init', 30 );
  * Make custom image sizes available in Gutenberg.
  */
 function occasio_add_image_size_names( $sizes ) {
-	return array_merge( $sizes, array(
-		'post-thumbnail'               => esc_html__( 'Occasio Single Post', 'occasio' ),
-		'occasio-horizontal-list-post' => esc_html__( 'Occasio List Post', 'occasio' ),
-	) );
+	return array_merge(
+		$sizes,
+		array(
+			'post-thumbnail'               => esc_html__( 'Occasio Single Post', 'occasio' ),
+			'occasio-horizontal-list-post' => esc_html__( 'Occasio List Post', 'occasio' ),
+		)
+	);
 }
 add_filter( 'image_size_names_choose', 'occasio_add_image_size_names' );
 

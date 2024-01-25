@@ -23,109 +23,127 @@ function occasio_gutenberg_support() {
 	add_theme_support( 'custom-line-height' );
 
 	// Define block color palette.
-	$color_palette = apply_filters( 'occasio_color_palette', array(
-		'primary_color'    => '#2a4861',
-		'secondary_color'  => '#5d7b94',
-		'tertiary_color'   => '#90aec7',
-		'accent_color'     => '#60945d',
-		'highlight_color'  => '#915d94',
-		'light_gray_color' => '#ededef',
-		'gray_color'       => '#84848f',
-		'dark_gray_color'  => '#24242f',
-	) );
+	$color_palette = apply_filters(
+		'occasio_color_palette',
+		array(
+			'primary_color'    => '#2a4861',
+			'secondary_color'  => '#5d7b94',
+			'tertiary_color'   => '#90aec7',
+			'accent_color'     => '#60945d',
+			'highlight_color'  => '#915d94',
+			'light_gray_color' => '#ededef',
+			'gray_color'       => '#84848f',
+			'dark_gray_color'  => '#24242f',
+		)
+	);
 
 	// Add theme support for block color palette.
-	add_theme_support( 'editor-color-palette', apply_filters( 'occasio_editor_color_palette_args', array(
-		array(
-			'name'  => esc_html_x( 'Primary', 'block color', 'occasio' ),
-			'slug'  => 'primary',
-			'color' => esc_html( $color_palette['primary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Secondary', 'block color', 'occasio' ),
-			'slug'  => 'secondary',
-			'color' => esc_html( $color_palette['secondary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Tertiary', 'block color', 'occasio' ),
-			'slug'  => 'tertiary',
-			'color' => esc_html( $color_palette['tertiary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Accent', 'block color', 'occasio' ),
-			'slug'  => 'accent',
-			'color' => esc_html( $color_palette['accent_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Highlight', 'block color', 'occasio' ),
-			'slug'  => 'highlight',
-			'color' => esc_html( $color_palette['highlight_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'White', 'block color', 'occasio' ),
-			'slug'  => 'white',
-			'color' => '#ffffff',
-		),
-		array(
-			'name'  => esc_html_x( 'Light Gray', 'block color', 'occasio' ),
-			'slug'  => 'light-gray',
-			'color' => esc_html( $color_palette['light_gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Gray', 'block color', 'occasio' ),
-			'slug'  => 'gray',
-			'color' => esc_html( $color_palette['gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Dark Gray', 'block color', 'occasio' ),
-			'slug'  => 'dark-gray',
-			'color' => esc_html( $color_palette['dark_gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Black', 'block color', 'occasio' ),
-			'slug'  => 'black',
-			'color' => '#000000',
-		),
-	) ) );
+	add_theme_support(
+		'editor-color-palette',
+		apply_filters(
+			'occasio_editor_color_palette_args',
+			array(
+				array(
+					'name'  => esc_html_x( 'Primary', 'block color', 'occasio' ),
+					'slug'  => 'primary',
+					'color' => esc_html( $color_palette['primary_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Secondary', 'block color', 'occasio' ),
+					'slug'  => 'secondary',
+					'color' => esc_html( $color_palette['secondary_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Tertiary', 'block color', 'occasio' ),
+					'slug'  => 'tertiary',
+					'color' => esc_html( $color_palette['tertiary_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Accent', 'block color', 'occasio' ),
+					'slug'  => 'accent',
+					'color' => esc_html( $color_palette['accent_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Highlight', 'block color', 'occasio' ),
+					'slug'  => 'highlight',
+					'color' => esc_html( $color_palette['highlight_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'White', 'block color', 'occasio' ),
+					'slug'  => 'white',
+					'color' => '#ffffff',
+				),
+				array(
+					'name'  => esc_html_x( 'Light Gray', 'block color', 'occasio' ),
+					'slug'  => 'light-gray',
+					'color' => esc_html( $color_palette['light_gray_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Gray', 'block color', 'occasio' ),
+					'slug'  => 'gray',
+					'color' => esc_html( $color_palette['gray_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Dark Gray', 'block color', 'occasio' ),
+					'slug'  => 'dark-gray',
+					'color' => esc_html( $color_palette['dark_gray_color'] ),
+				),
+				array(
+					'name'  => esc_html_x( 'Black', 'block color', 'occasio' ),
+					'slug'  => 'black',
+					'color' => '#000000',
+				),
+			)
+		)
+	);
 
 	// Add theme support for font sizes.
-	add_theme_support( 'editor-font-sizes', apply_filters( 'occasio_editor_font_sizes_args', array(
-		array(
-			'name' => esc_html_x( 'Small', 'block font size', 'occasio' ),
-			'size' => 16,
-			'slug' => 'small',
-		),
-		array(
-			'name' => esc_html_x( 'Medium', 'block font size', 'occasio' ),
-			'size' => 24,
-			'slug' => 'medium',
-		),
-		array(
-			'name' => esc_html_x( 'Large', 'block font size', 'occasio' ),
-			'size' => 36,
-			'slug' => 'large',
-		),
-		array(
-			'name' => esc_html_x( 'Extra Large', 'block font size', 'occasio' ),
-			'size' => 48,
-			'slug' => 'extra-large',
-		),
-		array(
-			'name' => esc_html_x( 'Huge', 'block font size', 'occasio' ),
-			'size' => 64,
-			'slug' => 'huge',
-		),
-	) ) );
+	add_theme_support(
+		'editor-font-sizes',
+		apply_filters(
+			'occasio_editor_font_sizes_args',
+			array(
+				array(
+					'name' => esc_html_x( 'Small', 'block font size', 'occasio' ),
+					'size' => 16,
+					'slug' => 'small',
+				),
+				array(
+					'name' => esc_html_x( 'Medium', 'block font size', 'occasio' ),
+					'size' => 24,
+					'slug' => 'medium',
+				),
+				array(
+					'name' => esc_html_x( 'Large', 'block font size', 'occasio' ),
+					'size' => 36,
+					'slug' => 'large',
+				),
+				array(
+					'name' => esc_html_x( 'Extra Large', 'block font size', 'occasio' ),
+					'size' => 48,
+					'slug' => 'extra-large',
+				),
+				array(
+					'name' => esc_html_x( 'Huge', 'block font size', 'occasio' ),
+					'size' => 64,
+					'slug' => 'huge',
+				),
+			)
+		)
+	);
 
 	// Check if block style functions are available.
 	if ( function_exists( 'register_block_style' ) ) {
 
 		// Register Widget Title Block style.
-		register_block_style( 'core/heading', array(
-			'name'         => 'widget-title',
-			'label'        => esc_html__( 'Widget Title', 'occasio' ),
-			'style_handle' => 'occasio-stylesheet',
-		) );
+		register_block_style(
+			'core/heading',
+			array(
+				'name'         => 'widget-title',
+				'label'        => esc_html__( 'Widget Title', 'occasio' ),
+				'style_handle' => 'occasio-stylesheet',
+			)
+		);
 	}
 }
 add_action( 'after_setup_theme', 'occasio_gutenberg_support' );

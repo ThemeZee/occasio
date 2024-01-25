@@ -149,7 +149,8 @@ function occasio_theme_info_page() {
 
 			<p>
 				<?php
-				printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'occasio' ),
+				printf(
+					esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'occasio' ),
 					$theme->display( 'Name' ),
 					'<a target="_blank" href="' . __( 'https://themezee.com/', 'occasio' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=occasio" title="ThemeZee">ThemeZee</a>',
 					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/occasio/reviews/', 'occasio' ) . '" title="' . esc_attr__( 'Rate this theme', 'occasio' ) . '">' . esc_html_x( 'rate it', 'If you like this theme, rate it', 'occasio' ) . '</a>'

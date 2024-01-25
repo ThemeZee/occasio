@@ -41,7 +41,7 @@ if ( ! function_exists( 'occasio_site_title' ) ) :
 
 			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -216,7 +216,8 @@ if ( ! function_exists( 'occasio_entry_date' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -236,7 +237,8 @@ if ( ! function_exists( 'occasio_entry_author' ) ) :
 	 */
 	function occasio_entry_author() {
 
-		$author_string = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		$author_string = sprintf(
+			'<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			// translators: post author link.
 			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'occasio' ), get_the_author() ) ),
@@ -340,10 +342,12 @@ if ( ! function_exists( 'occasio_post_navigation' ) ) :
 
 		if ( true === occasio_get_option( 'post_navigation' ) || is_customize_preview() ) :
 
-			the_post_navigation( array(
-				'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'occasio' ) . '</span><h3 class="entry-title">%title</h3>',
-				'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'occasio' ) . '</span><h3 class="entry-title">%title</h3>',
-			) );
+			the_post_navigation(
+				array(
+					'prev_text' => '<span class="nav-link-text">' . esc_html_x( 'Previous Post', 'post navigation', 'occasio' ) . '</span><h3 class="entry-title">%title</h3>',
+					'next_text' => '<span class="nav-link-text">' . esc_html_x( 'Next Post', 'post navigation', 'occasio' ) . '</span><h3 class="entry-title">%title</h3>',
+				)
+			);
 
 		endif;
 	}
@@ -356,11 +360,13 @@ if ( ! function_exists( 'occasio_pagination' ) ) :
 	 */
 	function occasio_pagination() {
 
-		the_posts_pagination( array(
-			'mid_size'  => 2,
-			'prev_text' => '&laquo;<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'occasio' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'occasio' ) . '</span>&raquo;',
-		) );
+		the_posts_pagination(
+			array(
+				'mid_size'  => 2,
+				'prev_text' => '&laquo;<span class="screen-reader-text">' . esc_html_x( 'Previous Posts', 'pagination', 'occasio' ) . '</span>',
+				'next_text' => '<span class="screen-reader-text">' . esc_html_x( 'Next Posts', 'pagination', 'occasio' ) . '</span>&raquo;',
+			)
+		);
 
 	}
 endif;
@@ -395,7 +401,8 @@ if ( ! function_exists( 'occasio_credit_link' ) ) :
 			<span class="credit-link">
 				<?php
 				// translators: Theme Name and Link to ThemeZee.
-				printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'occasio' ),
+				printf(
+					esc_html__( 'WordPress Theme: %1$s by %2$s.', 'occasio' ),
 					esc_html__( 'Occasio', 'occasio' ),
 					'ThemeZee'
 				);
@@ -416,10 +423,12 @@ if ( ! function_exists( 'occasio_breadcrumbs' ) ) :
 
 		if ( function_exists( 'themezee_breadcrumbs' ) ) {
 
-			themezee_breadcrumbs( array(
-				'before' => '<div class="breadcrumbs-container">',
-				'after'  => '</div>',
-			) );
+			themezee_breadcrumbs(
+				array(
+					'before' => '<div class="breadcrumbs-container">',
+					'after'  => '</div>',
+				)
+			);
 
 		}
 	}
@@ -434,12 +443,14 @@ if ( ! function_exists( 'occasio_related_posts' ) ) :
 
 		if ( function_exists( 'themezee_related_posts' ) ) {
 
-			themezee_related_posts( array(
-				'container'    => 'div',
-				'class'        => 'related-posts',
-				'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
-				'after_title'  => '</h2></header>',
-			) );
+			themezee_related_posts(
+				array(
+					'container'    => 'div',
+					'class'        => 'related-posts',
+					'before_title' => '<header class="archive-header related-posts-header entry-header"><h2 class="archive-title related-posts-title entry-title">',
+					'after_title'  => '</h2></header>',
+				)
+			);
 
 		}
 	}
